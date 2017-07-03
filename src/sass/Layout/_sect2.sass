@@ -1,0 +1,87 @@
+$top-1: 225px
+$top-2: 150px
+.sect2
+	width: 100%
+	height: 620px
+	background-image: url("../img/bg-2.jpg")
+	background-position-x: 50%	
+	background-position-y: 100%
+	background-repeat: no-repeat	
+	&-contain		
+		height: 100%		
+		position: relative	
+		background: url("../img/sect2-girl.png")no-repeat center 0px
+		border: 1px solid red		
+	&__title_top
+		color: $color-text-sect2
+		padding-top: 65px
+	&__title_bottom
+		float: right
+		position:relative
+		margin-top: 323px
+		margin-right: 100px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			width: 277px
+			height: 131px
+			background-image: url("../img/sect2-img.png")
+			right: 130px				
+	&-list
+		+ff("OpenSansSemibold")	
+		color: $color-text-sect2
+		font-size: 19px
+	&__item
+		position: absolute	
+		&-1
+			@extend %right
+			top: $top-1
+			margin-left: -380px
+		&-2
+			@extend %right
+			top: $top-1 + 102
+			margin-left: -470px		
+		&-3
+			@extend %right
+			top: $top-1 + 197
+			margin-left: -318px
+		&-4
+			@extend %left
+			top: $top-2
+			margin-left: 120px			
+		&-5
+			@extend %left
+			top: $top-2 + 93px
+			margin-left: 200px
+	.button		
+		margin: 530px auto 0
+		display: block
+%right
+	padding-right: 102px
+	left: 50%
+	&::before
+		content: ''
+		display: block
+		position: absolute	
+		background-image: url("../img/ico-sec2.png")	
+		width: 88px
+		height: 88px
+		right: 0
+		top: 50%
+		top: 50%
+		transform: translateY(-50%) 
+
+%left
+	padding-left: 102px	
+	left: 50%	
+	&::after
+		content: ''
+		display: block
+		position: absolute	
+		background-image: url("../img/ico-sec2.png")
+		width: 88px
+		height: 88px
+		left: 0
+		top: 50%
+		transform: translateY(-50%) 

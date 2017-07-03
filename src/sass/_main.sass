@@ -1,0 +1,65 @@
+
+
+%font
+	color: $color-text-button		
+	text-shadow: 0px 1px 0px #006d8f
+	text-align: center
+.block-form
+	width: 255px
+	height: 491px
+	background-image: url("../img/form.png")
+	&__title
+		+ff('KarmaLight')	
+		font-size: 29px		
+		padding-left: 20px
+		padding-right: 20px
+		padding-top: 15px
+		text-transform: uppercase
+		@extend %font
+	&__price
+		@extend %font
+		+ff('RobotoLight')
+		.al-cost
+			font-size: 45px
+			background: url("../img/form-price.png")no-repeat center
+		.al-cost-promo
+			font-size: 70px
+	&__form
+		width: 220px		
+		margin: 20px auto 0	
+		text-align: center
+		+ff('OpenSansRegular')
+		select
+			display: none
+		input
+			border: 1px solid #ccc
+			border-radius: 5px	
+			width: 100%
+			color: $color-text1
+			padding:
+				top: 8px
+				left: 13px
+				bottom: 13px
+			margin-top: 13px
+	&__button
+		width: 220px
+		height: 39px
+		background-image: url("../img/form-bottom.png")		
+		margin: 15px auto 0
+.button	
+	border: 2px solid #d05800
+	border-radius: 4px
+	width: 220px
+	height: 50px
+	+g(#ffd800, #ff5a00)
+	margin-top: 22px
+	text-transform: uppercase
+	color: $color-text-button		
+	+ff('OpenSansSemibold')
+	font-size: 17px
+@import Layout/sect1
+@import Layout/navbar
+@import Layout/sect2
+@import Layout/sect5
+@import Layout/sect6
+@import Layout/sect9
