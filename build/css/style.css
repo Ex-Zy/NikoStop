@@ -121,6 +121,30 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 
 .sect9 { background-image: url("../img/bg-9.png"); }
 .sect9-content-left span { display: none; }
+
+.title { color: #0883b0; font-family: "KarmaSemibold", Arial, sans-serif; font-size: 57px; font-weight: 600; line-height: 61px; }
+
+.inner { max-width: 1170px; padding: 0 15px; position: relative; margin: auto; }
+
+.effective { text-align: center; position: relative; background: url(../img/effective-bg.png) no-repeat 50% 100%; -webkit-background-size: cover; background-size: cover; }
+.effective .inner { min-height: 920px; background: url(../img/prod-effective.png) no-repeat 50% 70%; }
+
+.effective-items { max-width: 960px; margin: 60px auto 0; text-align: left; position: relative; }
+
+.effective-bl { max-width: 290px; max-height: 150px; overflow: hidden; position: absolute; z-index: 3; }
+.effective-bl_1 { left: 0; top: 0; }
+.effective-bl_2 { right: 0; top: 0; max-width: 260px; }
+.effective-bl_3 { top: 175px; left: -90px; max-width: 260px; }
+.effective-bl_4 { top: 175px; right: -90px; max-width: 240px; }
+.effective-bl_5 { top: 420px; left: 0; max-width: 280px; }
+.effective-bl_6 { top: 420px; right: 0; max-width: 260px; }
+.effective-bl__title { font-family: "OpenSansSemibold", Arial, sans-serif; font-size: 19px; }
+.effective-bl__text { margin-top: 10px; line-height: 1.4; }
+
+.parallax-list { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.parallax-list__item { position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; z-index: -1; }
+.parallax-list__item_1 { width: 800px; height: 476px; background: url(../img/parallax-bg1.png) no-repeat center; -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); }
+.parallax-list__item_2 { width: 618px; height: 451px; background: url(../img/parallax-bg2.png) no-repeat center; -webkit-transform: translateY(140px); -ms-transform: translateY(140px); transform: translateY(140px); z-index: 2; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 
 

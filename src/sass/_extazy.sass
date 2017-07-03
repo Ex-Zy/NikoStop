@@ -1,0 +1,89 @@
+//fonts
+=k-semibold
+	font-family: 'KarmaSemibold', Arial, sans-serif
+=o-semibold
+	font-family: 'OpenSansSemibold', Arial, sans-serif
+.title
+	color: $color-text-h2
+	+k-semibold
+	font-size: 57px
+	font-weight: 600
+	line-height: 61px
+.inner
+	max-width: 1170px
+	padding: 0 15px
+	position: relative
+	margin: auto
+.effective
+	text-align: center
+	position: relative
+	background: url(../img/effective-bg.png) no-repeat 50% 100%
+	background-size: cover
+	.inner
+		min-height: 920px
+		background: url(../img/prod-effective.png) no-repeat 50% 70%
+.effective-items
+	max-width: 960px
+	margin: 60px auto 0
+	text-align: left
+	position: relative
+.effective-bl
+	max-width: 290px
+	max-height: 150px
+	overflow: hidden
+	position: absolute
+	z-index: 3
+	&_1
+		left: 0
+		top: 0
+	&_2
+		right: 0
+		top: 0
+		max-width: 260px
+	&_3
+		top: 175px
+		left: -90px
+		max-width: 260px
+	&_4
+		top: 175px
+		right: -90px
+		max-width: 240px
+	&_5
+		top: 420px
+		left: 0
+		max-width: 280px
+	&_6
+		top: 420px
+		right: 0
+		max-width: 260px
+	&__title
+		+o-semibold
+		font-size: 19px
+	&__text
+		margin-top: 10px
+		line-height: 1.4
+.parallax-list
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	&__item
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: auto
+		z-index: -1
+		&_1
+			width: 800px
+			height: 476px
+			background: url(../img/parallax-bg1.png) no-repeat center
+			transform: translateY(-100px)
+		&_2
+			width: 618px
+			height: 451px
+			background: url(../img/parallax-bg2.png) no-repeat center
+			transform: translateY(140px)
+			z-index: 2
