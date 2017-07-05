@@ -1,0 +1,16 @@
+.left, .right{
+	background: url(sprites.png) no-repeat;
+}
+
+.left{
+	background-position: 0 0;
+	width: 17px;
+	height: 43px;
+}
+
+.right{
+	background-position: -25px 0;
+	width: 17px;
+	height: 43px;
+}
+

@@ -4,9 +4,9 @@
 	background-image: url("../img/bg-5.png")
 	background-position-x: 50%	
 	background-repeat: no-repeat
+	margin-bottom: 60px
 	&-contain		
-		height: 100%
-		border: 1px solid red
+		height: 100%		
 		position: relative	
 	&-girl
 		position: absolute
@@ -15,12 +15,13 @@
 	&-product
 		position: absolute
 		right:  0px	
-		top: 50px	
+		top: 60px	
 	&-list
 		+ff('OpenSansSemibold')	
 		font-size: 19px	
 		padding-left: 40px
 		margin-left: -15px	
+		margin-top: 20px
 		&__item
 			position: relative
 			padding-top: 10px
@@ -43,12 +44,9 @@
 		background-image: url("../img/sect5-tape.png")	
 		width: 569px
 		height: 90px
-		color: $color-text-button
-		+ff('OpenSansBoldItalic')	
+		@extend %tape
 		font-size: 19px	
-		padding-top: 30px
-		text-align: center
-		text-shadow: 0px 1px 6px #006d8f
+		margin-top: 27px
 	h2
 		margin-top: 50px	
 

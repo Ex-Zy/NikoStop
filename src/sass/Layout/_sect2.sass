@@ -1,24 +1,24 @@
-$top-1: 225px
-$top-2: 150px
+$top-1: 315px // 
+$top-2: 255px
 .sect2
 	width: 100%
-	height: 620px
-	background-image: url("../img/bg-2.jpg")
+	height: 720px
+	background-image: url("../img/bg-2.png")
 	background-position-x: 50%	
-	background-position-y: 100%
-	background-repeat: no-repeat	
+	background-position-y: -80%
+	background-repeat: no-repeat		
 	&-contain		
 		height: 100%		
 		position: relative	
-		background: url("../img/sect2-girl.png")no-repeat center 0px
-		border: 1px solid red		
+		background: url("../img/sect2-girl.png")no-repeat center 80px		
+		padding-top: 150px	
 	&__title_top
 		color: $color-text-sect2
-		padding-top: 65px
+		
 	&__title_bottom
 		float: right
 		position:relative
-		margin-top: 323px
+		margin-top: 280px
 		margin-right: 100px
 		&::after
 			content: ''
@@ -35,29 +35,29 @@ $top-2: 150px
 	&__item
 		position: absolute	
 		&-1
-			@extend %right
+			@extend %left
 			top: $top-1
 			margin-left: -380px
 		&-2
-			@extend %right
+			@extend %left
 			top: $top-1 + 102
 			margin-left: -470px		
 		&-3
-			@extend %right
+			@extend %left
 			top: $top-1 + 197
 			margin-left: -318px
 		&-4
-			@extend %left
+			@extend %right
 			top: $top-2
 			margin-left: 120px			
 		&-5
-			@extend %left
+			@extend %right
 			top: $top-2 + 93px
 			margin-left: 200px
 	.button		
-		margin: 530px auto 0
+		margin: 470px auto 0
 		display: block
-%right
+%left
 	padding-right: 102px
 	left: 50%
 	&::before
@@ -72,7 +72,7 @@ $top-2: 150px
 		top: 50%
 		transform: translateY(-50%) 
 
-%left
+%right
 	padding-left: 102px	
 	left: 50%	
 	&::after

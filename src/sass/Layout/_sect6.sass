@@ -1,27 +1,44 @@
 .sect6
 	width: 100%
 	height: 550px
+	position: relative
+	z-index: 10
 	&-contain		
-		height: 100%
-		border: 1px solid red
+		height: 100%		
 		position: relative	
 	&-block
+		margin-top: 35px
 		width: 100%
 		height: 388px
 		border: 2px solid #53cdfc
 		background: url("../img/sect6-shadow.png") no-repeat right
 		position: relative
+		&::before
+			position: absolute
+			bottom: -15px
+			right: 40px
+			content: ''
+			display: block
+			background: url("../img/sect6-signature.png") 
+			width: 153px
+			height: 104px
+			z-index: 10
 		&__img
 			position: absolute
 			bottom: 0
-			right: 0
+			right: 0			
 		&__form
 			margin-left: 15px
-			margin-top: -55px
+			margin-top: -45px
+			height: 445px
 		&__text
 			padding-top: 27px
+			padding-right: 40px
+			p
+				padding-bottom: 10px
 			.autor
 				text-align: right
 				&__name
 					display: block
-					
+					+ff('OpenSansSemibold')
+					font-size: 19px

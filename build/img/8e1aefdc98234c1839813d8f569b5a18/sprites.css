@@ -1,0 +1,46 @@
+.slider, .img2, .img1, .img3, .img4, .img5, .img6{
+	background: url(sprites.png) no-repeat;
+}
+
+.slider{
+	background-position: 0 0;
+	width: 42px;
+	height: 43px;
+}
+
+.img2{
+	background-position: -115px -50px ;
+	width: 111px;
+	height: 111px;
+}
+
+.img1{
+	background-position: 0 -50px ;
+	width: 111px;
+	height: 111px;
+}
+
+.img3{
+	background-position: -229px -50px ;
+	width: 111px;
+	height: 111px;
+}
+
+.img4{
+	background-position: -348px -50px ;
+	width: 111px;
+	height: 111px;
+}
+
+.img5{
+	background-position: -467px -50px ;
+	width: 111px;
+	height: 111px;
+}
+
+.img6{
+	background-position: -586px -50px ;
+	width: 111px;
+	height: 111px;
+}
+

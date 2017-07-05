@@ -1,13 +1,22 @@
 
-
 %font
 	color: $color-text-button		
 	text-shadow: 0px 1px 0px #006d8f
 	text-align: center
+// текст в ленте	
+%tape
+	color: $color-text-button
+	+ff('OpenSansBoldItalic')	
+	padding-top: 30px
+	text-align: center
+	text-shadow: 0px 1px 6px #006d8f	
+/****************************  style form	 *********************************/
 .block-form
 	width: 255px
 	height: 491px
-	background-image: url("../img/form.png")
+	background: url("../img/form.png")
+	position: relative
+
 	&__title
 		+ff('KarmaLight')	
 		font-size: 29px		
@@ -26,7 +35,7 @@
 			font-size: 70px
 	&__form
 		width: 220px		
-		margin: 20px auto 0	
+		margin: 18px auto 0	
 		text-align: center
 		+ff('OpenSansRegular')
 		select
@@ -41,11 +50,12 @@
 				left: 13px
 				bottom: 13px
 			margin-top: 13px
-	&__button
+	&__buttom-img
 		width: 220px
 		height: 39px
 		background-image: url("../img/form-bottom.png")		
-		margin: 15px auto 0
+		margin: 15px auto 0	
+/****************************  style button	 *********************************/		
 .button	
 	border: 2px solid #d05800
 	border-radius: 4px
@@ -57,9 +67,12 @@
 	color: $color-text-button		
 	+ff('OpenSansSemibold')
 	font-size: 17px
+@import Layout/navbar	
 @import Layout/sect1
-@import Layout/navbar
 @import Layout/sect2
+@import Layout/sect3
 @import Layout/sect5
 @import Layout/sect6
+@import Layout/sect7
+@import Layout/sect8
 @import Layout/sect9
