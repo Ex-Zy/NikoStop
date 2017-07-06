@@ -1,15 +1,16 @@
-
 <div class='block-form'>
-	<h4 class='block-form__title'>Start a free life now!</h4>
-	<div class="block-form__price">
-		<span class="al-cost">$50</span>
-		<span class="al-cost-promo">$25</span>
+	<div class="block-form__in">
+		<h4 class='block-form__title'>Start a free life now!</h4>
+		<div class="block-form__price">
+			<span class="al-cost">$50</span>
+			<span class="al-cost-promo">$25</span>
+		</div>
+		<form action="/land/order" class="block-form__form al-form" method='post'>
+			<select name="country" class="al-country"> </select>
+	        <input type="text" name="name" placeholder="Name">
+	        <input type="tel" name="phone" placeholder="Phone Number">
+	        <button class='button' type="submit">Заказать ></button>
+		</form>
+		<div class='block-form__bottom-img'></div>	
 	</div>
-	<form action="/land/order" class="block-form__form al-form" method='post'>
-		<select name="country" class="al-country"> </select>
-        <input type="text" name="name" placeholder="Name">
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <button class='button' type="submit">Заказать ></button>
-	</form>
-	<div class='block-form__bottom-img'></div>	
 </div>

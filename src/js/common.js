@@ -19,7 +19,7 @@ $(document).ready(function() {
    });   
 
  $(window).scroll(function(){
-      if ($(this).scrollTop() > $('.sect2').offset().top) {
+      if ($(this).scrollTop() > $('.why-not').offset().top) {
           $('.navbar').addClass('fixed');
       } else {
           $('.navbar').removeClass('fixed');
