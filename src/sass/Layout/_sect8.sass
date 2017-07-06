@@ -5,13 +5,24 @@
 	height: 176px
 	top: 50%
 	transform: translateY(-50%)
-.sect8
-	width: 100%
-	height: 600px	
+	+r(1199)
+		width: 130px
+		height: 133px
+		background-size: cover
+
+	+r(991)
+		width: 93px
+		height: 96px
+		background-size: cover
+	/************************** section-8 **************************/
+.sect8	
+	min-height: 600px	
 	background-position-x: 50%	
 	background-repeat: no-repeat
 	position: relative 
 	margin-top: -45px
+	+r(1199)
+		margin-top: 0
 	&-contain		
 		height: 100%		
 		position: relative	
@@ -22,12 +33,16 @@
 		background: url("../img/sect8-fon.jpg") no-repeat right
 		position: relative
 		margin-top: 15px
+		+r(1199)
+			background-size: 100%
 		&__img
 			position: absolute
 			background: url('../img/sect8-block-fon.png') no-repeat 0 0, url('../img/sect8-product2.png') no-repeat 310px 15px
 			right: 0px 
 			top: -135px				
-			width: 478px		
+			width: 478px
+			+r(1199)
+				top: -90px		
 			img
 				margin-left: 140px
 				margin-top: 0
@@ -42,7 +57,7 @@
 				margin-bottom: 30px
 			a
 				color: $color-text-h2
-				+ff('OpenSansSemibold')	
+				+fs('Open Sans', 600)	
 				text-decoration: underline
 		&-tape
 			background-image: url("../img/sect8-4.png")		
@@ -51,11 +66,29 @@
 			position: absolute
 			left: 0
 			bottom: 15px
+			+r(1199)
+				width: 600px
+				height: 75px
+				background-size: 100%
+				left: -10px
+				bottom: 30px
+			+r(991)
+				width: 428px
+				height: 54px
+				background-size: 100%
+				left: -5px
+				bottom: 50px
 			&__item
 				position: absolute					
 				@extend %bg-i
 				+bgpos(-176px, 0)
-				left: 250px				
+				left: 250px	
+				+r(1199)
+					background-position-x: -132px	
+					left: 180px	
+				+r(991)
+					background-position-x: -190px	
+					left: 138px	
 				&::before, &::after
 					@extend %bg-i					
 					position: absolute
@@ -63,11 +96,23 @@
 					display: block
 				&::before
 					+bgpos(0, 0)
-					left: -210px	
+					left: -210px
+					+r(1199)
+						left: -160px			
+					+r(991)
+						left: -118px		
 				&::after
 					+bgpos(-350px, 0)		
-					left: 205px
+					left: 210px
+					+r(1199)
+						background-position-x: -394px
+						left: 160px	
+					+r(991)
+						background-position-x: -380px
+						left: 118px			
 	button 
 		float: right
 		margin-top: 240px
-		margin-right: 65px				
+		margin-right: 65px	
+		position: relative
+		z-index: 100			

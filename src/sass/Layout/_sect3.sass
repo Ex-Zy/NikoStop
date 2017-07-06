@@ -1,8 +1,253 @@
-.sect3	
+/********************** section-3 *************************/
+.better
+	background: url(../img/sect3/back.png) no-repeat center top / auto 100%
+	min-height: 700px
+	position: relative
+	overflow: hidden	
+	+r(1199)
+		min-height: 710px
+	+r(991)
+		min-height: 606px
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 235px
+		background: url(../img/sect3/bottom-layer.png) no-repeat center bottom
+	h2
+		margin: 0		
+		margin-top: 44px
+		+r(991)
+			font-size: 50px
+			margin-top: 32px
+		+ span			
+			display: block
+			font-size: 25px
+			margin-top: 4px
+			margin-bottom: 10px
+			color: #595959
+			+r(991)
+				font-size: 19px
+				margin-top: 1px
+	.content
+		padding-top: 82px
+		+r(991)
+			padding-top: 51px
+	.right
+		padding-top: 99px
+		+r(1199)
+			padding-left: 0
+		+r(991)
+			padding-top: 84px
+		p
+			margin: 0
+			font-size: 20px
+			line-height: 1.25
+			color: #373230
+			padding-right: 50px
+			+r(1199)
+				font-size: 16px
+			+r(991)
+				font-size: 14px
+				margin-left: -38px
+		a
+			
+			margin-left: 6px
+			margin-top: 37px
+			+r(1199)
+				margin-top: 29px
+			+r(991)
+				min-width: 224px
+				margin-left: -35px
+				margin-top: 32px
+	.product
+		max-width: 100%
+		+r(991)
+			position: relative
+			max-width: 125%
+			left: -25%
+.overflow
+	overflow: hidden
+.graf-container
 	width: 100%
-	height: 982px
-	background-image: url("../img/bg-4.png")
-	background-position-x: 50%	
-	background-position-y: 100%	
-	background-repeat: no-repeat
-	
+	position: absolute
+	left: 0
+	top: 0
+	bottom: 0
+	&:after
+		content: ""
+		// width: 1966px
+		// height: 920px
+		position: absolute
+		width: 100%
+		top: 0
+		left: 0
+		bottom: 0
+		// padding-bottom: 45.455%
+		background: url(../img/sect3/front.png) no-repeat center top / auto 100%
+
+.graf
+	width: 110.812%
+	width: 107.9%
+	padding-bottom: 29.572%
+	margin: 187px auto 0
+	// margin: 16.848% auto 0
+	position: relative
+	left: -2.163%
+	+r(991)
+		width: 131%
+		padding-bottom: 35%
+		margin-top: 119px
+		left: -19%
+	> svg,
+	.our-bg
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+	.our-bg
+		background: url("../img/sect3/our-graf-bg.png") no-repeat center top / 100% 100%
+		opacity: 0
+	path
+		stroke-dasharray: 1600px
+		stroke-dashoffset: 1600px
+	.point
+		position: absolute
+		transform: scale(0)
+		z-index: 1
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			border-radius: 50%
+		&:before
+			width: 100%
+			height: 100%
+	.our-point
+		width: 5.529%
+		padding-bottom: 5.529%
+		right: 30.45%
+		top: 19.7%
+		&:before
+			background-color: #fff
+		&:after 
+			width: 58.84%
+			height: 58.84%
+			background-color: #27a6dc
+			top: 20.6%
+			left: 20.6%
+	.other-points
+		.point
+			width: 2.846%
+			padding-bottom: 2.846%
+			&:after
+				width: 48.6%
+				height: 48.6%
+				background-color: #fff
+				top: 25.73%
+				left: 25.73%
+		.point-orange
+			left: 18.5%
+			top: 19.8%
+			&:before
+				background-color: #ddb895
+		.point-red
+			left: 25.3%
+			top: 27.5%
+			&:before
+				background-color: #d89293
+		&:hover
+			.tooltip-other-outer
+				transform: scale(1)
+		&:not(:hover)
+			.tooltip-other-outer
+				transition-timing-function: linear
+	.tooltip-outer
+		position: absolute
+		transform: scale(0)
+		z-index: 2
+	.tooltip-inner
+		position: relative
+		width: 100%
+		span
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			+fs('Open Sans', 600)
+			font-weight: 500
+			font-size: 14px
+			line-height: 1.375
+			text-align: center
+			color: #595959
+			+r(991)
+				font-size: 12px
+	.tooltip-our-outer
+		width: 350%
+		left: -24%
+		bottom: 6%
+		transform-origin: 23% 70%
+		+r(1199)
+			width: 412%
+			left: -31%
+			bottom: -7%
+		+r(991)
+			width: 400%
+			left: -33%
+			bottom: -9%
+	.tooltip-our-inner
+		padding-bottom: 69%
+		span
+			background: url(../img/sect3/tooltip-our.png) no-repeat center / 100% 100%
+			padding: 13% 17%
+	.tooltip-other-outer
+		width: 17%
+		left: 15%
+		top: -3%
+		transition: transform cubic-bezier(0.63, 0.04, 0.74, 1.45) 0.3s
+		+r(1199)
+			width: 19%
+			left: 14%
+			top: -7%
+	.tooltip-other-inner
+		padding-bottom: 76%
+		span
+			background: url(../img/sect3/tooltip-other.png) no-repeat center / 100% 100%
+			padding: 14% 22%
+	&.is-animated
+		.our-bg
+			animation: fadeIn 0.5s cubic-bezier(0.01, 0.92, 0.74, 1.01) forwards 1.2s
+		path
+			animation: dash 1.5s linear forwards
+		.point
+			animation: scale .3s linear forwards 1.2s
+		.tooltip-our-outer
+			animation: scale .5s cubic-bezier(0.63, 0.04, 0.74, 1.45) forwards 1.5s
+		&.ie-detected
+			.point
+				animation: scale .3s linear forwards
+			.tooltip-our-outer
+				animation: scale .5s cubic-bezier(0.63, 0.04, 0.74, 1.45) forwards 0.2s
+	&.ie-detected
+		.our-bg
+			animation: fadeIn 0.5s cubic-bezier(0.01, 0.92, 0.74, 1.01) forwards
+		path
+			stroke-dashoffset: 0px !important
+
+
+@keyframes dash
+	to 
+		stroke-dashoffset: 0px
+
+@keyframes fadeIn
+	to 
+		opacity: 1
+
+@keyframes scale
+	to 
+		transform: scale(1)	

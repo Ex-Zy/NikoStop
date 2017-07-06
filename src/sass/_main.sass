@@ -1,4 +1,4 @@
-
+// стиль шрифта шапки
 %font
 	color: $color-text-button		
 	text-shadow: 0px 1px 0px #006d8f
@@ -6,28 +6,38 @@
 // текст в ленте	
 %tape
 	color: $color-text-button
-	+ff('OpenSansBoldItalic')	
+	+fs('Open Sans', 700)
+	font-style: italic	
 	padding-top: 30px
 	text-align: center
 	text-shadow: 0px 1px 6px #006d8f	
+/****************************  style title	 *********************************/	
+.title
+	+fs('Karma', 600)
+	font-size: 57px
+	color: $color-text-h2
+	line-height: 1.1
+	+r(1199)
+		font-size: 50px
+	&_bordo
+		color: $color-text-sect2		
 /****************************  style form	 *********************************/
 .block-form
 	width: 255px
 	height: 491px
 	background: url("../img/form.png")
 	position: relative
-
 	&__title
-		+ff('KarmaLight')	
+		+fs('Karma', 700)	
 		font-size: 29px		
 		padding-left: 20px
 		padding-right: 20px
 		padding-top: 15px
 		text-transform: uppercase
-		@extend %font
+		@extend %font		
 	&__price
 		@extend %font
-		+ff('RobotoLight')
+		+fs('Roboto', 300)
 		.al-cost
 			font-size: 45px
 			background: url("../img/form-price.png")no-repeat center
@@ -37,7 +47,7 @@
 		width: 220px		
 		margin: 18px auto 0	
 		text-align: center
-		+ff('OpenSansRegular')
+		+fs('Open Sans', 400)
 		select
 			display: none
 		input
@@ -50,29 +60,32 @@
 				left: 13px
 				bottom: 13px
 			margin-top: 13px
-	&__buttom-img
+		button
+			margin-top: 22px	
+	&__bottom-img
 		width: 220px
 		height: 39px
 		background-image: url("../img/form-bottom.png")		
 		margin: 15px auto 0	
 /****************************  style button	 *********************************/		
 .button	
+	display: inline-block
+	text-align: center
 	border: 2px solid #d05800
 	border-radius: 4px
-	width: 220px
-	height: 50px
-	+g(#ffd800, #ff5a00)
-	margin-top: 22px
+	min-width: 220px
+	padding-top: 13px
+	padding-bottom: 13px
+	+g(#ffd800, #ff5a00)	
 	text-transform: uppercase
 	color: $color-text-button		
-	+ff('OpenSansSemibold')
+	+fs('Open Sans', 600)
 	font-size: 17px
-@import Layout/navbar	
-@import Layout/sect1
-@import Layout/sect2
-@import Layout/sect3
-@import Layout/sect5
-@import Layout/sect6
-@import Layout/sect7
-@import Layout/sect8
-@import Layout/sect9
+	cursor: pointer
+	&_small
+		min-width: 138px
+		font-size: 14px
+		padding-top: 8px	
+		padding-bottom: 8px	
+
+	
