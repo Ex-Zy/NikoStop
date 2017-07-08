@@ -3,6 +3,8 @@
 	&.top-bottom
 		background-image: url("../img/bg-9-1.png") 
 		background-position-y: 100%
+		+r(991)
+			background-size: 1139px
 	&__top-bg
 		position: absolute		
 	&__girl
@@ -11,9 +13,14 @@
 		+r(1199)
 			left: 30px
 			bottom: 150px
+		+r(991)	
+			display: none	
 	&__boy
 		left: -20px
 		top: 25px
 		+r(1199)
 			left: -135px
-
+		+r(991)
+			width: 192px
+			left: -50px	
+			top: 160px

@@ -35,24 +35,43 @@
 		margin-top: 15px
 		+r(1199)
 			background-size: 100%
+		+r(991)
+			height: 300px	
+			width: 690px
+			margin: 25px auto 0
+			background-size: cover
+			border-left: 2px solid #53cdfc
 		&__img
-			position: absolute
-			background: url('../img/sect8-block-fon.png') no-repeat 0 0, url('../img/sect8-product2.png') no-repeat 310px 15px
+			position: absolute			
 			right: 0px 
 			top: -135px				
-			width: 478px
+			width: 440px
+			background: url('../img/sect8-block-fon.png') no-repeat
 			+r(1199)
 				top: -90px		
+			+r(991)							
+				background-size: 390px
+				right: -65px
+				top: -30px			
 			img
 				margin-left: 140px
 				margin-top: 0
 				margin-right: 115px
+				position: relative
+				z-index: 10
+				+r(991)
+					width: 190px
+					margin-left: 105px
 
 		&__text
 			padding-left: 35px
 			padding-top: 35px
 			padding-right: 75px
 			font-size: 16px
+			+r(991)
+				padding-left: 15px
+				padding-top: 25px
+				padding-right: 355px 
 			p
 				margin-bottom: 30px
 			a
@@ -76,8 +95,8 @@
 				width: 428px
 				height: 54px
 				background-size: 100%
-				left: -5px
-				bottom: 50px
+				left: -9px
+				bottom: 8px
 			&__item
 				position: absolute					
 				@extend %bg-i
@@ -116,3 +135,6 @@
 		margin-right: 65px	
 		position: relative
 		z-index: 10			
+		+r(991)
+			margin-top: 70px
+			margin-right: 15px

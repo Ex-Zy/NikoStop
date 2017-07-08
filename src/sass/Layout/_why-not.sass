@@ -1,25 +1,50 @@
-$top-1: 315px // 
+$top-1: 315px 
+$top-1_991: 195px	
 $top-2: 255px
+$top-2_991: 160px	
+$left-2_991: 85px
+$marg-top: 25px
 /********************* section-2 *****************************/
 .why-not
 	width: 100%
-	min-height: 720px
+	height: 720px
 	background-image: url("../img/bg-2.png")
 	background-position-x: 50%	
 	background-position-y: -80%
-	background-repeat: no-repeat		
+	background-repeat: no-repeat	
+	+r(991)
+		background-position-y: 100%	
+		height: auto
+	+r(767)
+		background-position-y: 0	
+		background-position-x: 25%
+		background-size: 1200px
 	&-contain		
 		height: 100%		
 		position: relative	
 		background: url("../img/sect2-girl.png")no-repeat center 80px		
-		padding-top: 150px			
+		padding-top: 150px	
+		+r(991)
+			background-size: 242px	
+			padding-top: 43px
+			background-position-y: 150px	
+		+r(767)
+			background-size: 155px	
+			background-position-x: 110%
+			background-position-y: 125px
+			width: 320px
 	&__title_bottom
 		float: right
 		position:relative
 		margin-top: 280px
 		margin-right: 100px
 		+r(1199)
-			margin-right: 30px
+			margin-right: 15px
+		+r(991)
+			margin-top: 215px
+		+r(767)
+			float: left
+			margin-top: 150px					
 		&::after
 			content: ''
 			display: block
@@ -29,39 +54,111 @@ $top-2: 255px
 			background-image: url("../img/sect2-img.png")
 			right: 130px	
 			+r(1199)
-				right: 40px		
+				margin-right: -100px	
+			+r(991)
+				width: 205px
+				background-size: 100%
+				background-repeat: no-repeat
+				margin-right: -60px	
+			+r(767)
+				display: none	
+		&::before
+			display: none
+			background-image: url("../img/sect2-img2.png")	
+			content: ''			
+			position: absolute	
+			width: 144px
+			height: 45px			
+			margin-top: 80px
+			+r(767)
+				display: block
+
 	&-list
 		+fs("Open Sans", 600)	
 		color: $color-text-sect2
 		font-size: 19px
+		+r(991)
+			font-size: 16px					 
 	&__item
 		position: absolute	
+		+r(767)
+			left: 0
+			margin-left: 20px
+			padding-left: 15px
+			top: 110px
+			text-transform: uppercase
+			&::after
+				display: inline-block
+				content: ''
+				width: 6px	
+				height: 6px
+				border-radius: 3px	
+				background-color: $color-text-sect2
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)				
 		&-1
 			@extend %left
 			top: $top-1
 			margin-left: -380px
+			+r(991)
+				top: $top-1_991
+				margin-left: -255px	
+			+r(767)
+				margin-top: $marg-top					
 		&-2
 			@extend %left
 			top: $top-1 + 102
-			margin-left: -470px		
+			margin-left: -470px	
+			+r(991)
+				top: $top-1_991 +115px
+				margin-left: -340px	
+			+r(767)
+				margin-top: 2*$marg-top 	
 		&-3
 			@extend %left
 			top: $top-1 + 197
 			margin-left: -318px
+			+r(991)
+				top: $top-1_991 +245px	
+				margin-left: -270px
+			+r(767)
+				margin-top: 3*$marg-top 		
 		&-4
 			@extend %right
 			top: $top-2
-			margin-left: 120px			
+			margin-left: 120px	
+			+r(991)
+				top: $top-2_991 
+				margin-left: $left-2_991 
+			+r(767)
+				margin-top: 4*$marg-top 	 		
 		&-5
 			@extend %right
 			top: $top-2 + 93px
 			margin-left: 200px
+			+r(991)
+				top: $top-2_991 +110px
+				margin-left: $left-2_991+45px 
+			+r(767)
+				margin-top: 5*$marg-top 	
 	.button		
 		margin: 470px auto 0
 		display: block
+		+r(991)
+			margin-top: 370px 
+			margin-left: 230px
+		+r(767)
+			margin-left: auto	
+			margin-right: auto	
+			margin-top: 280px
 %left
 	padding-right: 102px
 	left: 50%
+	+r(991)
+		padding-right: 83px
+		text-align: right
 	&::before
 		content: ''
 		display: block
@@ -73,11 +170,18 @@ $top-2: 255px
 		top: 50%
 		top: 50%
 		transform: translateY(-50%) 
-
+		+r(991)
+			width: 70px
+			height: 70px
+			background-size: cover
+		+r(767)
+			display: none	
 %right
 	padding-left: 102px	
-	left: 50%	
-	&::after
+	left: 50%
+	+r(991)
+		padding-left: 83px	
+	&::before
 		content: ''
 		display: block
 		position: absolute	
@@ -87,3 +191,9 @@ $top-2: 255px
 		left: 0
 		top: 50%
 		transform: translateY(-50%) 
+		+r(991)
+			width: 70px
+			height: 70px
+			background-size: cover	
+		+r(767)
+			display: none	

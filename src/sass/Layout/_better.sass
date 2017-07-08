@@ -37,10 +37,13 @@
 			padding-top: 51px
 	.right
 		padding-top: 99px
+		position: relative
+		z-index: 10
 		+r(1199)
 			padding-left: 0
 		+r(991)
-			padding-top: 84px
+			padding-top: 64px
+
 		p
 			margin: 0
 			font-size: 20px
@@ -50,8 +53,8 @@
 			+r(1199)
 				font-size: 16px
 			+r(991)
-				font-size: 14px
-				margin-left: -38px
+				font-size: 14px				
+				padding: 0 0 0 30px 
 		a
 			
 			margin-left: 6px
@@ -60,14 +63,15 @@
 				margin-top: 29px
 			+r(991)
 				min-width: 224px
-				margin-left: -35px
+				margin-left: 25px
 				margin-top: 32px
+				
 	.product
 		max-width: 100%
 		+r(991)
 			position: relative
 			max-width: 125%
-			left: -25%
+			margin-top: -20px
 .overflow
 	overflow: hidden
 .graf-container
@@ -246,7 +250,7 @@
 
 @keyframes fadeIn
 	to 
-		opacity: 1
+		opacity: 0.5
 
 @keyframes scale
 	to 

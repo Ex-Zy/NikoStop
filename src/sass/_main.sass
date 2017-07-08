@@ -19,6 +19,8 @@
 	line-height: 1.1
 	+r(1199)
 		font-size: 50px
+	+r(767)
+		font-size: 36px	
 	&_bordo
 		color: $color-text-sect2		
 /****************************  style form	 *********************************/
@@ -91,4 +93,25 @@
 		padding-top: 8px	
 		padding-bottom: 8px	
 
+/****************************  style btn-expand	 *********************************/	
+.btn-expand
+	color: $color-text-h2
+	+fs('Open Sans', 600)
+	display: block	
+	width: 100px	
+	position: relative
+	padding-bottom: 44px	
+	text-align: center
+	&::before
+		content: ''
+		display: block
+		width: 36px
+		height: 36px		
+		background-image: url("../img/ico-button.png")
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%) 
+.container
+	border: 1px solid red
 	

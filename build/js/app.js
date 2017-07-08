@@ -33,7 +33,7 @@ $(document).ready(function() {
         infinite: true,
         responsive: [
       {
-        breakpoint: 750,
+        breakpoint: 991,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,       
@@ -105,5 +105,13 @@ $(document).ready(function() {
     } else {
       $elem.removeClass("is-animated");
     }
-  });
+  });  
 });
+/*function rand(min, max){
+  return (max-min)*Math.random()+min
+}
+function test(){
+  alert($('.top-bottom-content__qt::after').attr('right'));
+}
+setInterval('test()' ,   rand(30000, 60000) );
+*/

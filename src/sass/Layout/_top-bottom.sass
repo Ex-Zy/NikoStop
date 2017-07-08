@@ -6,29 +6,53 @@
 	background-position-x: 50%			
 	background-repeat: no-repeat	
 	position: relative
-	overflow: hidden		
+	overflow: hidden	
+	+r(991)
+		height: 600px
+		background-size: cover	
+	+r(767)	
+		height: 1000px
 	&-contain		
 		height: 100%		
 		padding-top: 10px
-		position: relative		
+		position: relative	
+		+r(991)
+			padding-top: 0			
 	&__bottom-bg
 		bottom: 38px
 		position: absolute	
-		left: 0%	
+		left: 0%
+		+r(991)
+			bottom: 0
 	&__girl,	
 	&__boy			
 		position: absolute			
 	&-content		
-		float: right		
+		float: right
+		+r(767)
+			float: none				
+			margin-left: -15px	
+			margin-right: -15px	
+			+clr
 		&-left
 			width: 450px
 			float: left
 			padding-top: 15px
+			+r(991)
+				width: 420px
+				position: relative
+			+r(767)	
+				width: 100%
+				padding-top: 50px
 			h5
 				padding-bottom: 10px
+				+r(991)
+					display: none
 			h5, h2
 				+r(1199)
-					padding-left: 25px	
+					padding-left: 25px
+				+r(991)
+					padding-left: 0		
 			span
 				margin-top: 20px
 				display: inline-block				
@@ -38,10 +62,26 @@
 				padding-left: 45px	
 				font-size: 16px	
 				line-height: 1.3
+				+r(991)
+					width: 200px
+					font-size: 14px
+					padding-left: 0px	
+					position: absolute
+					right: 0
+					margin-top: 90px
+				+r(767)
+					display: none
 		.block-form
 			float: right
-			margin-top: 22px			
-			z-index: 0				
+			margin-top: 22px
+			+r(991)
+				margin-top: 8px
+			+r(767)
+				position: absolute
+				top: 400px	
+				left: 50%
+				margin-left: -127px
+
 		&__qt
 			text-align: right
 			+fs('Open Sans', 400)
@@ -49,26 +89,50 @@
 			position: relative
 			padding-right: 90px
 			margin-top: 15px
-			&::before
-				width: 70px
-				height: 60px
-				background-image: url("../img/ico-sec1.png")
-				content: ''
+			+r(991)
+				position: absolute
+				padding-right: 0px
+				padding-left: 90px
+				text-align: left
+				font-size: 14px
+				top: 140px
+				margin-left: 130px
+			+r(767)
+				padding-left: 40px
+				top: 0
+				margin-left: 0
+			span
+				border: 2px solid red	
 				display: block
-				position: absolute
-				right: 0
-				top: 50%
-				transform: translateY(-50%)
-			&::after
-				content: '83'
-				position: absolute
-				+fs('Roboto', 300)
-				color: $color-text-h2
-				font-size: 45px
-				right: 3px
-				top: 50%
-				transform: translateY(-50%)
-				letter-spacing: 5px
+				+r(767)
+					display: none
+
+		&__counter
+			width: 70px
+			height: 58px
+			background-image: url("../img/ico-sec1.png")
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			font-size: 45px
+			+fs('Roboto', 400)
+			color: $color-text-h2
+			text-align: center
+			padding-top: 2px
+			letter-spacing: 3px
+			+r(991)
+				left: 0
+			+r(767)
+				font-size: 19px	
+				background-image: none
+				font-weight: 700
+				letter-spacing: normal
+				width: 30px
+				height: 24px
+				border: 1px solid $color-text-h2
+				border-radius: 3px
+				padding-top: 0
 		&-list
 			width: 265px
 			float: right
@@ -76,10 +140,24 @@
 			font-size: 19px	
 			padding-left: 45px
 			margin-top: 20px	
+			+r(991)
+				font-size: 14px
+				width: 189px
+				margin-top: 180px
+			+r(767)
+				position: absolute
+				left: 50%
+				top: 0
+				margin-top: 130px
+				margin-left: -50px
+	
 			&__item
 				position: relative
 				padding-top: 17px
 				padding-bottom: 17px
+				+r(991)
+					padding-top: 8px
+					padding-bottom: 8px
 				&::before
 					width: 24px
 					height: 40px
@@ -90,6 +168,14 @@
 					left: -45px
 					top: 50%
 					transform: translateY(-50%)
+					+r(991)
+						left: -35px	
+					+r(767)
+						background-size: 60%
+						background-repeat: no-repeat
+						transform: none
+						top: 11px
+						margin-left: 10px	
 				&::after
 					width: 168px
 					height: 1px
@@ -100,6 +186,10 @@
 					left: 50%
 					top: 100%
 					transform: translateX(-50%)	
+					+r(767)
+						width: 120px
+						background-size: 100%
+
 				&_none::after
 					display: none	
 	&-product	
@@ -112,12 +202,33 @@
 		height: 485px 
 		+r(1199)
 			left: -40px	
+		+r(991)
+			width: 639px
+			height: 363px
+			background-size: contain
+			background-repeat: no-repeat	
+			left: -25px	
+		+r(767)
+			height: 235px
+			left: 50%
+			margin-left: -230px
+			top: 140px
+	
 		&__link
 			position: absolute
-			bottom: 35px
+			bottom: 0px
 			right: 200px
 			@extend %tape
 			font-size: 26px
+			padding-bottom: 35px
+			+r(991)
+				right: 110px
+				font-size: 20px	
+			+r(767)
+				font-size: 14px				
+				padding-bottom: 15px
+				padding-left: 0
+				right: 290px							
 			&::before, &::after
 				display: block
 				content: ''
@@ -126,10 +237,22 @@
 				background-image: url("../img/flag.png")
 				position: absolute
 				top: 50%
-				transform: translateY(-30%)
+				transform: translateY(-50%)
+				+r(991)
+					transform: translateY(-50%)
+				+r(767)
+					width: 67px
+					height: 70px
+					background-size: cover
+					transform: translateY(-38%)						
 			&::before
 				left: -105px
 				z-index: 10	
+				+r(767)
+					margin-left: 25px
 			&::after
 				background-position-x: 90px	
 				left: -165px
+				+r(767)
+					background-position-x: 60px	
+					margin-left: 60px

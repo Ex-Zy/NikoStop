@@ -10,12 +10,17 @@
 	z-index: 100
 	transition: transform 1s
 	position: fixed
+	display: none
 	&.fixed
 		transform: translateY(100%)		
 	&-logo
-		margin-top: 5px				
+		margin-top: 5px			
+		+r(991)
+			width: 150px			
 	&-menu	
-		padding-left: 55px	
+		padding-left: 55px			
+		+r(991)
+			padding-left: 0px
 		li
 			display: inline-block	
 			font-size: 18px
@@ -25,6 +30,11 @@
 			+r(1199)
 				padding-left: 13px
 				padding-right: 13px
+			+r(991)	
+				font-size: 15px
+				padding-left: 4px
+				padding-right: 4px
+
 		a
 			color: $color-nav	
 			&:hover
@@ -34,7 +44,11 @@ a.is-active
 	color: $color-nav-active
 	border-bottom: 4px solid $color-nav-active		
 	padding-bottom: 16px
+	+r(991)
+		padding-bottom: 18px
 .wrar-buttom
 	padding-top: 10px
 	float: right
 	padding-right: 10px
+	+r(991)
+		margin-right: 15px
