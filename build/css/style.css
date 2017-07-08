@@ -112,11 +112,11 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 
 .wrar-buttom { padding-top: 10px; float: right; padding-right: 10px; }
 
-/********************* section-1 **************************** */
+/********************* top-drops-section **************************** */
 .top-drops__girl { left: 150px; top: 60px; }
 .top-drops__boy { left: -45px; }
 
-/********************* section-1 & section-9 **************************** */
+/********************* top-bottom **************************** */
 .top-bottom { height: 710px; background-image: url("../img/bg-1.jpg"); background-color: #FFF; background-position-x: 50%; background-repeat: no-repeat; position: relative; overflow: hidden; }
 .top-bottom-contain { height: 100%; padding-top: 10px; position: relative; }
 .top-bottom__bottom-bg { bottom: 38px; position: absolute; left: 0%; }
@@ -140,7 +140,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 .top-bottom-product__link::before { left: -105px; z-index: 10; }
 .top-bottom-product__link::after { background-position-x: 90px; left: -165px; }
 
-/********************* section-2 **************************** */
+/********************* why-not-section **************************** */
 .why-not { width: 100%; height: 720px; background-image: url("../img/bg-2.png"); background-position-x: 50%; background-position-y: -80%; background-repeat: no-repeat; }
 .why-not-contain { height: 100%; position: relative; background: url("../img/sect2-girl.png") no-repeat center 80px; padding-top: 150px; background: url("../img/sect2-girl.png") no-repeat center 80px; padding-top: 150px; }
 .why-not__title_bottom { float: right; margin-top: 280px; margin-right: 100px; }
@@ -161,7 +161,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 .why-not__item-4, .why-not__item-5 { padding-left: 102px; left: 50%; }
 .why-not__item-4::before, .why-not__item-5::before { content: ""; display: block; position: absolute; background-image: url("../img/ico-sec2.png"); width: 88px; height: 88px; left: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
-/********************** section-3 ************************ */
+/**********************better-section ************************ */
 .better { background: url(../img/sect3/back.png) no-repeat center top/auto 100%; min-height: 700px; position: relative; overflow: hidden; }
 .better:after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 235px; background: url(../img/sect3/bottom-layer.png) no-repeat center bottom; }
 .better h2 { margin: 0; margin-top: 44px; }
@@ -220,7 +220,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 @keyframes fadeIn { to { opacity: 0.5; } }
 @-webkit-keyframes scale { to { -webkit-transform: scale(1); transform: scale(1); } }
 @keyframes scale { to { -webkit-transform: scale(1); transform: scale(1); } }
-/********************* section-5 **************************** */
+/*********************effect-section **************************** */
 .effect { min-height: 460px; background-image: url("../img/bg-5.png"); background-position-x: 50%; background-repeat: no-repeat; margin-bottom: 60px; }
 .effect-contain { height: 100%; position: relative; *zoom: 1; }
 .effect-contain:after { content: " "; display: table; clear: both; }
@@ -233,7 +233,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 .effect-tape { background-image: url("../img/sect5-tape.png"); width: 569px; height: 90px; font-size: 19px; margin-top: 27px; }
 .effect h2 { margin-top: 50px; }
 
-/********************* section-6 **************************** */
+/*********************expert-section**************************** */
 .expert { min-height: 550px; position: relative; z-index: 10; }
 .expert-contain { height: 100%; position: relative; }
 .expert-block { margin-top: 35px; width: 100%; height: 388px; border: 2px solid #53cdfc; background: url("../img/sect6-shadow.png") no-repeat right; position: relative; }
@@ -248,7 +248,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 .expert .title { text-align: center; }
 .expert .btn-expand { display: none; }
 
-/********************* section-7 **************************** */
+/*********************reviews-section **************************** */
 .reviews { min-height: 736px; background-image: url("../img/bg-7.png"); background-position-x: 50%; background-repeat: no-repeat; position: relative; margin-top: -220px; padding-top: 240px; }
 .reviews h2 { text-align: center; }
 
@@ -271,7 +271,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 
 .guarantee-block-tape__item, .guarantee-block-tape__item::before, .guarantee-block-tape__item::after { background-image: url("../img/sect8-item.png"); width: 171px; height: 176px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
-/************************** section-8 ************************* */
+/************************** guarantee-section ************************* */
 .guarantee { min-height: 600px; background-position-x: 50%; background-repeat: no-repeat; position: relative; margin-top: -45px; }
 .guarantee-contain { height: 100%; position: relative; }
 .guarantee-contain .uppercase { text-transform: uppercase; }
@@ -288,7 +288,7 @@ a.is-active { color: #259bc8; border-bottom: 4px solid #259bc8; padding-bottom: 
 .guarantee-block-tape__item::after { background-position-x: -350px; background-position-y: 0; left: 210px; }
 .guarantee button { float: right; margin-top: 240px; margin-right: 65px; position: relative; z-index: 10; }
 
-/********************* section-9 **************************** */
+/*********************bottom-drops-section **************************** */
 .bottom-drops.top-bottom { background-image: url("../img/bg-9-1.png"); background-position-y: 100%; }
 .bottom-drops__top-bg { position: absolute; }
 .bottom-drops__girl { left: 190px; bottom: 80px; }
