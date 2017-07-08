@@ -23,5 +23,8 @@
     "postcss-svg": "~2.0.0",
     "require-dir": "~0.3.0",
     "rimraf": "~2.6.1"
+  },
+  "dependencies": {
+    "parallax-js": "https://github.com/wagerfield/parallax"
   }
 }
