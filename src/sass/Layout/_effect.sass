@@ -1,0 +1,61 @@
+/********************* section-5 *****************************/
+.effect	
+	min-height: 460px
+	background-image: url("../img/bg-5.png")
+	background-position-x: 50%	
+	background-repeat: no-repeat
+	margin-bottom: 60px
+	&-contain		
+		height: 100%		
+		position: relative
+		+clr	
+	&-girl
+		position: absolute
+		left: -30px	
+		top: -30px
+		+r(1199)
+			left: -140px
+	&-product
+		position: absolute
+		right:  0px	
+		top: 60px	
+	&-list
+		+fs('Open Sans', 600)	
+		font-size: 19px	
+		padding-left: 40px
+		margin-left: -15px	
+		margin-top: 20px
+		+r(1199)
+			font-size: 18px
+		&__item
+			position: relative
+			padding-top: 10px
+			padding-bottom: 10px
+			&::before
+				width: 17px
+				height: 29px
+				background-image: url("../img/ico5.png")
+				content: ''
+				display: block
+				position: absolute
+				left: -40px
+				top: 50%
+				transform: translateY(-50%)	
+	button
+		position: absolute
+		right: 30px
+		bottom: 25px			
+	&-tape
+		background-image: url("../img/sect5-tape.png")	
+		width: 569px
+		height: 90px
+		@extend %tape
+		font-size: 19px	
+		margin-top: 27px
+		+r(1199)
+			margin-left: -50px
+	h2
+		margin-top: 50px	
+
+
+

@@ -2,112 +2,56 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>NikoStop</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/style.css" >
 </head>
 <body>
-	<header class="sect1">
-		<div class='container sect1-contain'>
-			<img  src='img/sect1-product.png' alt='product'>
-			<div class="sect1-content col-md-8">
-				<div class='sect1-content-left'>
+<!--  Begin navbar  -->
+	<header>
+		<nav class="navbar">
+			<div class="container navbar-contein">	
+				<img class='navbar-logo col-sm-2' src="img/logo.png" alt="logo">
+				<ul class="navbar-menu col-sm-8 ">
+					<li><a href="#" class='is-active'>Main page</a></li>
+					<li><a href="#"> Чем лучше? </a></li>
+					<li><a href="#">Состав</a></li>
+					<li><a href="#">Эксперт</a></li>
+					<li><a href="#">Гарантия</a></li>
+				</ul>
+				<div class="wrar-buttom col-sm-2">
+					<button class='button button_small'>Заказать ></button>
+				</div>	
+		</div>
+		</nav>
+	</header>
+<!--  End navbar  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="top-bottom">
+		<div class='container top-bottom-contain'>
+			<img class='top-bottom__girl top-drops__girl' src="img/sect1-girl.png" alt="foto girl">
+			<img class='top-bottom__boy top-drops__boy' src="img/sect1-boy.png" alt="foto boy">		
+			<div class="top-bottom-content col-lg-8 col-md-10 col-sm-12">			
+				<div class='top-bottom-content-left'>
 					<h5>NikoStop Antistress</h5>
-					<h2 class='sect1-content__h2'>Drops for easy quitting smoking</h2>
-					<ul class='sect1-content-list'>
-						<li class='sect1-content-list__item'>Полное избавление<br> от курения за 1 курс</li>
-						<li class='sect1-content-list__item'>Без стресса, гнева<br>  и раздражения </li>
-						<li class='sect1-content-list__item sect1-content-list__item_none'>Даже для самых заядлых курильщиков</li>
+					<h2 class='title'>Drops for easy quitting smoking</h2>
+					<ul class='top-bottom-content-list'>
+						<li class='top-bottom-content-list__item'>Полное избавление<br> от курения за 1 курс</li>
+						<li class='top-bottom-content-list__item'>Без стресса, гнева<br>  и раздражения </li>
+						<li class='top-bottom-content-list__item top-bottom-content-list__item_none'>Даже для самых заядлых курильщиков</li>
 					</ul>
 					<span>
 						Надежные и эффективные капли, которые помогают быстро и безболезненно перейти в NO-SMOKING режим
 					</span>
 				</div>
-				<div class="sect1-content-right">
-				<div class='sect1-content__qt'>
+				<div class="top-bottom-content-right">
+				<div class='top-bottom-content__qt'>
 					Осталось упаковок<br> по акции
 				</div>
-					
 					<div class='block-form'>
-						<h4 class='block-form__title'>Start a free life now!</h4>
-						<div class="block-form__price">
-							<span class="al-cost">$50</span>
-							<span class="al-cost-promo">$25</span>
-						</div>
-						<form action="/land/order" class="block-form__form al-form" method='post'>
-							<select name="country" class="al-country"> </select>
-					        <input type="text" name="name" placeholder="Name">
-					        <input type="tel" name="phone" placeholder="Phone Number">
-					        <button class='button' type="submit">Заказать ></button>
-						</form>
-						<div class='block-form__button'></div>
-					</div>
-				</div>
-				
-			</div>		
-		</div>
-	</header>
-	
-	<nav class="navbar">
-		<div class="container navbar-contein">	
-			<img class='navbar-logo col-sm-2' src="img/logo.png" alt="logo">
-			<ul class="navbar-menu col-sm-8 ">
-				<li><a href="#" class='is-active'>Main page</a></li>
-				<li><a href="#"> Чем лучше? </a></li>
-				<li><a href="#">Состав</a></li>
-				<li><a href="#">Эксперт</a></li>
-				<li><a href="#">Гарантия</a></li>
-			</ul>
-			<div class="col-sm-2">
-				<button class='button navbar-button'>Заказать ></button>
-			</div>	
-	</div>
-	</nav>
-	<section class="sect2">
-		<div class='container sect2-contain'>
-			<h2 class='sect2__title_top col-md-5'>Why can not<br>I quit smoking?</h2>
-			<ul class='sect2-list'>
-				<li class="sect2__item sect2__item-1">Отчаяние</li>
-				<li class="sect2__item sect2__item-2">Растерянность</li>
-				<li class="sect2__item sect2__item-3">Страх</li>
-				<li class="sect2__item sect2__item-4">Стресс</li>
-				<li class="sect2__item sect2__item-5">Раздражение</li>
-			</ul>
-			<h2 class='sect2__title_bottom'>So it was<br> before!</h2>
-			<button class='button' type="submit">Заказать ></button>
-		</div>
-	</section>
-	<section class="sect3">
-	</section>
-	<header class="sect5">
-		<div class='container sect5-contain'>
-			<img class="sect5-girl" src="img/sect5-girl.png" alt="girl" >
-			<div class='col-md-9 col-md-offset-3'>
-				<h2>What effect will I get?</h2>
-				<ul class='sect5-list'>
-					<li class='sect5-list__item'>Устранение симптомов отмены курения</li>
-					<li class='sect5-list__item'>Очищение организма от никотина и смол</li>
-					<li class='sect5-list__item'>Даже для самых заядлых курильщиков</li>
-					<li class='sect5-list__item'>Повышение работоспособности, концентрации внимания</li>
-					<li class='sect5-list__item'>Здоровый сон и восстановление организма</li>
-					<li class='sect5-list__item sect1-content-list__item_none'>Закрепление новой привычки не-курить</li>
-				</ul>
-				<div class="sect5-tape">Отказаться от куренияе с НикоСтоп - просто!</div>
-			</div>
-			<img class="sect5-product" src="img/sect5-product.png" alt="product" >
-			<button class='button' type="submit">Заказать ></button>
-		</div>
-	</header>	
-	<section class="sect6">
-		<div class='container sect6-contain'>
-			<h2 class='col-md-offset-3'>Experts recommend</h2>
-			<div class="sect6-block col-md-12">
-				<img class='sect6-block__img' src="img/sect6-boy.png" alt="foto expert">
-				<div class='row'>
-					<div class='sect6-block__form col-md-3'>
-						
-						<div class='block-form'>
+						<div class="block-form__in">
 							<h4 class='block-form__title'>Start a free life now!</h4>
 							<div class="block-form__price">
 								<span class="al-cost">$50</span>
@@ -119,10 +63,158 @@
 						        <input type="tel" name="phone" placeholder="Phone Number">
 						        <button class='button' type="submit">Заказать ></button>
 							</form>
-							<div class='block-form__button'></div>
+							<div class='block-form__bottom-img'></div>	
 						</div>
 					</div>
-					<div class="sect6-block__text col-md-6">
+				</div>			
+			</div>	
+			<div class='top-bottom-product'>
+				<a class='top-bottom-product__link' href="#">Guarantee</a>
+			</div>	
+		</div>
+		<img class='top-bottom__bottom-bg' src="img/bg-1-bottom.png" alt="">		
+		</section>
+	
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="why-not">
+		<div class='container why-not-contain'>
+			<h2 class='title title_bordo col-md-5'>Why can not<br>I quit smoking?</h2>
+			<ul class='why-not-list'>
+				<li class="why-not__item why-not__item-1">Отчаяние</li>
+				<li class="why-not__item why-not__item-2">Растерянность</li>
+				<li class="why-not__item why-not__item-3">Страх</li>
+				<li class="why-not__item why-not__item-4">Стресс</li>
+				<li class="why-not__item why-not__item-5">Раздражение</li>
+			</ul>
+			<h2 class='title why-not__title_bottom'>So it was<br> before!</h2>
+			<button class='button'><a href="#">Заказать ></a></button>
+		</div>
+	</section>
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="better">
+		<div class="graf-container">
+			<div class="container">
+				<div class="graf">
+					<style type="text/css">
+						.st0{opacity:0.3;fill:none;stroke:#516269;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;enable-background:new;}
+						.st1{opacity:0.3;fill:none;stroke:#516269;stroke-width:8.2754;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;enable-background:new;}
+						.st2{opacity:0.3;fill:none;stroke:#516269;stroke-width:8.7203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;enable-background:new;}
+						.st3{fill:none;stroke:#FFFFFF;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+						.st4{fill:none;stroke:#DE9090;stroke-width:8.2754;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+						.st5{fill:#FFFFFF;stroke:#DE9090;stroke-width:9.2857;stroke-miterlimit:10;}
+						.st6{fill:none;stroke:#E8B07D;stroke-width:8.7203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+						.st7{fill:#FFFFFF;stroke:#E8B07D;stroke-width:9.2857;stroke-miterlimit:10;}
+						.st8{fill:#28AAE2;}
+						.st9{fill:none;stroke:#FFFFFF;stroke-width:14.4545;stroke-miterlimit:10;}
+					</style>
+							
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 1231.7 328.7" style="enable-background:new 0 0 1231.7 328.7;" xml:space="preserve">
+						<path class="st2" d="M5.2,69.5c0,0,229.7-36.1,491.1,121.9C737.5,337.2,851.2,318.8,1227,324.1"/>
+						<path class="st6" d="M5.2,65.5c0,0,229.7-36.1,491.1,121.9C737.5,333.2,851.2,314.8,1227,320.1"/>
+						<path class="st1" d="M5,125.3c0,0,310.5-60.4,564.5,38.9s476,149.8,658,157.2"/>
+						<path class="st4" d="M5,121.3c0,0,310.5-60.4,564.5,38.9s476,149.8,658,157.2"/>
+					</svg>
+	
+					<div class="other-points">
+						<div class="point point-orange"></div>
+						<div class="point point-red"></div>
+						<div class="tooltip-outer tooltip-other-outer">
+							<div class="tooltip-inner tooltip-other-inner">
+								<span>Эффективность других средств</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="our-bg"></div>
+	
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 1231.7 328.7" style="enable-background:new 0 0 1231.7 328.7;" xml:space="preserve">
+						<path class="st0" d="M9,233.4c0,0,387.3,28.1,612.7-38.8C811,138.4,909.3-0.6,1223.9,16.4"/>
+						<path class="st3" d="M9,226.4c0,0,387.3,28.1,612.7-38.8C811,131.4,909.3-7.6,1223.9,9.4"/>
+					</svg>
+	
+					<div class="point our-point">
+						<div class="tooltip-outer tooltip-our-outer">
+							<div class="tooltip-inner tooltip-our-inner">
+								<span>NikoStop Antistress помогает избавиться от курения за 1 курс</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row overflow">
+				<div class="col-xs-12">
+					<h2 class='title'>Why NikoStop is better?</h2>
+					<span>Сравнение эффективности средств от курения</span>
+				</div>
+			</div>
+			<div class="row content">
+				<div class="col-md-4 col-md-offset-4">
+					<img src="img/sect3/nikostop.png" alt="NikoStop" class="product">
+				</div>
+				<div class="col-md-4 right">
+					<p>Обычные средства от курения и заменители никотина НЕ помогают человеку справиться со стрессом и дискомфортом, которые возникают при отказе от курения.</p>
+					<a class='button' href="#">Заказать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="effect">
+		<div class='container effect-contain'>
+			<img class="effect-girl" src="img/sect5-girl.png" alt="girl" >
+			<div class='col-lg-9 col-md-10 col-lg-offset-3 col-md-offset-2'>
+				<h2 class='title'>What effect will I get?</h2>
+				<ul class='effect-list'>
+					<li class='effect-list__item'>Устранение симптомов отмены курения</li>
+					<li class='effect-list__item'>Очищение организма от никотина и смол</li>	
+					<li class='effect-list__item'>Повышение работоспособности, концентрации внимания</li>
+					<li class='effect-list__item'>Здоровый сон и восстановление организма</li>
+					<li class='effect-list__item sect1-content-list__item_none'>Закрепление новой привычки не-курить</li>
+				</ul>
+				<div class="effect-tape">Отказаться от куренияе с НикоСтоп - просто!</div>
+			</div>
+			<img class="effect-product" src="img/sect5-product.png" alt="product" >
+			<button class='button'><a href="#">Заказать ></a></button>
+		</div>
+	</section>	
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="expert">
+		<div class='container expert-contain'>
+			<h2 class='title col-md-offset-3'>Experts recommend</h2>
+			<div class="expert-block col-md-12">
+				<img class='expert-block__img' src="img/sect6-boy.png" alt="foto expert">
+				<div class='row'>
+					<div class='expert-block__form col-lg-3 col-md-3'>
+						<div class='block-form'>
+							<div class="block-form__in">
+								<h4 class='block-form__title'>Start a free life now!</h4>
+								<div class="block-form__price">
+									<span class="al-cost">$50</span>
+									<span class="al-cost-promo">$25</span>
+								</div>
+								<form action="/land/order" class="block-form__form al-form" method='post'>
+									<select name="country" class="al-country"> </select>
+							        <input type="text" name="name" placeholder="Name">
+							        <input type="tel" name="phone" placeholder="Phone Number">
+							        <button class='button' type="submit">Заказать ></button>
+								</form>
+								<div class='block-form__bottom-img'></div>	
+							</div>
+						</div>
+					</div>
+					<div class="expert-block__text col-md-6">
 						<p>
 							Никотиновая зависимость требует комплексного и крайне индивидуального подхода.
 						</p>
@@ -144,77 +236,115 @@
 			</div>
 		</div>
 	</section>	
-	<footer class="sect1 sect9">
-		<div class='container sect1-contain'>
-			<img  src='img/sect1-product.png' alt='product'>
-			<div class="sect1-content col-md-8 ">
-				<div class='sect1-content-left sect9-content-left'>
-					<h5>NikoStop Antistress</h5>
-					<h2 class='sect1-content__h2'>Drops for easy quitting smoking</h2>
-					<ul class='sect1-content-list'>
-						<li class='sect1-content-list__item'>Полное избавление<br> от курения за 1 курс</li>
-						<li class='sect1-content-list__item'>Без стресса, гнева<br>  и раздражения </li>
-						<li class='sect1-content-list__item sect1-content-list__item_none'>Даже для самых заядлых курильщиков</li>
-					</ul>
-					<span>
-						Надежные и эффективные капли, которые помогают быстро и безболезненно перейти в NO-SMOKING режим
-					</span>
+	
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="reviews">
+	   <div class='container reviews-contain'>
+	    	<h2 class='title'>Reviews about NikoStop</h2>
+	    	<div class="regular slider col-md-12">
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_1'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	    	      Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	    	      И снова начинал курить.
+	    			А вот капли NikoStop помогли мне с первого раза. За
+	        </div>
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_2'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	    	      Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	    	      И снова начинал курить.
+	    			А вот капли NikoStop помогли мне с первого раза. За 
+	        </div>
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_3'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	    	      Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	    	      И снова начинал курить.
+	    			А вот капли NikoStop помогли мне с первого раза. За 
+	        </div>
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_4'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	    	      Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	    	      И снова начинал курить.
+	    			А вот капли NikoStop помогли мне с первого раза. За 
+	        </div>
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_5'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	    	      Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	    	      И снова начинал курить.
+	    			А вот капли NikoStop помогли мне с первого раза. За 
+	        </div>
+	        <div>
+	        	<div class='slick-slide__ava slick-slide__ava_6'><strong>Аркадий, (35 лет)</strong> отец 2 детей</div>
+	          Я хочу быть хорошим примером для моих детей. Потому что нельзя рассказывать, что курение это плохо, а самому курить. Раньше я пять раз пытался бросить курить по книге Аллена Карра. Но все, что получал в итоге - раздражение, разочарование и презрение к себе. Я понимал, что курение вредно. Но ничего не мог с собой поделать. Руки дрожали, голова отказывалась работать. Я злился, раздражался, постоянно скандалил с женой. 
+	          И снова начинал курить.
+	    		А вот капли NikoStop помогли мне с первого раза. За 
+	
+	        </div>
+	      </section>
+	    </div>
+	</section> 
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="guarantee">
+		<div class='container guarantee-contain'>
+			<h2 class='title'>
+				Others promise — <br>
+				<span class="uppercase">we</span> give a <span class="uppercase">guarantee</span>
+			</h2>
+			<div class="guarantee-block col-md-12">
+				<div class="guarantee-block__img ">
+					<img src="img/sect8-product.png">
 				</div>
-				<div class="sect1-content-right">
-					<div class='sect1-content__qt'>
-						Осталось упаковок<br> по акции
-					</div>
-					
-					<div class='block-form'>
-						<h4 class='block-form__title'>Start a free life now!</h4>
-						<div class="block-form__price">
-							<span class="al-cost">$50</span>
-							<span class="al-cost-promo">$25</span>
-						</div>
-						<form action="/land/order" class="block-form__form al-form" method='post'>
-							<select name="country" class="al-country"> </select>
-					        <input type="text" name="name" placeholder="Name">
-					        <input type="tel" name="phone" placeholder="Phone Number">
-					        <button class='button' type="submit">Заказать ></button>
-						</form>
-						<div class='block-form__button'></div>
-					</div>
-				</div>			
-			</div>		
+				<div class="guarantee-block__text col-md-7">
+					<p>
+						Мы уверены в качестве нашего продукта! И мы не разбрасываемся пустыми обещаниями. Если в течение 30 дней капли NikoStop вам не помогут, мы вернем вам деньги. 
+					</p>
+					<a href='#'>Детальнее о условиях возврата</a>	
+				</div>
+				<div class="guarantee-block-tape">
+					<div class="guarantee-block-tape__item"></div>							
+				</div>
+				<button class='button'><a href="#">Заказать ></a></button>
+			</div>
 		</div>
-	</footer>
+	</section>
+<!--  End dorp-section  -->
+
+<!--  Begin dorp-section  -->
 	<!-- BEGIN effective -->
 	<section class="effective js-parallax-section">
-		<ul class="parallax-list" id="scene-1">
+		<ul class="parallax-list" id="scene-1" data-invert-x="false" data-invert-y="false" data-relative-input="true">
 			<li class="parallax-list__item parallax-list__item_1" data-depth="0.08"></li>
-			<li class="parallax-list__item parallax-list__item_2" data-depth="0.1"></li>
+			<li class="parallax-list__item parallax-list__item_2" data-depth="0.10"></li>
 		</ul>
-		<ul class="parallax-list" id="scene-2">
-			<li class="parallax-list__item parallax-list__item_4" data-depth="0.4"></li>
+		 <ul class="parallax-list" id="scene-2">
+			<li class="parallax-list__item parallax-list__item_4" data-depth="0.40"></li>
 		</ul>
 		<ul class="parallax-list parallax-list_front" id="scene-3">
-			<li class="parallax-list__item parallax-list__item_5" data-depth="0.4"></li>
-			<li class="parallax-list__item parallax-list__item_3" data-depth="0.9"></li>
+			<li class="parallax-list__item parallax-list__item_5" data-depth="0.40"></li>
+			<li class="parallax-list__item parallax-list__item_3" data-depth="0.90"></li>
 		</ul>
 		<div class="inner">
 			<h2 class="title">What makes NikoStop <br> so effective?</h2>
 			<div class="effective-items">
 				<div class="effective-bl effective-bl_1">
-					<div class="effective-bl__title">Витамины B1, B3, B6</div>
+					<div class="effective-bl__title">Витамины B1 + B3</div>
 					<div class="effective-bl__text">
-						Обеспечивают оптимальную активность нервной системы, устраняют синдром отмены курения, улучшают работу мозга, оздоравливают организм.
+						Обеспечивают оптимальную активность нервной системы, улучшают работу мозга, нормализуют работу всех систем организма. Помогают устранить болезненную тягу к сигаретам.
 					</div>
 				</div>
 				<div class="effective-bl effective-bl_2">
-					<div class="effective-bl__title">Розмарин</div>
+					<div class="effective-bl__title">Боярышник</div>
 					<div class="effective-bl__text">
-						Мощный адаптоген, помогает организму привыкнуть к жизни без сигарет, укрепляет иммунитет, повышает концентрацию и работоспособность.
+						Предотвращает старение сосудов, улучшает кровообращение, нормализует работу сердца и мозга, успокаивающе действует на нервную систему, оздоравливает весь организм.
 					</div>
 				</div>
 				<div class="effective-bl effective-bl_3">
-					<div class="effective-bl__title">Мелиса</div>
+					<div class="effective-bl__title">Витамин B6</div>
 					<div class="effective-bl__text">
-						Прекрасно помогает против стресса, нервозности и депрессии, вызванных отсутствием никотина, улучшает память и концентрацию внимания.
+						Участвует в синтезе серотонина, повышает иммунитет, улучшает работу сердечно-сосудистой системы, снижает риск инсультов и инфарктов миокарда, способствует улучшению настроения.
 					</div>
 				</div>
 				<div class="effective-bl effective-bl_4">
@@ -224,22 +354,70 @@
 					</div>
 				</div>
 				<div class="effective-bl effective-bl_5">
-					<div class="effective-bl__title">Померанец</div>
+					<div class="effective-bl__title">Мелисса</div>
 					<div class="effective-bl__text">
-						Укрепляет нервную систему, снимает проявления абстинентного синдрома, облегчает отказ от старых привычек, улучшает работу мозга, нормализует сон.
+						Прекрасно помогает против стресса, нервозности и депрессии, вызванных отсутствием никотина, улучшает память и концентрацию внимания.
 					</div>
 				</div>
 				<div class="effective-bl effective-bl_6">
-					<div class="effective-bl__title">Липа</div>
+					<div class="effective-bl__title">Лаванда</div>
 					<div class="effective-bl__text">
-						Укрепляет и защищает нервную систему, помогает очищать легкие, загрязненные в результате курения, выводит из организма токсины.
+						Мощный адаптоген, помогает легко привыкнуть к жизни без сигарет. Очищает организм от токсинов. Защищает от перепадов настроения, повышает концентрацию и работоспособность.
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END effective -->
-</div>
+<!--  End dorp-section  -->	
+
+<!--  Begin dorp-section  -->
+	<section class="bottom-drops top-bottom">
+		<img class='bottom-drops__top-bg' src="img/bg-9-top.png" alt="">		
+		<div class='container top-bottom-contain'>
+			<img class='top-bottom__girl sect9__girl' src="img/sect9-girl.png" alt="foto girl">
+			<img class='top-bottom__boy sect9__boy' src="img/sect9-boy.png" alt="foto boy">		
+			<div class="top-bottom-content col-lg-8 col-md-10">			
+				<div class='top-bottom-content-left'>
+					<h5>NikoStop Antistress</h5>
+					<h2 class='title top-bottom-content__h2'>Drops for easy quitting smoking</h2>
+					<ul class='top-bottom-content-list'>
+						<li class='top-bottom-content-list__item'>Полное избавление<br> от курения за 1 курс</li>
+						<li class='top-bottom-content-list__item'>Без стресса, гнева<br>  и раздражения </li>
+						<li class='top-bottom-content-list__item top-bottom-content-list__item_none'>Даже для самых заядлых курильщиков</li>
+					</ul>				
+				</div>
+				<div class="top-bottom-content-right">
+				<div class='top-bottom-content__qt'>
+					Осталось упаковок<br> по акции
+				</div>
+					<div class='block-form'>
+						<div class="block-form__in">
+							<h4 class='block-form__title'>Start a free life now!</h4>
+							<div class="block-form__price">
+								<span class="al-cost">$50</span>
+								<span class="al-cost-promo">$25</span>
+							</div>
+							<form action="/land/order" class="block-form__form al-form" method='post'>
+								<select name="country" class="al-country"> </select>
+						        <input type="text" name="name" placeholder="Name">
+						        <input type="tel" name="phone" placeholder="Phone Number">
+						        <button class='button' type="submit">Заказать ></button>
+							</form>
+							<div class='block-form__bottom-img'></div>	
+						</div>
+					</div>
+				</div>			
+			</div>	
+			<div class='top-bottom-product'>
+				<a class='top-bottom-product__link' href="#">Guarantee</a>
+			</div>	
+		</div>
+		<img class='top-bottom__bottom-bg' src="img/bg-1-bottom.png" alt="">	
+	</section>
+<!--  End dorp-section  -->	
+
+
 <script src="js/app.js"></script>
 </body>
 </html>

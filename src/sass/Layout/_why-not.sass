@@ -1,0 +1,89 @@
+$top-1: 315px // 
+$top-2: 255px
+/********************* section-2 *****************************/
+.why-not
+	width: 100%
+	min-height: 720px
+	background-image: url("../img/bg-2.png")
+	background-position-x: 50%	
+	background-position-y: -80%
+	background-repeat: no-repeat		
+	&-contain		
+		height: 100%		
+		position: relative	
+		background: url("../img/sect2-girl.png") no-repeat center 80px
+		padding-top: 150px			
+	&__title_bottom
+		float: right
+		position:relative
+		margin-top: 280px
+		margin-right: 100px
+		+r(1199)
+			margin-right: 30px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			width: 277px
+			height: 131px
+			background-image: url("../img/sect2-img.png")
+			right: 130px	
+			+r(1199)
+				right: 40px		
+	&-list
+		+fs("Open Sans", 600)	
+		color: $color-text-sect2
+		font-size: 19px
+	&__item
+		position: absolute	
+		&-1
+			@extend %left
+			top: $top-1
+			margin-left: -380px
+		&-2
+			@extend %left
+			top: $top-1 + 102
+			margin-left: -470px		
+		&-3
+			@extend %left
+			top: $top-1 + 197
+			margin-left: -318px
+		&-4
+			@extend %right
+			top: $top-2
+			margin-left: 120px			
+		&-5
+			@extend %right
+			top: $top-2 + 93px
+			margin-left: 200px
+	.button		
+		margin: 470px auto 0
+		display: block
+%left
+	padding-right: 102px
+	left: 50%
+	&::before
+		content: ''
+		display: block
+		position: absolute	
+		background-image: url("../img/ico-sec2.png")	
+		width: 88px
+		height: 88px
+		right: 0
+		top: 50%
+		top: 50%
+		transform: translateY(-50%) 
+
+%right
+	padding-left: 102px	
+	left: 50%	
+	&::after
+		content: ''
+		display: block
+		position: absolute	
+		background-image: url("../img/ico-sec2.png")
+		width: 88px
+		height: 88px
+		left: 0
+		top: 50%
+		transform: translateY(-50%) 

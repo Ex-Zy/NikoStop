@@ -1,12 +1,5 @@
-+font(KarmaBold, Karma-bold) 
-+font(KarmaLight, Karma-light) 
-+font(KarmaSemibold, Karma-semibold) 
 +font(MyriadProRegular, MyriadProRegular) 
-+font(OpenSansBoldItalic, OpenSans-BoldItalic) 
-+font(OpenSansRegular, OpenSans-Regular) 
-+font(OpenSansSemibold, OpenSans-Semibold) 
-+font(RobotoLight, Roboto-Light) 
-
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Open+Sans:300,400,600,700i|Roboto:300,400')
 
 $color-text-h2: #0883b0		//синий
 $color-text-sect2: #a7241e //бордо
@@ -15,31 +8,32 @@ $color-text2: #595959 //темно-серый
 $color-text-button: #fff //белый 
 $color-nav: #373230 
 $color-nav-active: #259bc8 
+
 =ff($name-font)
 	font-family: $name-font
 
+=fs($name-font, $weight)
+	font-family: $name-font
+	font-weight: $weight
 =bgpos($x, $y)
 	background-position-x: $x
 	background-position-y: $y
 
 body
-	+ff('OpenSansRegular')
+	+fs('Open Sans', 400)
 	font-size: 14px
 	line-height: 1.2
 	color: $color-text2
-a
+a, a:hover
 	text-decoration: none
+
 	
 a, button
-	outline: none
-h2
-	+ff('KarmaSemibold')
-	font-size: 54px
-	color: $color-text-h2
-	line-height: 1.1
-	
+	outline: none	
+a
+	color: white	
 h5
-	+ff('KarmaLight')
+	+fs('Karma', 300)
 	font-size: 30px
 	color: $color-text-h2
 

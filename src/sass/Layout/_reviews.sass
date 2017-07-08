@@ -1,0 +1,65 @@
+/********************* section-7 *****************************/
+.reviews 	
+	min-height: 736px
+	background-image: url("../img/bg-7.png")
+	background-position-x: 50%	
+	background-repeat: no-repeat
+	position: relative 
+	margin-top: -220px
+	&-contain
+	padding-top: 240px
+	h2
+		text-align: center		
+.slider	
+	margin: 30px auto 0		
+.slick-slide	
+	margin: 0 10px 20px
+	height: 220px
+	background: $color-text-button
+	padding-left: 186px
+	padding-top: 20px 
+	padding-bottom: 20px 
+	padding-right: 20px 
+	+ff('MyriadProRegular')
+	box-shadow: 0px 3px 12px 0px rgba(104, 150, 180, 0.2)
+	+r(1199)
+		height: 300px
+
+	&__ava
+		position: absolute
+		width: 186px
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		text-align: center
+		strong
+			display: block
+		&::before
+			content: ''
+			width: 111px
+			height: 111px
+			display: block	
+			background-image: url("../img/slider.png")
+			background-position-y: -50px
+			margin: auto
+		&_1::before
+			background-position-x: 0
+		&_2::before
+			background-position-x: -115px
+		&_3::before
+			background-position-x: --229px
+		&_4::before
+			background-position-x: -348px
+		&_5::before
+			background-position-x: -467px
+		&_6::before
+			background-position-x: -586px					
+				
+.slick-slide img
+	width: 100%
+.slick-prev:before,
+.slick-next:before	
+	color: black
+
+
+  

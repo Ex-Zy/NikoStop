@@ -3,12 +3,6 @@
 	font-family: 'KarmaSemibold', Arial, sans-serif
 =o-semibold
 	font-family: 'OpenSansSemibold', Arial, sans-serif
-.title
-	color: $color-text-h2
-	+k-semibold
-	font-size: 57px
-	font-weight: 600
-	line-height: 61px
 .inner
 	max-width: 1170px
 	padding: 0 15px
@@ -34,7 +28,7 @@
 			content: ''
 			display: block
 			+coverdiv
-			background: url(../img/prod-effective.png) no-repeat center
+			background: url(../img/prod-effective.png) no-repeat 50% 50%
 .effective-items
 	max-width: 960px
 	margin: 60px auto 0
@@ -78,86 +72,43 @@
 .parallax-list
 	position: absolute
 	top: 0
+	right: 0
+	bottom: 0
 	left: 0
-	width: 100%
-	height: 100%
-	overflow: hidden
+	margin: auto
+	width: 1140px
 	z-index: -1
 	&_front
 		z-index: 100
 	&__item
 		position: absolute
 		top: 0
-		right: 0
-		bottom: 0
 		left: 0
+		width: 100%
+		height: 100%
 		margin: auto
-		// &_1
-		// 	width: 602px
-		// 	height: 232px
-		// 	background: url(../img/parallax-bg1.png) no-repeat center
-		// 	z-index: 10
-		// 	top: -40px
-		// &_2
-		// 	width: 800px
-		// 	height: 197px
-		// 	background: url(../img/parallax-bg2.png) no-repeat center
-		// 	top: -170px
-		// 	z-index: -2
-		// 	transform: translateY(-70px)
-		// &_3
-		// 	width: 421px
-		// 	height: 451px
-		// 	background: url(../img/parallax-bg3.png) no-repeat center
-		// 	left: -220px
-		// 	top: 166px
-		// 	z-index: 5
-		// &_4
-		// 	width: 562px
-		// 	height: 476px
-		// 	background: url(../img/parallax-bg4.png) no-repeat center
-		// 	left: 130px
-		// 	top: -150px
-		// 	z-index: -1
-		// &_5
-		// 	width: 315px
-		// 	height: 260px
-		// 	background: url(../img/parallax-bg5.png) no-repeat center
-		// 	z-index: 5
-		// 	top: 260px
-		// 	left: 430px
 		&_1
-			// width: 798px
-			// height: 467px
-			width: 100%
-			height: 100%
-			background: url(../img/DropsBack.png) no-repeat 52% 47%
+			//top: 380px
+			//left: 564px
+			background: url(../img/DropsBack.png) no-repeat 49% 53%
 			z-index: 1
 		&_2
 			// width: 505px
 			// height: 451px
-			width: 100%
-			height: 100%
-			background: url(../img/BackElements.png) no-repeat 52% 22%
+			background: url(../img/BackElements.png) no-repeat 49% 29%
 			z-index: 2
 		&_3
 			// width: 169px
 			// height: 149px
-			width: 100%
-			height: 100%
-			background: url(../img/DROPSFRONT.png) no-repeat 50% 44%
+			background: url(../img/DROPSFRONT.png) no-repeat 39% 53%
 			z-index: 3
 		&_4
 			// width: 562px
 			// height: 476px
-			width: 100%
-			height: 100%
-			background: url(../img/TriptofanPart.png) no-repeat 63% 33%
+			background: url(../img/TriptofanPart.png) no-repeat 68% 38%
 			z-index: 4
 		&_5
 			// width: 798px
 			// height: 297px
-			width: 100%
-			height: 100%
-			background: url(../img/FrontElements.png) no-repeat 48% 48%
+			background: url(../img/FrontElements.png) no-repeat 38% 55%
 			z-index: -5
