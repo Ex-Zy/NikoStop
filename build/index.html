@@ -13,15 +13,15 @@
 		<nav class="navbar">
 			<div class="container navbar-contein">	
 				<img class='navbar-logo col-sm-2' src="img/logo.png" alt="logo">
-				<ul class="navbar-menu col-md-8 col-sm-7">
-					<li><a href="#" class='is-active'>Main page</a></li>
-					<li><a href="#"> Чем лучше? </a></li>
-					<li><a href="#">Состав</a></li>
-					<li><a href="#">Эксперт</a></li>
-					<li><a href="#">Гарантия</a></li>
+				<ul class="navbar-menu col-md-8 col-sm-7" id='fixed-nav'>
+					<li><a class='is-active js-scroll' href="#why-not" '>Main page</a></li>
+					<li><a class='js-scroll' href="#better"> Чем лучше? </a></li>
+					<li><a class='js-scroll' href="#effective">Состав</a></li>
+					<li><a class='js-scroll' href="#expert">Эксперт</a></li>
+					<li><a class='js-scroll' href="#guarant">Гарантия</a></li>
 				</ul>
 				<div class="wrar-buttom col-sm-2">
-					<button class='button button_small'>Заказать ></button>
+					<a class='js-scroll' href="#order"><button class='button button_small'>Заказать ></button></a>
 				</div>	
 		</div>
 		</nav>
@@ -62,7 +62,7 @@
 								<select name="country" class="al-country"> </select>
 						        <input type="text" name="name" placeholder="Name">
 						        <input type="tel" name="phone" placeholder="Phone Number">
-						        <button class='button' id='btn' type="submit">Заказать ></button>
+						        <button class='button js-btn' type="submit">Заказать ></button>
 							</form>
 							<div class='block-form__bottom-img'></div>	
 						</div>
@@ -70,7 +70,7 @@
 				</div>			
 			</div>	
 			<div class='top-bottom-product'>
-				<a class='top-bottom-product__link' href="#">Guarantee</a>
+				<a class='top-bottom-product__link js-scroll' href="#guarant">Guarantee</a>
 			</div>	
 		</div>
 		<img class='top-bottom__bottom-bg' src="img/bg-1-bottom.png" alt="">		
@@ -79,7 +79,7 @@
 <!--  End dorp-section  -->	
 
 <!--  Begin why-not-section  -->
-	<section class="why-not">
+	<section class="why-not" id='why-not'>
 		<div class='container why-not-contain'>
 			<h2 class='title title_bordo col-md-5'>Why can not<br>I quit smoking?</h2>
 			<ul class='why-not-list'>
@@ -90,13 +90,13 @@
 				<li class="why-not__item why-not__item-5">Раздражение</li>
 			</ul>
 			<h2 class='title why-not__title_bottom'>So it was<br> before!</h2>
-			<button class='button'><a href="#">Заказать ></a></button>
+			<a class='js-scroll' href="#order"><button class='button'>Заказать ></button></a>
 		</div>
 	</section>
 <!--  End dorp-section  -->	
 
 <!--  Begin better-section  -->
-	<section class="better">
+	<section class="better" id='better'>
 		<div class="graf-container">
 			<div class="container">
 				<div class="graf">
@@ -162,7 +162,7 @@
 				</div>
 				<div class="col-md-4 right col-sm-5">
 					<p>Обычные средства от курения и заменители никотина НЕ помогают человеку справиться со стрессом и дискомфортом, которые возникают при отказе от курения.</p>
-					<a class='button' href="#">Заказать</a>
+					<a class='button js-scroll' href="#order">Заказать</a>
 				</div>
 			</div>
 		</div>
@@ -171,7 +171,7 @@
 
 <!--  Begin effective-section  -->
 	<!-- BEGIN effective -->
-	<section class="effective js-parallax-section">
+	<section class="effective js-parallax-section" id='effective'>
 		<ul class="parallax-list" id="scene-1" data-invert-x="false" data-invert-y="false" data-relative-input="true">
 			<li class="parallax-list__item parallax-list__item_1" data-depth="0.08"></li>
 			<li class="parallax-list__item parallax-list__item_2" data-depth="0.10"></li>
@@ -244,13 +244,13 @@
 				<div class="effect-tape">Отказаться от куренияе с НикоСтоп - просто!</div>
 			</div>
 			<img class="effect-product" src="img/sect5-product.png" alt="product" >
-			<button class='button'><a href="#">Заказать ></a></button>
+			<a class='js-scroll' href="#order"><button class='button'>Заказать ></button></a>
 		</div>
 	</section>	
 <!--  End dorp-section  -->	
 
 <!--  Begin expert-section  -->
-	<section class="expert">
+	<section class="expert" id='expert'>
 		<div class='container expert-contain'>
 			<h2 class='title col-md-offset-3'>Experts recommend</h2>
 			<div class="expert-block col-md-12">
@@ -268,7 +268,7 @@
 									<select name="country" class="al-country"> </select>
 							        <input type="text" name="name" placeholder="Name">
 							        <input type="tel" name="phone" placeholder="Phone Number">
-							        <button class='button' id='btn' type="submit">Заказать ></button>
+							        <button class='button' type="submit">Заказать ></button>
 								</form>
 								<div class='block-form__bottom-img'></div>	
 							</div>
@@ -355,27 +355,30 @@
 <!--  End dorp-section  -->	
 
 <!--  Begin guarantee-section  -->
-	<section class="guarantee">
+	<section class="guarantee" id='guarant'>
 		<div class='container guarantee-contain'>
 			<h2 class='title'>
 				Others promise — <br>
 				<span class="uppercase">we</span> give a <span class="uppercase">guarantee</span>
-			</h2>
+			</h2>		
 			<div class="guarantee-block col-md-12">
 				<div class="guarantee-block__img ">
 					<img src="img/sect8-product.png">
 				</div>
+				
+				<ul class="guarantee-block-tape">
+					<li class="guarantee-block-tape__item1"></li>							
+					<li class="guarantee-block-tape__item2"></li>							
+					<li class="guarantee-block-tape__item3"></li>							
+				</ul>
 				<div class="guarantee-block__text col-md-7">
-					<p>
-						Мы уверены в качестве нашего продукта! И мы не разбрасываемся пустыми обещаниями. Если в течение 30 дней капли NikoStop вам не помогут, мы вернем вам деньги. 
-					</p>
-					<a href='#'>Детальнее о условиях возврата</a>	
-				</div>
-				<div class="guarantee-block-tape">
-					<div class="guarantee-block-tape__item"></div>							
-				</div>
-				<button class='button'><a href="#">Заказать ></a></button>
+				<p>
+					Мы уверены в качестве нашего продукта! И мы не разбрасываемся пустыми обещаниями. Если в течение 30 дней капли NikoStop вам не помогут, мы вернем вам деньги. 
+				</p>
+				<a href='#'>Детальнее о условиях возврата</a>	
 			</div>
+				<a class='js-scroll' href="#order"><button class='button'>Заказать ></button></a>
+			</div>		
 		</div>
 	</section>
 <!--  End dorp-section  -->
@@ -398,7 +401,8 @@
 				</div>
 				<div class="top-bottom-content-right">
 				<div class='top-bottom-content__qt'>
-					Осталось упаковок<br> по акции
+					Осталось упаковок<span> по акции</span>
+					<div class="top-bottom-content__counter">17</div>
 				</div>
 					<div class='block-form'>
 						<div class="block-form__in">
@@ -407,19 +411,19 @@
 								<span class="al-cost">$50</span>
 								<span class="al-cost-promo">$25</span>
 							</div>
-							<form action="/land/order" class="block-form__form al-form" method='post'>
+							<form id='order' action="/land/order" class="block-form__form al-form" method='post'>
 								<select name="country" class="al-country"> </select>
 						        <input type="text" name="name" placeholder="Name">
 						        <input type="tel" name="phone" placeholder="Phone Number">
-						        <button class='button' id='btn' type="submit">Заказать ></button>
+						        <button class='button js-btn' type="submit">Заказать ></button>
 							</form>
 							<div class='block-form__bottom-img'></div>	
 						</div>
-					</div>
+	</div>
 				</div>			
 			</div>	
 			<div class='top-bottom-product'>
-				<a class='top-bottom-product__link' href="#">Guarantee</a>
+				<a class='top-bottom-product__link js-scroll' href="#guarant">Guarantee</a>
 			</div>	
 		</div>
 		<img class='top-bottom__bottom-bg' src="img/bg-1-bottom.png" alt="">	

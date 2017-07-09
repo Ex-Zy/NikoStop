@@ -1,5 +1,19 @@
 $(document).ready(function() {
   'use strict';
+  /******************* scroll ****************/
+   $('.js-scroll').click(function(e){
+      e.preventDefault();
+      var el = $(this).attr('href');
+      if($(this).parents('ul').attr('id') == 'fixed-nav'){
+         $('#fixed-nav a').removeClass("is-active");
+         $(this).addClass('is-active');
+      }            
+      $('html, body').animate({
+            scrollTop: $(el).offset().top - ($(window).height()/4)}, 900);
+        return false;
+    });
+  /***********************************/   
+  /************* slider **************/
    $(".regular").slick({
           dots: true,        
           slidesToShow: 2,
@@ -16,11 +30,12 @@ $(document).ready(function() {
           dots: true
         }
       }]
-   });   
-
+   });  
+ /********************************/   
+/************* menu **************/
  $(window).scroll(function(){
-      var btnTop = $('.top-drops #btn').offset().top; 
-      var btnBottom = $('.bottom-drops #btn').offset().top; 
+      var btnTop = $('.top-drops .js-btn').offset().top; 
+      var btnBottom = $('.bottom-drops .js-btn').offset().top; 
       if ($(this).scrollTop() > btnTop) {
           $('.navbar').addClass('fixed');
           if ($(this).scrollTop() > (btnBottom - $(window).height())){
@@ -30,7 +45,7 @@ $(document).ready(function() {
           $('.navbar').removeClass('fixed');
       }
   });        
-
+ /********************************/ 
 	var scene1 = $('#scene-1').get(0);
 	var scene2 = $('#scene-2').get(0);
 	var scene3 = $('#scene-3').get(0);
@@ -55,7 +70,7 @@ $(document).ready(function() {
     }
     return 0;
   }
-
+ /*************** graf *****************/ 
   $(window).on("scroll", function(){
     var scrolledTop = getScrolled(document.querySelectorAll("html, body")),
         scrolledBottom = scrolledTop + window.innerHeight,
@@ -70,13 +85,15 @@ $(document).ready(function() {
     } else {
       $elem.removeClass("is-animated");
     }
-  });  
+  }); 
+/*******************************/
 });
+/*********** counter ***************/
 function rand(min, max){
   return (max-min)*Math.random()+min;
 }
-function test(){
-  var counter = $('.top-bottom-content__counter').text();
+function productCounter(){
+  var counter = $('.top-bottom-content__counter:eq(0)').text();
   counter = +counter- 1;
   if(counter <= 9){
     counter='0'+ counter;
@@ -86,4 +103,5 @@ function test(){
   }
   $('.top-bottom-content__counter').text(counter);
 }
-var timerId = setInterval('test()' , rand(1000, 3000) );
+var timerId = setInterval('productCounter()' , rand(1000, 3000) );
+/**********************************/

@@ -5,15 +5,16 @@
 	height: 176px
 	top: 50%
 	transform: translateY(-50%)
+	position: absolute
 	+r(1199)
 		width: 130px
 		height: 133px
 		background-size: cover
-
 	+r(991)
 		width: 93px
-		height: 96px
-		background-size: cover
+		height: 96px	
+	+r(767)
+		left: 15px		
 /************************** guarantee-section **************************/
 .guarantee	
 	min-height: 600px	
@@ -30,6 +31,11 @@
 			padding: 0 20px
 		.uppercase	
 			text-transform: uppercase
+	h2
+		+r(767)
+			font-size: 34px
+			max-width: 400px
+			margin: auto 		
 	&-block		
 		height: 332px		
 		background: url("../img/sect8-fon.jpg") no-repeat right
@@ -70,17 +76,15 @@
 				+r(767)
 					margin-right: 0
 					margin-left: 0
-		&__text
-			padding-left: 35px
-			padding-top: 35px
-			padding-right: 75px
+		&__text			
+			padding: 35px 75px 0 35px
 			font-size: 16px
-			+r(991)
-				padding-left: 15px
-				padding-top: 25px
-				padding-right: 355px 
+			+r(991)				
+				padding: 25px 355px 0 15px
 			p
 				margin-bottom: 30px
+				+r(767)
+					position: absolute
 			a
 				color: $color-text-h2
 				+fs('Open Sans', 600)	
@@ -109,46 +113,41 @@
 				height: 195px
 				top: 15px	
 				z-index: 10
-			&__item
-				position: absolute					
+			&__item1								
 				@extend %bg-i
 				background-position: -176px, 0
-				left: 250px					
+				left: 252px	
+				z-index: 2				
 				+r(1199)
 					background-position-x: -132px	
 					left: 180px	
 				+r(991)
 					background-position-x: -190px	
-					left: 138px	
-				+r(767)
-					left: 10px						
-				&::before, &::after
-					@extend %bg-i					
-					position: absolute
-					content: ''
-					display: block					
-				&::before
-					background-position: 0, 0					
-					left: -210px
-					+r(1199)
-						left: -160px			
-					+r(991)
-						left: -118px
-					+r(767)
-						left: 0
-						top: -25px								
-				&::after
-					background-position: -350px, 0							
-					left: 210px
-					+r(1199)
-						background-position-x: -394px
-						left: 160px	
-					+r(991)
-						background-position-x: -380px
-						left: 118px	
-					+r(767)
-						left: 0
-						margin-top: 70px
+					left: 138px														
+			&__item3
+				@extend %bg-i
+				background-position: 0, 0					
+				left: 45px
+				z-index: 1	
+				+r(1199)
+					left: 30px			
+				+r(991)
+					left: 25px
+				+r(767)					
+					top: 30px								
+			&__item2
+				@extend %bg-i
+				background-position: -350px, 0							
+				left: 460px
+				z-index: 3
+				+r(1199)
+					background-position-x: -394px
+					left: 340px	
+				+r(991)
+					background-position-x: -380px
+					left: 250px
+				+r(767)					
+					margin-top: 70px
 									
 	button 
 		float: right
