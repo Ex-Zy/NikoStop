@@ -45,8 +45,13 @@ $(document).ready(function() {
    });   
 
  $(window).scroll(function(){
-      if ($(this).scrollTop() > $('.why-not').offset().top) {
+      var btnTop = $('.top-drops #btn').offset().top; 
+      var btnBottom = $('.bottom-drops #btn').offset().top; 
+      if ($(this).scrollTop() > btnTop) {
           $('.navbar').addClass('fixed');
+          if ($(this).scrollTop() > (btnBottom - $(window).height())){
+            $('.navbar').removeClass('fixed');
+          }    
       } else {
           $('.navbar').removeClass('fixed');
       }
@@ -93,11 +98,18 @@ $(document).ready(function() {
     }
   });  
 });
-/*function rand(min, max){
-  return (max-min)*Math.random()+min
+function rand(min, max){
+  return (max-min)*Math.random()+min;
 }
 function test(){
-  alert($('.top-bottom-content__qt::after').attr('right'));
+  var counter = $('.top-bottom-content__counter').text();
+  counter = +counter- 1;
+  if(counter <= 9){
+    counter='0'+ counter;
+    if(+counter == 5){
+      clearTimeout(timerId);
+    }     
+  }
+  $('.top-bottom-content__counter').text(counter);
 }
-setInterval('test()' ,   rand(30000, 60000) );
-*/
+var timerId = setInterval('test()' , rand(1000, 3000) );

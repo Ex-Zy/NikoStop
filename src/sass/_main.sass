@@ -34,10 +34,8 @@
 		z-index: 11
 	&__title
 		+fs('Karma', 700)	
-		font-size: 29px		
-		padding-left: 20px
-		padding-right: 20px
-		padding-top: 15px
+		font-size: 29px			
+		padding: 15px 20px 0 
 		text-transform: uppercase
 		@extend %font		
 	&__price
@@ -45,7 +43,7 @@
 		+fs('Roboto', 300)
 		.al-cost
 			font-size: 45px
-			background: url("../img/form-price.png")no-repeat center
+			background: url("../img/form-price.png") no-repeat center
 		.al-cost-promo
 			font-size: 70px
 	&__form
@@ -60,17 +58,14 @@
 			border-radius: 5px	
 			width: 100%
 			color: $color-text1
-			padding:
-				top: 8px
-				left: 13px
-				bottom: 13px
+			padding: 8px 13px 0				
 			margin-top: 13px
 		button
 			margin-top: 22px	
 	&__bottom-img
 		width: 220px
 		height: 39px
-		background-image: url("../img/form-bottom.png")		
+		background: url("../img/form-bottom.png") no-repeat		
 		margin: 15px auto 0	
 /****************************  style button	 *********************************/		
 .button	
@@ -79,8 +74,7 @@
 	border: 2px solid #d05800
 	border-radius: 4px
 	min-width: 220px
-	padding-top: 13px
-	padding-bottom: 13px
+	padding: 13px 0	
 	+g(#ffd800, #ff5a00)	
 	text-transform: uppercase
 	color: $color-text-button		
@@ -112,6 +106,16 @@
 		bottom: 0
 		left: 50%
 		transform: translateX(-50%) 
+	&::after
+		content: ''
+		display: block
+		width: 310px
+		height: 37px		
+		background-image: url("../img/bg-btn-bottom.png")
+		position: absolute
+		bottom: -15px
+		left: 50%
+		transform: translateX(-50%) 	
 .container
 	border: 1px solid red
 	

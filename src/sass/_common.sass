@@ -9,28 +9,18 @@ $color-text-button: #fff //белый
 $color-nav: #373230 
 $color-nav-active: #259bc8 
 
-=ff($name-font)
-	font-family: $name-font
-
 =fs($name-font, $weight)
 	font-family: $name-font
 	font-weight: $weight
-=bgpos($x, $y)
-	background-position-x: $x
-	background-position-y: $y
-
 body
 	+fs('Open Sans', 400)
 	font-size: 14px
 	line-height: 1.2
 	color: $color-text2
-	overflow-x: hidden
-a, a:hover
-	text-decoration: none	
-a, button
-	outline: none	
+	overflow-x: hidden		
 a
-	color: white	
+	color: white
+	text-decoration: none		
 h5
 	+fs('Karma', 300)
 	font-size: 30px
