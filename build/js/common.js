@@ -105,3 +105,26 @@ function productCounter(){
 }
 var timerId = setInterval('productCounter()' , rand(1000, 3000) );
 /**********************************/
+
+
+$(document).ready(function() { 
+  $('a.modal_button').click( function(event){ 
+    event.preventDefault();
+    $('#overlay').fadeIn(400, 
+      function(){ 
+        $('.guarantee-popup') 
+          .css('display', 'block')
+          .animate({opacity: 1, top: '18px'}, 200); 
+    });
+  });
+  /* Зaкрытие мoдaльнoгo oкнa*/
+  $('.guarantee-popup__close, #overlay').click( function(){ 
+    $('.guarantee-popup')
+      .animate({opacity: 0, top: '-300px'}, 500,  
+        function(){ 
+          $(this).css('display', 'none'); 
+          $('#overlay').fadeOut(400); 
+        }
+      );
+  });
+});

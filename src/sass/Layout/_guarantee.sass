@@ -35,7 +35,8 @@
 		+r(767)
 			font-size: 34px
 			max-width: 400px
-			margin: auto 		
+			margin: auto 
+			text-align: center		
 	&-block		
 		height: 332px		
 		background: url("../img/sect8-fon.jpg") no-repeat right
@@ -50,7 +51,8 @@
 			background-size: cover
 			border-left: 2px solid #53cdfc
 		+r(767)
-			max-width: 400px	
+			max-width: 400px
+			margin-top: 250px	
 		&__img
 			position: absolute			
 			right: 0px 
@@ -78,13 +80,17 @@
 					margin-left: 0
 		&__text			
 			padding: 35px 75px 0 35px
-			font-size: 16px
+			font-size: 16px			
 			+r(991)				
 				padding: 25px 355px 0 15px
+			+r(767)
+				position: absolute
+				padding: 0
+				margin-top: -200px
+				text-align: center	
 			p
 				margin-bottom: 30px
-				+r(767)
-					position: absolute
+				
 			a
 				color: $color-text-h2
 				+fs('Open Sans', 600)	
@@ -158,3 +164,66 @@
 		+r(991)
 			margin-top: 70px
 			margin-right: 15px
+		+r(767)
+			display: block
+			float: none
+			position: relative
+			top: 240px
+			margin: auto
+.guarantee-popup
+	width: 570px 
+	height: 725px 	
+	background: #fafbf9
+	position: fixed 
+	top: -300px
+	left: 50% 
+	margin-left: -275px
+	display: none
+	opacity: 1 
+	border: 1px solid #53cdfc
+	z-index: 150
+	padding: 50px 55px 35px 30px
+	color: $color-text2
+	box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.8)	
+.guarantee-popup-content
+	overflow: auto	
+	width: 525px
+	height: 545px	
+.guarantee-popup__close
+	width: 30px
+	height: 30px
+	position: absolute
+	top: 10px
+	right: 15px
+	cursor: pointer
+	display: block
+	background: url('../img/close.png')
+.guarantee-popup__line
+	display: inline-block
+	width: 100%
+	height: 1px
+	background-color: #d7d7d7
+#overlay 
+	z-index: 30
+	position: fixed
+	background-color: rgba(225, 225, 225, 0.8)
+	width: 100%
+	height: 100%
+	top: 0 
+	left: 0
+	cursor: pointer
+	display: none
+
+.guarantee-popup h2
+	font-size: 35px
+	+fs('Karma', 700)		
+.guarantee-popup p	
+	+fs('Open Sans', 400)
+	font-size: 16px
+	line-height: 1.3	
+	margin-top: 50px
+.guarantee-popup ul	
+	list-style-type: disc
+	margin-left: 15px
+	line-height: 1.3
+	font-size: 16px
