@@ -4,10 +4,19 @@
 =o-semibold
 	font-family: 'OpenSansSemibold', Arial, sans-serif
 .inner
-	max-width: 1170px
-	padding: 0 15px
+
 	position: relative
-	margin: auto
+	&:before
+		content: ''
+		display: block
+		height: 0
+		width: (1070px / 1170px) * 100%  // ширину элемента делим на ширину контейнера
+		padding-top: (542px / 1170px) * 100% // высота элемента делим на ширину контейнера
+		left: (6px / 1170px) * 100% 
+		top: (230px / 920px) * 100% 
+		position: absolute
+		background: url(../img/prod-effective.png) no-repeat 50% 50%
+		background-size: contain
 .effective
 	text-align: center
 	position: relative
@@ -22,18 +31,13 @@
 		z-index: -5
 		background: url(../img/effective-bg.png) no-repeat 50% 100%
 		background-size: cover
-	.inner
-		min-height: 920px
-		&:before
-			content: ''
-			display: block
-			+coverdiv
-			background: url(../img/prod-effective.png) no-repeat 50% 50%
 .effective-items
 	max-width: 960px
 	margin: 60px auto 0
 	text-align: left
 	position: relative
+	padding-top: (736px / 1140px) * 100%
+	z-index: 100
 .effective-bl
 	max-width: 290px
 	max-height: 150px
@@ -46,23 +50,18 @@
 	&_2
 		right: 0
 		top: 0
-		max-width: 260px
 	&_3
 		top: 175px
 		left: -90px
-		max-width: 260px
 	&_4
 		top: 175px
 		right: -90px
-		max-width: 240px
 	&_5
 		top: 420px
 		left: 0
-		max-width: 280px
 	&_6
 		top: 420px
 		right: 0
-		max-width: 260px
 	&__title
 		+o-semibold
 		font-size: 19px
@@ -76,39 +75,37 @@
 	bottom: 0
 	left: 0
 	margin: auto
-	width: 1140px
 	z-index: -1
 	&_front
 		z-index: 100
 	&__item
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		margin: auto
+		position: absolute !important
+		img
+			width: 100%
+			height: auto
+			display: block
 		&_1
-			//top: 380px
-			//left: 564px
-			background: url(../img/DropsBack.png) no-repeat 49% 53%
 			z-index: 1
+			top: (382px / 920px) * 100% !important 
+			left: (208px / 1170px) * 100% !important
+			width: (739px / 1170px) * 100%
 		&_2
-			// width: 505px
-			// height: 451px
-			background: url(../img/BackElements.png) no-repeat 49% 29%
 			z-index: 2
+			top: (142px / 920px) * 100% !important 
+			left: (342px / 1170px) * 100% !important
+			width: (470px / 1170px) * 100%
 		&_3
-			// width: 169px
-			// height: 149px
-			background: url(../img/DROPSFRONT.png) no-repeat 39% 53%
 			z-index: 3
+			top: (240px / 920px) * 100% !important 
+			left: (150px / 1170px) * 100% !important
+			width: (798px / 1170px) * 100%
 		&_4
-			// width: 562px
-			// height: 476px
-			background: url(../img/TriptofanPart.png) no-repeat 68% 38%
 			z-index: 4
+			top: (295px / 920px) * 100% !important 
+			left: (680px / 1170px) * 100% !important
+			width: (166px / 1170px) * 100%
 		&_5
-			// width: 798px
-			// height: 297px
-			background: url(../img/FrontElements.png) no-repeat 38% 55%
 			z-index: -5
+			top: (295px / 920px) * 100% !important 
+			left: (265px / 1170px) * 100% !important
+			width: (484px / 1170px) * 100%
