@@ -5,8 +5,27 @@
 		background-position-y: 100%
 		+r(991)
 			background-size: 1139px
+		+r(767)
+			height: 1100px
+			background-size: 1170px
+			background-position-y: -100%
+	
 	&__top-bg
-		position: absolute		
+		position: absolute	
+	&__bottom-bg 
+		background: url('../img/bg-1-bottom.png') no-repeat center bottom			
+		position: absolute			
+		bottom: 25px
+		height: 100%
+		width: 100%
+		background-size: 100%		
+		+r(991)
+			bottom: 0
+		+r(767)
+			bottom: 360px
+			z-index: 12
+			height: 260px				
+			background: url('../img/bg-1-bottom1.png')				
 	&__girl
 		left: 190px
 		bottom: 80px
@@ -14,7 +33,7 @@
 			left: 30px
 			bottom: 150px
 		+r(991)	
-			display: none	
+			display: none			
 	&__boy
 		left: -20px
 		top: 25px
@@ -24,3 +43,42 @@
 			width: 192px
 			left: -50px	
 			top: 160px
+		+r(767)
+			display: none	
+		&-mobile
+			display: none
+			+r(767)
+				display: block	
+				position: absolute				
+				left: -90px
+				width: 340px
+				margin-top: 165px
+	.top-bottom
+		&-content-list
+			+r(767)
+				display: none	
+		&-product
+			+r(767)	
+				height: 485px
+				margin-left: -205px
+				top: 240px
+			&__link
+				+r(767)
+					display: none	
+		&-contain
+			+r(767)
+				background: url('../img/sect1-girl.png') no-repeat 83px 190px
+				background-size: 200px						
+				max-width: 540px
+				margin: auto
+		&-content-left 
+			+r(767)
+				padding-top: 40px
+		&-content__qt 
+			+r(767)
+				top: 115px		
+		&-content .block-form 
+			+r(767)
+				margin-top: 150px
+				z-index: 20		
+		

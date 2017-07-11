@@ -3,6 +3,7 @@
 	<div class='container top-bottom-contain'>
 		<img class='top-bottom__girl bottom-drops__girl' src="img/sect9-girl.png" alt="foto girl">
 		<img class='top-bottom__boy bottom-drops__boy' src="img/sect9-boy.png" alt="foto boy">		
+		<img class='top-bottom__boy bottom-drops__boy-mobile' src="img/sect1-boy.png" alt="foto boy">		
 		<div class="top-bottom-content col-lg-8 col-md-10 col-sm-12">			
 			<div class='top-bottom-content-left'>
 				<h5>NikoStop Antistress</h5>
@@ -15,14 +16,30 @@
 			</div>
 			<div class="top-bottom-content-right">
 			<div class='top-bottom-content__qt'>
-				Осталось упаковок<br> по акции
+				Осталось упаковок<span> по акции</span>
+				<div class="top-bottom-content__counter">17</div>
 			</div>
-				//=include form.html
+				<div class='block-form'>
+					<div class="block-form__in">
+						<h4 class='block-form__title'>Start a free life now!</h4>
+						<div class="block-form__price">
+							<span class="al-cost">$50</span>
+							<span class="al-cost-promo">$25</span>
+						</div>
+						<form id='order' action="/land/order" class="block-form__form al-form" method='post'>
+							<select name="country" class="al-country"> </select>
+					        <input type="text" name="name" placeholder="Name">
+					        <input type="tel" name="phone" placeholder="Phone Number">
+					        <button class='button js-btn' type="submit">Заказать ></button>
+						</form>
+						<div class='block-form__bottom-img'></div>	
+					</div>
+				</div>
 			</div>			
 		</div>	
 		<div class='top-bottom-product'>
-			<a class='top-bottom-product__link' href="#">Guarantee</a>
+			<a class='top-bottom-product__link js-scroll' href="#guarant">Guarantee</a>
 		</div>	
 	</div>
-	<img class='top-bottom__bottom-bg' src="img/bg-1-bottom.png" alt="">	
+	<div class='bottom-drops__bottom-bg'>	</div>
 </section>

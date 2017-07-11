@@ -3,8 +3,8 @@
 	min-height: 460px
 	background-image: url("../img/bg-5.png")
 	background-position-x: 50%	
-	background-repeat: no-repeat
-	margin-bottom: 60px
+	background-repeat: no-repeat	
+	margin: -100px 0 60px
 	&-contain		
 		height: 100%		
 		position: relative
@@ -45,8 +45,7 @@
 	
 		&__item
 			position: relative
-			padding-top: 10px
-			padding-bottom: 10px
+			padding: 10px 0			
 			&::before
 				width: 17px
 				height: 29px
@@ -62,7 +61,11 @@
 		right: 30px
 		bottom: 25px
 		+r(767)
-			bottom: 0		
+			bottom: -570px	
+			right: 50%
+			margin-right: -110px
+		+r(460)
+			bottom: -630px			
 	&-tape
 		background-image: url("../img/sect5-tape.png")	
 		width: 569px

@@ -7,8 +7,7 @@
 		height: 100%		
 		position: relative	
 		+r(767)
-			margin-left: -7px
-			margin-right: -7px
+			margin: 0 -7px			
 	&-block
 		margin-top: 35px
 		width: 100%
@@ -22,11 +21,15 @@
 			background-size: 212px
 			background-position-y: top	
 		+r(767)
-			max-width: 400px
+			max-width: 440px
 			min-width: 300px
 			margin-left: auto
 			margin-right: auto	
 			background-size: 160px
+			height: 430px
+		+r(460)
+			height: 495px
+			max-width: 300px	
 		&::before
 			position: absolute
 			bottom: -15px
@@ -44,7 +47,7 @@
 				background-repeat: no-repeat
 			+r(767)
 				background-size: 68%
-				top: 120px
+				top: 110px
 				right: -40px
 	
 		&__img
@@ -74,24 +77,20 @@
 			+r(991)
 				position: relative	
 				padding: 0
+				height: 388px
 			+r(767)
-				padding-left: 20px	
-				padding-right: 20px	
+				padding: 0 20px 					
+				height: 495px				
 			p
 				padding-bottom: 10px
 				+r(991)
-					visibility: hidden
-					
-			.visible
-				+r(991)
-					visibility: visible		
-					margin-top: 45px		
+					display: none			
 			.autor
 				text-align: right
 				+r(1199)
 					padding-right: 50px
 				+r(991)
-					visibility: visible	
+					display: block	
 					position: absolute
 					top: 85px
 					left: 0
@@ -102,24 +101,42 @@
 				+r(767)					
 					top: 40px
 					left: 50%
-					margin-left: -125px 
+					margin-left: -175px 					
+					width: 180px
+				+r(460)
 					font-size: 12px
-					width: 130px
-					
+					width: 130px	
+					margin-left: -125px 
 				&__name
 					display: block
 					+fs('Open Sans', 600)
 					font-size: 19px					
-					+r(767)
+					+r(460)
 						font-size: 14px
 						font-weight: bold
-						width: 150px
+						width: 150px				
 	.btn-expand
 		margin: auto
+		&::after
+			display: none
+			+r(767)			
+				display: block	
 	.title
 		+r(767)
-		text-align: center	
+		text-align: center		
 	.btn-expand 
 		display: none
 		+r(991)
 			display: block
+.table-visible
+	display: none 
+	+r(991)
+		display: block	
+		position: absolute
+		bottom: 15px
+		p
+			display: block
+	+r(767)
+		margin-bottom: 155px	
+		padding-right: 20px
+		
