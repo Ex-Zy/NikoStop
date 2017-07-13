@@ -1,0 +1,223 @@
+$top-1: 298px 
+$top-1_991: 195px	
+$top-2: 215px
+$top-2_991: 160px	
+$left-2_991: 85px
+$marg-top: 25px
+/********************* why-not-section *****************************/
+.why-not
+	width: 100%
+	height: 720px
+	background: url("../img/bg-2.png") no-repeat 50% -110%		
+	+r(991)
+		background-position-y: 100%	
+		height: auto
+		margin-bottom: 32px
+	+r(767)
+		background-position-y: 0	
+		background-position-x: 25%
+		background-size: 1200px
+		position: relative
+		margin-top: -100px
+		margin-bottom: 0
+	&-contain		
+		height: 100%		
+		position: relative	
+		background: url("../img/sect2-girl.png")no-repeat center 65px		
+		padding-top: 135px	
+		+r(991)
+			background-size: 242px	
+			padding-top: 43px
+			background-position-y: 150px	
+		+r(767)
+			background-size: 170px	
+			background-position-x: 165px
+			background-position-y: 125px
+			max-width: 350px
+	.title
+		+r(767)
+			padding: 0				
+	&__title_bottom
+		float: right
+		position:relative
+		margin-top: 263px
+		margin-right: 100px
+		+r(1199)
+			margin-right: 15px
+		+r(991)
+			margin-top: 215px
+		+r(767)
+			float: left
+			margin-top: 150px
+			padd					
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			width: 277px
+			height: 131px
+			background-image: url("../img/sect2-img.png")
+			right: 130px	
+			+r(1199)
+				margin-right: -100px	
+			+r(991)
+				width: 205px
+				background-size: 100%
+				background-repeat: no-repeat
+				margin-right: -60px	
+			+r(767)
+				display: none	
+		&::before
+			display: none
+			background-image: url("../img/sect2-img2.png")	
+			content: ""		
+			position: absolute	
+			width: 144px
+			height: 45px			
+			margin-top: 80px
+			+r(767)
+				display: block
+	&-list
+		+fs("Open Sans", 600)	
+		color: $color-text-sect2
+		font-size: 19px
+		+r(991)
+			font-size: 16px					 
+	&__item
+		position: absolute	
+		+r(767)
+			left: 0
+			margin-left: 20px
+			padding-left: 15px
+			top: 110px
+			text-transform: uppercase
+			&::after
+				display: inline-block
+				content: ""
+				width: 6px	
+				height: 6px
+				border-radius: 3px	
+				background-color: $color-text-sect2
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)	
+		&::before
+			background: url("../img/ico-sec2.png") no-repeat 						
+		&-1
+			@extend %left
+			top: $top-1
+			margin-left: -380px
+			+r(991)
+				top: $top-1_991
+				margin-left: -255px	
+			+r(767)
+				margin-top: $marg-top										
+		&-2
+			@extend %left
+			top: $top-1 + 102
+			margin-left: -470px			
+			+r(991)
+				top: $top-1_991 +115px
+				margin-left: -340px	
+			+r(767)
+				margin-top: 2*$marg-top 
+			&::before
+				background-position-x: -89px
+				+r(991)
+					background-position-x: -70px				
+		&-3
+			@extend %left
+			top: $top-1 + 197
+			margin-left: -318px
+			+r(991)
+				top: $top-1_991 +245px	
+				margin-left: -270px
+			+r(767)
+				margin-top: 3*$marg-top 
+			&::before
+				background-position-x: -182px	
+				background-position-y: -1px	
+				+r(991)
+					background-position-x: -141px							
+		&-4
+			@extend %right
+			top: $top-2
+			margin-left: 120px	
+			+r(991)
+				top: $top-2_991 
+				margin-left: $left-2_991 
+			+r(767)
+				margin-top: 4*$marg-top 
+			&::before
+				background-position-x: -272px
+				+r(991)
+					background-position-x: -213px					 		
+		&-5
+			@extend %right
+			top: $top-2 + 93px
+			margin-left: 200px
+			+r(991)
+				top: $top-2_991 +110px
+				margin-left: $left-2_991+45px 
+			+r(767)
+				margin-top: 5*$marg-top 
+			&::before
+				background-position-x: -363px
+				+r(991)
+					background-position-x: -285px		
+	.button		
+		margin: 465px auto 0
+		display: block
+		+r(991)
+			margin-top: 370px 
+			margin-left: 230px
+		+r(767)
+			margin-left: auto	
+			margin-right: auto	
+			margin-top: 280px
+		a
+			width: 100%
+			display: inline-block
+
+%left
+	padding-right: 102px
+	left: 50%
+	+r(991)
+		padding-right: 83px
+		text-align: right
+	&::before
+		content: ""
+		display: block
+		position: absolute			
+		width: 88px
+		height: 88px
+		right: 0
+		top: 50%		
+		transform: translateY(-50%) 
+		+r(991)
+			width: 70px
+			height: 70px
+			background-size: cover
+		+r(767)
+			display: none	
+%right
+	padding-left: 102px	
+	left: 50%
+	+r(991)
+		padding-left: 83px	
+	&::before
+		content: ""
+		display: block
+		position: absolute			
+		width: 88px
+		height: 88px
+		left: 0
+		top: 50%
+		transform: translateY(-50%) 
+		+r(991)
+			width: 70px
+			height: 70px
+			background-size: cover	
+		+r(767)
+			display: none	

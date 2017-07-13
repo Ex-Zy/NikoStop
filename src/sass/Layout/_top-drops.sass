@@ -1,0 +1,38 @@
+/********************* top-drops-section *****************************/
+.top-drops
+	&.top-bottom
+		+r(991)
+			background-size: 1680px	
+		+r(767)
+			background-size: 1500px
+			background-position-x: 50%
+	
+	&__girl	
+		left: 150px
+		top: 80px
+		+r(1199)
+			left: 0px
+		+r(991)	
+			display: none
+	&__boy	
+		left: -45px
+		+r(1199)
+			left: -180px
+		+r(991)
+			width: 265px
+			left: -50px	
+			top: 150px
+		+r(767)
+			display: none	
+	.top-bottom-product
+		+r(767)			
+			margin-left: -235px
+			background: url("../img/sect1-prod-small.png") no-repeat   		
+			background-size: 425px
+			height: 300px		
+			left: 50%
+			margin-left: -230px
+			top: 140px	
+			&__link
+				bottom: 65px
+@import top-bottom  

@@ -1,0 +1,26 @@
++font(MyriadProRegular, MyriadProRegular) 
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Open+Sans:300,400,600,700,700i|Roboto:300,400,700")
+
+$color-text-h2: #0883b0		//синий
+$color-text-sect2: #a7241e //бордо
+$color-text1: #8c8c8c //светло-серый 
+$color-text2: #595959 //темно-серый
+$color-text-button: #fff //белый 
+$color-nav: #373230 
+$color-nav-active: #259bc8 
+
+=fs($name-font, $weight)
+	font-family: $name-font, sans-serif
+	font-weight: $weight
+body
+	color: $color-text2
+	overflow-x: hidden
+	font: 400 14px/1.2 "Open Sans", Helvetica, Arial, sans-serif
+a
+	color: white
+	text-decoration: none		
+h5
+	+fs("Karma", 300)
+	font-size: 30px
+	color: $color-text-h2
+	
