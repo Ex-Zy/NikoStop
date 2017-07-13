@@ -124,14 +124,35 @@ cur = cur[cur.length - 1];
 	var scene1 = $("#scene-1").get(0);
 	var scene2 = $("#scene-2").get(0);
 	var scene3 = $("#scene-3").get(0);
+  var scrollWidth = getScrollWidth();
+  var notMobile = ($(window).width() + scrollWidth) > 767;
+  
+  function initParallax() {
+    if(notMobile) {
+      new Parallax(scene1);
+      new Parallax(scene2);
+      new Parallax(scene3);
+    }
+  }
 
-	var parallax1 = new Parallax(scene1);
-	var parallax2 = new Parallax(scene2);
-	var parallax3 = new Parallax(scene3);
+  function getScrollWidth() {
+      var block = $('<div>').css({'height':'50px','width':'50px'}),
+          indicator = $('<div>').css({'height':'200px'});
+
+      $('body').append(block.append(indicator));
+      var w1 = $('div', block).innerWidth();    
+      block.css('overflow-y', 'scroll');
+      var w2 = $('div', block).innerWidth();
+      $(block).remove();
+      return (w1 - w2);
+  }
+
+  initParallax();
 
   $('.js-dropdown').click(function(e) {
     e.preventDefault();
     $(this).closest('.e-dropdown').addClass('is-drop');
+    $('.shadow').hide();
   });
  /*************** graf *****************/ 
  
