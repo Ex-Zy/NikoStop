@@ -4,7 +4,6 @@
 =o-semibold
 	font-family: 'OpenSansSemibold', Arial, sans-serif
 .inner
-
 	position: relative
 	&:before
 		content: ''
@@ -17,9 +16,21 @@
 		position: absolute
 		background: url(../img/prod-effective.png) no-repeat 50% 50%
 		background-size: contain
+		+r(991)
+			width: (871px / 750px) * 100%
+			padding-top: (440px / 738px) * 100%
+			left: (-110px / 750px) * 100%
+			top: (380px / 920px) * 100%
+		+r(767)
+			width: (682px / 320px) * 100%
+			padding-top: (345px / 320px) * 100%
+			left: (-202px / 320px) * 100%
+			top: (143px / 763px) * 100%
 .effective
 	text-align: center
 	position: relative
+	+r(991)
+		margin-bottom: 80px
 	&:after
 		content: ''
 		display: block
@@ -31,6 +42,11 @@
 		z-index: -5
 		background: url(../img/effective-bg.png) no-repeat 50% 100%
 		background-size: cover
+	.container
+		+r(767)
+			width: 320px
+		&:after
+			display: none
 .effective-items
 	max-width: 960px
 	margin: 60px auto 0
@@ -38,12 +54,16 @@
 	position: relative
 	padding-top: (736px / 1140px) * 100%
 	z-index: 100
+	+r(991)
+		display: none
 .effective-bl
 	max-width: 290px
-	max-height: 150px
+	height: 150px
 	overflow: hidden
 	position: absolute
 	z-index: 3
+	+r(1200)
+		height: 200px
 	&_1
 		left: 0
 		top: 0
@@ -53,9 +73,13 @@
 	&_3
 		top: 175px
 		left: -90px
+		+r(1200)
+			left: 0
 	&_4
 		top: 175px
 		right: -90px
+		+r(1200)
+			right: 0
 	&_5
 		top: 420px
 		left: 0
@@ -89,23 +113,141 @@
 			top: (382px / 920px) * 100% !important 
 			left: (208px / 1170px) * 100% !important
 			width: (739px / 1170px) * 100%
+			+r(991)
+				width: (585px / 750px) * 100%
+				top: (430px / 738px) * 100% !important
+				left: (55px / 750px) * 100% !important
+			+r(767)
+				width: (458px / 320px) * 100%
+				top: (235px / 697px) * 100% !important
+				left: (-70px / 320px) * 100% !important
 		&_2
 			z-index: 2
 			top: (142px / 920px) * 100% !important 
 			left: (342px / 1170px) * 100% !important
 			width: (470px / 1170px) * 100%
+			+r(991)
+				width: (381px / 750px) * 100%
+				top: (240px / 738px) * 100% !important
+				left: (150px / 750px) * 100% !important
+			+r(767)
+				width: (298px / 320px) * 100%
+				top: (86px / 697px) * 100% !important
+				left: (6px / 320px) * 100% !important
 		&_3
 			z-index: 3
 			top: (240px / 920px) * 100% !important 
 			left: (150px / 1170px) * 100% !important
 			width: (798px / 1170px) * 100%
+			+r(991)
+				width: (647px / 750px) * 100%
+				top: (310px / 738px) * 100% !important
+				left: 0 !important
+			+r(767)
+				width: (507px / 320px) * 100%
+				top: (145px / 697px) * 100% !important
+				left: (-110px / 320px) * 100% !important
 		&_4
 			z-index: 4
 			top: (295px / 920px) * 100% !important 
 			left: (680px / 1170px) * 100% !important
 			width: (166px / 1170px) * 100%
+			+r(991)
+				width: (137px / 750px) * 100%
+				top: (360px / 738px) * 100% !important
+				left: (430px / 750px) * 100% !important
+			+r(767)
+				width: (90px / 320px) * 100%
+				top: (182px / 697px) * 100% !important
+				left: (220px / 320px) * 100% !important
 		&_5
 			z-index: -5
 			top: (295px / 920px) * 100% !important 
 			left: (265px / 1170px) * 100% !important
 			width: (484px / 1170px) * 100%
+			+r(991)
+				width: (394px / 750px) * 100%
+				top: (356px / 738px) * 100% !important
+				left: (94px / 750px) * 100% !important
+			+r(767)
+				width: (286px / 320px) * 100%
+				top: (178px / 697px) * 100% !important
+				left: (-30px / 320px) * 100% !important
+.e-dropdown
+	position: relative
+	&.is-drop
+		visibility: visible
+		height: auto
+		.shadow
+			display: none
+	+rm(768)
+		padding: 126px 0 0
+	+r(767)
+		height: 210px
+		overflow: hidden
+		margin-top: 370px
+	&__bottom
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		text-align: center
+		z-index: 2
+		padding: 50px 0 14px
+		+rm(768)
+			display: none
+		a
+			margin: auto
+.e-list
+	position: relative
+	text-align: left
+	color: $color-text2
+	+rm(992)
+		display: none
+	+rm(768)
+		padding: 500px 0 0
+		margin: 0 -15px
+	&__item
+		+r(767)
+			&:not(:first-of-type)
+				margin: 20px 0 0
+		+rm(768)
+			width: 33.3333%
+			height: 200px
+			padding: 0 15px
+			position: absolute
+			overflow: hidden
+		&_1
+			+rm(768)
+				top: 0
+				left: 0
+		&_3
+			+rm(768)
+				top: 0
+				right: 0
+		&_4
+			+rm(768)
+				top: 360px
+				left: 0
+		&_5
+			+rm(768)
+				top: 360px
+				right: 0
+		&_2
+			+rm(768)
+				left: 33.3333%
+				top: -90px
+	&__title
+		font-size: 19px
+		font-weight: 600
+		margin-bottom: 4px
+.shadow
+	width: 767px
+	height: 229px
+	background: url(../img/white-non.png) no-repeat center
+	z-index: 1
+	position: absolute
+	bottom: 0
+	left: -222px
+	+rm(768)
+		display: none
