@@ -180,6 +180,7 @@ cur = cur[cur.length - 1];
     $(this).closest('.e-dropdown').addClass('is-drop');
     $('.shadow').hide();
   });
+  
  /*************** graf *****************/ 
  
   if(document.documentMode) {
