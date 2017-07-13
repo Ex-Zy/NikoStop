@@ -8,6 +8,8 @@
 	+r(991)
 		min-height: 420px
 		background-size: 1650px	
+	+r(767)
+		padding: 10px 0 0	
 	&-contain		
 		height: 100%		
 		position: relative
@@ -69,7 +71,12 @@
 		bottom: 10px
 		+r(991)
 			bottom: 23px					
-								
+		+r(767)
+			right: 0
+			left: 0
+			top: -90px
+			bottom: auto
+			margin: auto						
 	&-tape
 		background: url("../img/tape-effect.png") no-repeat 0 0	
 		width: 569px
