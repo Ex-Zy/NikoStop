@@ -134,11 +134,19 @@ cur = cur[cur.length - 1];
       new Parallax(scene3);
     }
   }
+<<<<<<< HEAD
 
   function getScrollWidth() {
       var block = $('<div>').css({'height':'50px','width':'50px'}),
           indicator = $('<div>').css({'height':'200px'});
 
+=======
+
+  function getScrollWidth() {
+      var block = $('<div>').css({'height':'50px','width':'50px'}),
+          indicator = $('<div>').css({'height':'200px'});
+
+>>>>>>> 7e6872e20faf7207ecfe03d05fe1332b44685526
       $('body').append(block.append(indicator));
       var w1 = $('div', block).innerWidth();    
       block.css('overflow-y', 'scroll');
