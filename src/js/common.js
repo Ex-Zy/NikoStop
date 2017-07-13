@@ -129,7 +129,12 @@ cur = cur[cur.length - 1];
 	var parallax2 = new Parallax(scene2);
 	var parallax3 = new Parallax(scene3);
 
+  $('.js-dropdown').click(function(e) {
+    e.preventDefault();
+    $(this).closest('.e-dropdown').addClass('is-drop');
+  });
  /*************** graf *****************/ 
+ 
   if(document.documentMode) {
     $(".graf").addClass("ie-detected");
   }
