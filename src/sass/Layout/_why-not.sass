@@ -1,6 +1,6 @@
-$top-1: 315px 
+$top-1: 298px 
 $top-1_991: 195px	
-$top-2: 255px
+$top-2: 215px
 $top-2_991: 160px	
 $left-2_991: 85px
 $marg-top: 25px
@@ -8,37 +8,39 @@ $marg-top: 25px
 .why-not
 	width: 100%
 	height: 720px
-	background-image: url("../img/bg-2.png")
-	background-position-x: 50%	
-	background-position-y: -80%
-	background-repeat: no-repeat	
+	background: url("../img/bg-2.png") no-repeat 50% -110%		
 	+r(991)
 		background-position-y: 100%	
 		height: auto
+		margin-bottom: 32px
 	+r(767)
 		background-position-y: 0	
 		background-position-x: 25%
 		background-size: 1200px
+		position: relative
+		margin-top: -100px
+		margin-bottom: 0
 	&-contain		
 		height: 100%		
 		position: relative	
-		background: url("../img/sect2-girl.png")no-repeat center 80px		
-		padding-top: 150px	
+		background: url("../img/sect2-girl.png")no-repeat center 65px		
+		padding-top: 135px	
 		+r(991)
 			background-size: 242px	
 			padding-top: 43px
 			background-position-y: 150px	
 		+r(767)
-			background-size: 155px	
-			background-position-x: 110%
+			background-size: 170px	
+			background-position-x: 165px
 			background-position-y: 125px
-			width: 320px
-		background: url("../img/sect2-girl.png") no-repeat center 80px
-		padding-top: 150px
+			max-width: 350px
+	.title
+		+r(767)
+			padding: 0				
 	&__title_bottom
 		float: right
 		position:relative
-		margin-top: 280px
+		margin-top: 263px
 		margin-right: 100px
 		+r(1199)
 			margin-right: 15px
@@ -46,9 +48,10 @@ $marg-top: 25px
 			margin-top: 215px
 		+r(767)
 			float: left
-			margin-top: 150px					
+			margin-top: 150px
+			padd					
 		&::after
-			content: ''
+			content: ""
 			display: block
 			position: absolute
 			width: 277px
@@ -67,14 +70,13 @@ $marg-top: 25px
 		&::before
 			display: none
 			background-image: url("../img/sect2-img2.png")	
-			content: ''			
+			content: ""		
 			position: absolute	
 			width: 144px
 			height: 45px			
 			margin-top: 80px
 			+r(767)
 				display: block
-
 	&-list
 		+fs("Open Sans", 600)	
 		color: $color-text-sect2
@@ -91,7 +93,7 @@ $marg-top: 25px
 			text-transform: uppercase
 			&::after
 				display: inline-block
-				content: ''
+				content: ""
 				width: 6px	
 				height: 6px
 				border-radius: 3px	
@@ -99,7 +101,9 @@ $marg-top: 25px
 				position: absolute
 				left: 0
 				top: 50%
-				transform: translateY(-50%)				
+				transform: translateY(-50%)	
+		&::before
+			background: url("../img/ico-sec2.png") no-repeat 						
 		&-1
 			@extend %left
 			top: $top-1
@@ -108,16 +112,20 @@ $marg-top: 25px
 				top: $top-1_991
 				margin-left: -255px	
 			+r(767)
-				margin-top: $marg-top					
+				margin-top: $marg-top										
 		&-2
 			@extend %left
 			top: $top-1 + 102
-			margin-left: -470px	
+			margin-left: -470px			
 			+r(991)
 				top: $top-1_991 +115px
 				margin-left: -340px	
 			+r(767)
-				margin-top: 2*$marg-top 	
+				margin-top: 2*$marg-top 
+			&::before
+				background-position-x: -89px
+				+r(991)
+					background-position-x: -70px				
 		&-3
 			@extend %left
 			top: $top-1 + 197
@@ -126,7 +134,12 @@ $marg-top: 25px
 				top: $top-1_991 +245px	
 				margin-left: -270px
 			+r(767)
-				margin-top: 3*$marg-top 		
+				margin-top: 3*$marg-top 
+			&::before
+				background-position-x: -182px	
+				background-position-y: -1px	
+				+r(991)
+					background-position-x: -141px							
 		&-4
 			@extend %right
 			top: $top-2
@@ -135,7 +148,11 @@ $marg-top: 25px
 				top: $top-2_991 
 				margin-left: $left-2_991 
 			+r(767)
-				margin-top: 4*$marg-top 	 		
+				margin-top: 4*$marg-top 
+			&::before
+				background-position-x: -272px
+				+r(991)
+					background-position-x: -213px					 		
 		&-5
 			@extend %right
 			top: $top-2 + 93px
@@ -144,9 +161,13 @@ $marg-top: 25px
 				top: $top-2_991 +110px
 				margin-left: $left-2_991+45px 
 			+r(767)
-				margin-top: 5*$marg-top 	
+				margin-top: 5*$marg-top 
+			&::before
+				background-position-x: -363px
+				+r(991)
+					background-position-x: -285px		
 	.button		
-		margin: 470px auto 0
+		margin: 465px auto 0
 		display: block
 		+r(991)
 			margin-top: 370px 
@@ -166,15 +187,13 @@ $marg-top: 25px
 		padding-right: 83px
 		text-align: right
 	&::before
-		content: ''
+		content: ""
 		display: block
-		position: absolute	
-		background-image: url("../img/ico-sec2.png")	
+		position: absolute			
 		width: 88px
 		height: 88px
 		right: 0
-		top: 50%
-		top: 50%
+		top: 50%		
 		transform: translateY(-50%) 
 		+r(991)
 			width: 70px
@@ -188,10 +207,9 @@ $marg-top: 25px
 	+r(991)
 		padding-left: 83px	
 	&::before
-		content: ''
+		content: ""
 		display: block
-		position: absolute	
-		background-image: url("../img/ico-sec2.png")
+		position: absolute			
 		width: 88px
 		height: 88px
 		left: 0

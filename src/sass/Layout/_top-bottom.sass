@@ -8,22 +8,32 @@
 	position: relative
 	overflow: hidden	
 	+r(991)
-		height: 600px
-		background-size: cover	
+		height: 600px		
 	+r(767)	
-		height: 1000px
+		height: 970px		
 	&-contain		
 		height: 100%		
 		padding-top: 10px
 		position: relative	
 		+r(991)
-			padding-top: 0			
+			padding-top: 0	
+		+r(767)
+			max-width: 320px
+			margin: auto				
 	&__bottom-bg
-		bottom: 38px
-		position: absolute	
-		left: 0%
+		background: url("../img/bg-1-bottom.png") no-repeat center bottom			
+		position: absolute			
+		bottom: 25px
+		height: 100%
+		width: 100%
+		background-size: 100%		
 		+r(991)
-			bottom: 0
+			bottom: 50px			
+		+r(767)
+			bottom: 360px
+			z-index: 12
+			height: 260px				
+			background: url("../img/bg-1-bottom1.png")	
 	&__girl,	
 	&__boy			
 		position: absolute			
@@ -43,27 +53,27 @@
 				position: relative
 			+r(767)	
 				width: 100%
-				padding-top: 50px
+				padding-top: 45px
 			h5
 				padding-bottom: 10px
 				+r(991)
 					display: none
 			h5, h2
 				+r(1199)
-					padding-left: 25px
-				+r(991)
-					padding-left: 0	
+					padding-left: 25px				
 			h2
+				+r(991)
+					padding-top: 5px
+					padding-left: 0	
 				+r(767)
 					max-width: 400px
 					margin: auto
-
 			span
 				margin-top: 20px
 				display: inline-block				
 				width: 265px
 				float: right
-				+fs('Open Sans', 300)	
+				+fs("Open Sans", 300)	
 				padding-left: 45px	
 				font-size: 16px	
 				line-height: 1.3
@@ -72,8 +82,8 @@
 					font-size: 14px
 					padding-left: 0px	
 					position: absolute
-					right: 0
-					margin-top: 90px
+					right: -20px
+					margin-top: 80px
 				+r(767)
 					display: none
 		.block-form
@@ -83,13 +93,14 @@
 				margin-top: 8px
 			+r(767)
 				position: absolute
-				top: 400px	
+				top: 380px	
 				left: 50%
 				margin-left: -127px
+				z-index: 20
 
 		&__qt
 			text-align: right
-			+fs('Open Sans', 400)
+			+fs("Open Sans", 400)
 			font-size: 18px
 			position: relative
 			padding-right: 90px
@@ -111,7 +122,6 @@
 				display: block
 				+r(767)
 					display: none
-
 		&__counter
 			width: 70px
 			height: 58px
@@ -121,7 +131,7 @@
 			top: 50%
 			transform: translateY(-50%)
 			font-size: 45px
-			+fs('Roboto', 400)
+			+fs("Roboto", 400)
 			color: $color-text-h2
 			text-align: center
 			padding-top: 2px
@@ -141,7 +151,7 @@
 		&-list
 			width: 265px
 			float: right
-			+fs('Open Sans', 600)	
+			+fs("Open Sans", 600)	
 			font-size: 19px	
 			padding-left: 45px
 			margin-top: 20px	
@@ -153,9 +163,8 @@
 				position: absolute
 				left: 50%
 				top: 0
-				margin-top: 130px
-				margin-left: -50px
-	
+				margin-top: 150px
+				margin-left: -50px	
 			&__item
 				position: relative
 				padding-top: 17px
@@ -167,7 +176,7 @@
 					width: 24px
 					height: 40px
 					background-image: url("../img/ico1.png")
-					content: ''
+					content: ""
 					display: block
 					position: absolute
 					left: -45px
@@ -185,7 +194,7 @@
 					width: 168px
 					height: 1px
 					background-image: url("../img/sect1-line.png")
-					content: ''
+					content: ""
 					display: block
 					position: absolute
 					left: 50%
@@ -202,22 +211,16 @@
 		left: 170px
 		bottom: 0	
 		z-index: 10
-		background: url('../img/sect1-prod.png')
+		background: url("../img/sect1-prod.png") no-repeat
 		width: 878px
 		height: 485px 
 		+r(1199)
 			left: -40px	
 		+r(991)			
 			height: 363px
-			background-size: contain
-			background-repeat: no-repeat	
-			left: -25px						
-		+r(767)
-			height: 235px
-			left: 50%
-			margin-left: -230px
-			top: 140px
-	
+			background-size: contain				
+			left: -25px	
+			bottom: 20px			
 		&__link
 			position: absolute
 			bottom: 0px
@@ -225,6 +228,8 @@
 			@extend %tape
 			font-size: 26px
 			padding-bottom: 35px
+			&:hover
+				text-decoration: underline
 			+r(991)
 				right: 330px
 				font-size: 20px	
@@ -236,15 +241,13 @@
 				right: 525px							
 			&::before, &::after
 				display: block
-				content: ''
+				content: ""
 				width: 90px
 				height: 97px
 				background-image: url("../img/flag.png")
 				position: absolute
 				top: 50%
-				transform: translateY(-50%)
-				+r(991)
-					transform: translateY(-50%)
+				transform: translateY(-50%)				
 				+r(767)
 					width: 67px
 					height: 70px

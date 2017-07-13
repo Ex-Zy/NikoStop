@@ -17,31 +17,38 @@
 		left: 15px		
 /************************** guarantee-section **************************/
 .guarantee	
-	min-height: 600px	
+	min-height: 555px	
 	background-position-x: 50%	
 	background-repeat: no-repeat
 	position: relative 
-	margin-top: -45px
+	margin-top: 45px
 	+r(1199)
 		margin-top: 0
+	+r(991)
+		min-height: 508px	
+	+r(767)
+		margin-top: -160px	
 	&-contain		
 		height: 100%		
-		position: relative	
+		position: relative
+		padding-top: 15px	
 		+r(767)
 			padding: 0 20px
 		.uppercase	
 			text-transform: uppercase
 	h2
+		padding-left: 15px
 		+r(767)
 			font-size: 34px
 			max-width: 400px
 			margin: auto 
-			text-align: center		
+			text-align: center
+			padding-left: 0 		
 	&-block		
 		height: 332px		
 		background: url("../img/sect8-fon.jpg") no-repeat right
 		position: relative
-		margin-top: 15px
+		margin-top: 10px
 		+r(1199)
 			background-size: 100%
 		+r(991)
@@ -52,13 +59,14 @@
 			border-left: 2px solid #53cdfc
 		+r(767)
 			max-width: 400px
-			margin-top: 250px	
+			margin-top: 235px	
+			height: 330px
 		&__img
 			position: absolute			
-			right: 0px 
+			right: 25px 
 			top: -135px				
 			width: 440px
-			background: url('../img/sect8-block-fon.png') no-repeat
+			background: url("../img/sect8-block-fon.png") no-repeat
 			+r(1199)
 				top: -90px		
 			+r(991)							
@@ -67,13 +75,13 @@
 				top: -30px	
 			+r(767)
 				background: none	
-				right: -280px						
+				right: -272px						
 			img				
 				margin: 0 115px 0 140px
 				position: relative
 				z-index: 10
 				+r(991)
-					width: 190px
+					width: 210px
 					margin-left: 105px			
 				+r(767)
 					margin-right: 0
@@ -86,14 +94,17 @@
 			+r(767)
 				position: absolute
 				padding: 0
-				margin-top: -200px
+				margin-top: -215px
 				text-align: center	
+				left: 0
 			p
 				margin-bottom: 30px
+				+r(767)
+					margin-bottom: 20px
 				
 			a
 				color: $color-text-h2
-				+fs('Open Sans', 600)	
+				+fs("Open Sans", 600)	
 				text-decoration: underline
 		&-tape
 			background-image: url("../img/sect8-4.png")		
@@ -117,7 +128,7 @@
 				background-image: url("../img/tape_767.png")
 				width: 150px
 				height: 195px
-				top: 15px	
+				top: 10px	
 				z-index: 10
 			&__item1								
 				@extend %bg-i
@@ -155,9 +166,9 @@
 				+r(767)					
 					margin-top: 70px
 									
-	button 
+	.button 
 		float: right
-		margin: 240px 0 65px
+		margin: 240px 52px 0 0
 		
 		position: relative
 		z-index: 10			
@@ -168,62 +179,5 @@
 			display: block
 			float: none
 			position: relative
-			top: 240px
+			top: 250px
 			margin: auto
-.guarantee-popup
-	width: 570px 
-	height: 725px 	
-	background: #fafbf9
-	position: fixed 
-	top: -300px
-	left: 50% 
-	margin-left: -275px
-	display: none
-	opacity: 1 
-	border: 1px solid #53cdfc
-	z-index: 150
-	padding: 50px 55px 35px 30px
-	color: $color-text2
-	box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.8)	
-.guarantee-popup-content
-	overflow: auto	
-	width: 525px
-	height: 545px	
-.guarantee-popup__close
-	width: 30px
-	height: 30px
-	position: absolute
-	top: 10px
-	right: 15px
-	cursor: pointer
-	display: block
-	background: url('../img/close.png')
-.guarantee-popup__line
-	display: inline-block
-	width: 100%
-	height: 1px
-	background-color: #d7d7d7
-#overlay 
-	z-index: 30
-	position: fixed
-	background-color: rgba(225, 225, 225, 0.8)
-	width: 100%
-	height: 100%
-	top: 0 
-	left: 0
-	cursor: pointer
-	display: none
-
-.guarantee-popup h2
-	font-size: 35px
-	+fs('Karma', 700)		
-.guarantee-popup p	
-	+fs('Open Sans', 400)
-	font-size: 16px
-	line-height: 1.3	
-	margin-top: 50px
-.guarantee-popup ul	
-	list-style-type: disc
-	margin-left: 15px
-	line-height: 1.3
-	font-size: 16px

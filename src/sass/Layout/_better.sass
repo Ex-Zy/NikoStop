@@ -1,13 +1,13 @@
 /**********************better-section *************************/
 .better
-	background: url(../img/sect3/back.png) no-repeat center top / auto 100%
-	min-height: 700px
+	background: url("../img/sect3/back.png") no-repeat center top / auto 100%
+	min-height: 730px
 	position: relative
 	overflow: hidden	
 	+r(1199)
 		min-height: 710px
 	+r(991)
-		min-height: 606px
+		min-height: 600px
 	+r(767)	
 		min-height: 500px
 		background: url("../img/sect3/infographics.png")no-repeat 50% 40px 		
@@ -27,9 +27,10 @@
 		height: 235px
 		background: url(../img/sect3/bottom-layer.png) no-repeat center bottom
 	h2
-		margin: 0		
-		margin-top: 44px
+		margin-left: 60px		
+		margin-top: 30px
 		+r(991)
+			margin-left: 15px	
 			font-size: 50px
 			margin-top: 32px
 		+r(767)
@@ -43,16 +44,18 @@
 			font-size: 25px
 			margin-top: 4px
 			margin-bottom: 10px
+			margin-left: 60px
 			color: #595959
 			+r(991)
 				font-size: 19px
 				margin-top: 1px
+				margin-left: 15px
 			+r(767)
 				display: none	
 	.content
-		padding-top: 82px
+		padding-top: 60px
 		+r(991)
-			padding-top: 51px
+			padding-top: 65px
 	.right
 		padding-top: 99px
 		position: relative
@@ -60,13 +63,12 @@
 		+r(1199)
 			padding-left: 0
 		+r(991)
-			padding-top: 64px
+			padding-top: 74px
 		+r(767)			
 			padding-right: 0
 			width: 100%
 			position: relative
-			padding-top: 100px			
-
+			padding-top: 100px	
 		p
 			margin: 0
 			font-size: 20px
@@ -85,14 +87,18 @@
 				max-width: 270px
 				left: 50%
 				margin-left: -240px
+				display: none
 			+r(460)
 				padding-right: 70px
 				margin-left: -160px
-				top: 20px	
-		a
-			
+				top: 30px	
+		.mobile-p
+			display: none
+			+r(767)
+				display: block		
+		a			
 			margin-left: 6px
-			margin-top: 37px
+			margin-top: 30px
 			+r(1199)
 				margin-top: 29px
 			+r(991)
@@ -101,8 +107,7 @@
 				margin-top: 32px
 			+r(767)
 				margin: 120px auto 0
-				display: block
-			
+				display: block			
 	.product
 		max-width: 100%
 		+r(991)
@@ -141,14 +146,14 @@
 	width: 110.812%
 	width: 107.9%
 	padding-bottom: 29.572%
-	margin: 187px auto 0
+	margin: 150px auto 0
 	// margin: 16.848% auto 0
 	position: relative
 	left: -2.163%
 	+r(991)
 		width: 131%
 		padding-bottom: 35%
-		margin-top: 119px
+		margin-top: 132px
 		left: -19%
 	+r(767)
 		display: none	
@@ -230,7 +235,7 @@
 			position: absolute
 			left: 0
 			top: 0
-			+fs('Open Sans', 600)
+			+fs("Open Sans", 600)
 			font-weight: 500
 			font-size: 14px
 			line-height: 1.375

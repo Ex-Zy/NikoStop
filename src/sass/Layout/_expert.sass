@@ -3,6 +3,7 @@
 	min-height: 550px
 	position: relative
 	z-index: 10
+
 	&-contain		
 		height: 100%		
 		position: relative	
@@ -11,30 +12,33 @@
 	&-block
 		margin-top: 35px
 		width: 100%
-		height: 388px
+		min-height: 388px
 		border: 2px solid #53cdfc
 		background: url("../img/sect6-shadow.png") no-repeat right
-		position: relative		
+		position: relative	
+		background-size: contain
+		+clr	
 		+r(1199)
-			margin-top: 50px
+			margin-top: 45px
 		+r(991)
 			background-size: 212px
-			background-position-y: top	
+			background-position-y: top
 		+r(767)
 			max-width: 440px
 			min-width: 300px
 			margin-left: auto
 			margin-right: auto	
 			background-size: 160px
-			height: 430px
+			min-height: 430px
+			margin-top: 35px
 		+r(460)
-			height: 495px
+			min-height: 495px
 			max-width: 300px	
 		&::before
 			position: absolute
 			bottom: -15px
 			right: 40px
-			content: ''
+			content: ""
 			display: block
 			background: url("../img/sect6-signature.png") 
 			width: 153px
@@ -48,8 +52,7 @@
 			+r(767)
 				background-size: 68%
 				top: 110px
-				right: -40px
-	
+				right: -40px	
 		&__img
 			position: absolute
 			bottom: 0
@@ -65,26 +68,25 @@
 			height: 445px
 			+r(991)
 				margin-left: 0
+				width: 280px
 			+r(767)
 				display: none
 		&__text
 			padding-top: 27px
-			padding-right: 40px
+			padding-right: 40px			
 			+r(1199)
 				padding-left: 50px
 				padding-right: 50px
 				font-size: 13px
-			+r(991)
-				position: relative	
-				padding: 0
-				height: 388px
+			+r(991)				
+				padding: 0				
+				position: static				
 			+r(767)
 				padding: 0 20px 					
-				height: 495px				
+				height: auto										
 			p
 				padding-bottom: 10px
-				+r(991)
-					display: none			
+						
 			.autor
 				text-align: right
 				+r(1199)
@@ -93,7 +95,8 @@
 					display: block	
 					position: absolute
 					top: 85px
-					left: 0
+					left: 50%
+					margin-left: -75px
 					width: 200px					
 					padding-right: 0
 					text-align: left
@@ -102,41 +105,52 @@
 					top: 40px
 					left: 50%
 					margin-left: -175px 					
-					width: 180px
+					width: 180px					
 				+r(460)
 					font-size: 12px
 					width: 130px	
 					margin-left: -125px 
 				&__name
 					display: block
-					+fs('Open Sans', 600)
+					+fs("Open Sans", 600)
 					font-size: 19px					
 					+r(460)
 						font-size: 14px
 						font-weight: bold
-						width: 150px				
+						width: 150px	
+		&-wrap
+			+r(991)
+				padding-top: 250px	
+				display: none
+				padding-bottom: 15px
+			+r(767)
+				padding-top: 190px	
+				padding-bottom: 100px							
 	.btn-expand
 		margin: auto
+		display: none
+		+r(991)
+			display: block
 		&::after
 			display: none
 			+r(767)			
 				display: block	
 	.title
-		+r(767)
-		text-align: center		
-	.btn-expand 
-		display: none
+		padding-left: 45px
 		+r(991)
-			display: block
+			text-align: center
+			padding: 0	
+		+r(767)
+			width: 320px
+			margin: auto		
 .table-visible
 	display: none 
 	+r(991)
 		display: block	
 		position: absolute
 		bottom: 15px
-		p
-			display: block
-	+r(767)
-		margin-bottom: 155px	
-		padding-right: 20px
+		margin-right: 15px			
+	+r(767)			
+		top: 0
+		margin-top: 188px
 		

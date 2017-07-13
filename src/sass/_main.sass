@@ -6,14 +6,14 @@
 // текст в ленте	
 %tape
 	color: $color-text-button
-	+fs('Open Sans', 700)
+	+fs("Open Sans", 700)
 	font-style: italic	
 	padding-top: 30px
 	text-align: center
 	text-shadow: 0px 1px 6px #006d8f	
 //title	
 .title
-	+fs('Karma', 600)
+	+fs("Karma", 600)
 	font-size: 57px
 	color: $color-text-h2
 	line-height: 1.1
@@ -33,69 +33,122 @@
 		position: relative
 		z-index: 11
 	&__title
-		+fs('Karma', 700)	
+		+fs("Karma", 700)	
 		font-size: 29px			
 		padding: 15px 20px 0 
 		text-transform: uppercase
 		@extend %font		
 	&__price
 		@extend %font
-		+fs('Roboto', 300)
+		+fs("Roboto", 300)
 		.al-cost
 			font-size: 45px
-			background: url("../img/form-price.png") no-repeat center
+			background: url("../img/form-price.png") no-repeat center			
+			&__small
+				font-size: 30px								
 		.al-cost-promo
 			font-size: 70px
+			&__small
+				font-size: 50px 
 	&__form
 		width: 220px		
-		margin: 18px auto 0	
+		margin: 0 auto 	
 		text-align: center
-		+fs('Open Sans', 400)
+		padding-top: 18px
+		+fs("Open Sans", 400)
 		select
-			display: none
+			display: none			
 		input
 			border: 1px solid #ccc
 			border-radius: 5px	
 			width: 100%
-			color: $color-text1
-			padding: 11px 0 11px 13px				
+			color: $color-text2
+			padding: 10px 0 10px 13px				
 			margin-top: 13px
+			&:focus
+				border-color: #53cdfc
 		button
-			margin-top: 22px	
+			margin-top: 22px
+		label
+			display: none		
+	&-wraper
+		position: relative		
 	&__bottom-img
 		width: 220px
 		height: 39px
 		background: url("../img/form-bottom.png") no-repeat		
 		margin: 15px auto 0	
+	.error
+		border: 1px solid red
+		padding-top: 14px
+		padding-bottom: 6px
+		display: block
+		+ label
+			color: red	
+			position: absolute
+			left: 13px
+			bottom: 20px
+			display: block 	
 // style button	 
 .button	
 	display: inline-block
 	text-align: center
 	border: 2px solid #d05800
 	border-radius: 4px
-	min-width: 220px
+	width: 220px
 	padding: 13px 0	
 	+g(#ffd800, #ff5a00)	
 	text-transform: uppercase
 	color: $color-text-button		
-	+fs('Open Sans', 600)
+	+fs("Open Sans", 600)
 	font-size: 17px
-	cursor: pointer
+	cursor: pointer		
+	&__ico-animete
+		background: url("../img/btn4.png") no-repeat center				
+		display: inline-block
+		width: 2px
+		height: 11px		
+		transition: width 0.5s	
+		margin-left: 3px
+	&__ico
+		display: inline-block
+		width: 6px
+		height: 11px
+		background: url("../img/btn.png") no-repeat 0 0		
+		margin-left: -5px			
 	&_small
-		min-width: 138px
+		width: 138px
 		font-size: 14px
 		padding: 8px 0	
-		
+		line-height: 17px
+	&:hover	
+		background: #ff4800		
+		.button__ico-animete
+			width: 15px 
+			background: url("../img/btn4.png") no-repeat center		
+			transition: width 0.5s				
+	&:active
+		background: #4acb4a
+		border-color: #3c9a3c		 	
+		.button__ico-animete
+			background: none
+		.button__ico
+			background-position: -80px 0
+			width: 17px
+			height: 19px
+			margin-top: -5px	
+			margin-left: -15px
+			
 .btn-expand
 	color: $color-text-h2
-	+fs('Open Sans', 600)
+	+fs("Open Sans", 600)
 	display: block	
 	width: 100px	
 	position: relative
 	padding-bottom: 44px	
 	text-align: center
 	&::before
-		content: ''
+		content: ""
 		display: block
 		width: 36px
 		height: 36px		
@@ -105,7 +158,7 @@
 		left: 50%
 		transform: translateX(-50%) 
 	&::after
-		content: ''
+		content: ""
 		display: block
 		width: 310px
 		height: 37px		
@@ -113,6 +166,65 @@
 		position: absolute
 		bottom: -15px
 		left: 50%
-		transform: translateX(-50%) 	
+		transform: translateX(-50%) 
+			
+.btn-mobile-menu
+	width: 45px
+	height: 45px
+	background-color: #53cdfc
+	border-radius: 23px
+	display: none
+	position: fixed
+	right: 10px	
+	top: 10px
+	z-index: 200	
+	font-size: 0
+	text-indent: -9999px
+	appearance: none
+	box-shadow: none
+	cursor: pointer
+	transition: background 0.3s
+	+r(767)
+		display: block	
+	span
+		display: block
+		position: absolute		
+		height: 2px
+		left: 10px
+		right: 10px
+		top: 22px
+		background: white
+		&::before,
+		&::after
+			position: absolute
+			display: block
+			left: 0
+			width: 100%
+			height: 2px
+			background-color: white
+			content: ""
+		&::before
+			top: -9px	
+		&::after
+			bottom: -9px	
+.btn-close
+	width: 30px
+	height: 30px
+	cursor: pointer
+	&::before,
+	&::after
+		width: 35px
+		height: 2px
+		content: ""
+		display: block
+		position: absolute
+		background-color: #53cdfc
+		top: 50%
+		left: 0					
+	&::before		
+		transform: rotate(45deg)
+	&::after		
+		transform: rotate(-45deg)			
+
 
 	

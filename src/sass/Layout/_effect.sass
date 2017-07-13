@@ -1,10 +1,13 @@
 /*********************effect-section *****************************/
 .effect	
-	min-height: 460px
+	min-height: 525px
 	background-image: url("../img/bg-5.png")
 	background-position-x: 50%	
 	background-repeat: no-repeat	
-	margin: -100px 0 60px
+	margin: -100px 0 0
+	+r(991)
+		min-height: 420px
+		background-size: 1650px
 	&-contain		
 		height: 100%		
 		position: relative
@@ -23,11 +26,12 @@
 		top: 60px
 		+r(991)
 			right: -15px	
-			top: 20px
+			top: -12px
+			width: 195px
 		+r(767)	
 			display: none
 	&-list
-		+fs('Open Sans', 600)	
+		+fs("Open Sans", 600)	
 		font-size: 19px	
 		padding-left: 40px
 		margin-left: -15px	
@@ -36,13 +40,14 @@
 			font-size: 18px
 		+r(991)
 			font-size: 16px
+			margin-left: 10px
 		+r(767)
 			font-size: 14px
 			width: 285px
 			position: relative
 			left: 50%
-			margin-left: -142px
-	
+			margin-left: -142px	
+			margin-top: 10px
 		&__item
 			position: relative
 			padding: 10px 0			
@@ -50,43 +55,48 @@
 				width: 17px
 				height: 29px
 				background-image: url("../img/ico5.png")
-				content: ''
+				content: ""
 				display: block
 				position: absolute
 				left: -40px
 				top: 50%
 				transform: translateY(-50%)	
-	button
+			+r(767)
+				padding: 7px 0	
+	.button
 		position: absolute
 		right: 30px
-		bottom: 25px
-		+r(767)
-			bottom: -570px	
+		bottom: 10px
+		+r(991)
+			bottom: 23px
+		+r(767)			
 			right: 50%
 			margin-right: -110px
+			z-index: 30	
+			bottom: -550px
 		+r(460)
-			bottom: -630px			
+			bottom: -575px						
 	&-tape
-		background-image: url("../img/sect5-tape.png")	
+		background: url("../img/tape-effect.png") no-repeat 0 0	
 		width: 569px
-		height: 90px
+		height: 83px
 		@extend %tape
 		font-size: 19px	
 		margin-top: 27px
 		+r(1199)
 			margin-left: -50px
 		+r(991)
-			font-size: 16px
-			background-repeat: no-repeat
-			background-size: 80%
+			font-size: 16px					
 			text-align: left
 			padding-left: 40px
 			padding-top: 23px	
 			margin-left: -15px	
+			margin-top: 15px
+			background-position-y: -84px
 		+r(767)
 			background-image: none
 			font-size: 19px
-			+fs('Open Sans', 700)	
+			+fs("Open Sans", 700)	
 			font-style: normal
 			text-shadow: none
 			color: $color-text-h2

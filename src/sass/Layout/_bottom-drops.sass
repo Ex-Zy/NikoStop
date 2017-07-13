@@ -3,29 +3,19 @@
 	&.top-bottom
 		background-image: url("../img/bg-9-1.png") 
 		background-position-y: 100%
+		margin-bottom: 50px
 		+r(991)
 			background-size: 1139px
+			margin-bottom: 10px
 		+r(767)
 			height: 1100px
 			background-size: 1170px
-			background-position-y: -100%
-	
-	&__top-bg
-		position: absolute	
-	&__bottom-bg 
-		background: url('../img/bg-1-bottom.png') no-repeat center bottom			
-		position: absolute			
-		bottom: 25px
-		height: 100%
-		width: 100%
-		background-size: 100%		
+			background-position-y: -100%		
+	.top-bottom-content-list 
 		+r(991)
-			bottom: 0
-		+r(767)
-			bottom: 360px
-			z-index: 12
-			height: 260px				
-			background: url('../img/bg-1-bottom1.png')				
+			margin-top: 123px					
+	&__top-bg
+		position: absolute						
 	&__girl
 		left: 190px
 		bottom: 80px
@@ -41,8 +31,8 @@
 			left: -135px
 		+r(991)
 			width: 192px
-			left: -50px	
-			top: 160px
+			left: -40px	
+			top: 140px
 		+r(767)
 			display: none	
 		&-mobile
@@ -62,12 +52,13 @@
 				height: 485px
 				margin-left: -205px
 				top: 240px
+				left: 50%
 			&__link
 				+r(767)
 					display: none	
 		&-contain
 			+r(767)
-				background: url('../img/sect1-girl.png') no-repeat 83px 190px
+				background: url("../img/sect1-girl.png") no-repeat 83px 190px
 				background-size: 200px						
 				max-width: 540px
 				margin: auto
@@ -76,7 +67,7 @@
 				padding-top: 40px
 		&-content__qt 
 			+r(767)
-				top: 115px		
+				top: 120px		
 		&-content .block-form 
 			+r(767)
 				margin-top: 150px
