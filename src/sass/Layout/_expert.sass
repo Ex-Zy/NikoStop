@@ -1,0 +1,164 @@
+/*********************expert-section*****************************/
+.expert	
+	min-height: 550px
+	position: relative
+	z-index: 10
+	&-contain		
+		height: 100%		
+		position: relative	
+		+r(767)
+			margin: 0 -7px			
+	&-block
+		margin-top: 35px
+		width: 100%
+		min-height: 388px
+		border: 2px solid #53cdfc
+		background: url("../img/sect6-shadow.png") no-repeat right
+		position: relative	
+		background-size: contain
+		+clr	
+		+r(1199)
+			margin-top: 45px
+		+r(991)
+			background-size: 212px
+			background-position-y: top
+		+r(767)
+			max-width: 440px
+			min-width: 300px
+			margin-left: auto
+			margin-right: auto	
+			background-size: 160px
+			min-height: 430px
+			margin-top: 35px
+		+r(460)
+			min-height: 495px
+			max-width: 300px	
+		&::before
+			position: absolute
+			bottom: -15px
+			right: 40px
+			content: ""
+			display: block
+			background: url("../img/sect6-signature.png") 
+			width: 153px
+			height: 104px
+			z-index: 10
+			+r(991)
+				top: 150px
+				right: -10px
+				background-size: 90%
+				background-repeat: no-repeat
+			+r(767)
+				background-size: 68%
+				top: 110px
+				right: -40px	
+		&__img
+			position: absolute
+			bottom: 0
+			right: 0
+			+r(991)
+				width: 225px
+				top: -44px	
+			+r(767)
+				width: 180px			
+		&__form
+			margin-left: 15px
+			margin-top: -45px
+			height: 445px
+			+r(991)
+				margin-left: 0
+				width: 280px
+			+r(767)
+				display: none
+		&__text
+			padding-top: 27px
+			padding-right: 40px			
+			+r(1199)
+				padding-left: 50px
+				padding-right: 50px
+				font-size: 13px
+			+r(991)				
+				padding: 0				
+				position: static				
+			+r(767)
+				padding: 0 20px 					
+				height: auto										
+			p
+				padding-bottom: 10px
+						
+			.autor
+				text-align: right
+				+r(1199)
+					padding-right: 50px
+				+r(991)
+					display: block	
+					position: absolute
+					top: 85px
+					left: 50%
+					margin-left: -75px
+					width: 200px					
+					padding-right: 0
+					text-align: left
+					font-weight: 600
+				+r(767)					
+					top: 40px
+					left: 50%
+					margin-left: -175px 					
+					width: 180px					
+				+r(460)
+					font-size: 12px
+					width: 130px	
+					margin-left: -125px 
+				&__name
+					display: block
+					+fs("Open Sans", 600)
+					font-size: 19px					
+					+r(460)
+						font-size: 14px
+						font-weight: bold
+						width: 150px	
+		&-wrap
+			+r(991)
+				padding-top: 250px	
+				display: none
+				padding-bottom: 15px
+			+r(767)
+				padding-top: 190px	
+				padding-bottom: 100px	
+	a.button
+		display: none
+		+r(767)
+			display: block	
+			position: absolute
+			bottom: 33px
+			left: 50%
+			transform: translateX(-50%)	
+
+	.btn-expand
+		margin: auto
+		display: none
+		+r(991)
+			display: block
+		&::after
+			display: none
+			+r(767)			
+				display: block	
+	.title
+		padding-left: 45px
+		+r(991)
+			text-align: center
+			padding: 0	
+		+r(767)
+			width: 320px
+			margin: auto		
+.table-visible
+	display: none 
+	+r(991)
+		display: block	
+		position: absolute
+		bottom: 15px
+		margin-right: 15px			
+	+r(767)			
+		top: 0
+		margin-top: 188px
+		
