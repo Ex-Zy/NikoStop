@@ -1,0 +1,205 @@
+/********************* negative *****************************/
+.negative
+	background: url("../img/sections/2/negative-bg.jpg") no-repeat center
+	margin: 32px 0 0
+	+r(991)
+		margin: 0 0 32px
+		background: url("../img/sections/2/negative-bg-tablet.jpg") no-repeat center
+		background-size: cover
+	+r(767)
+		background-position: 41% 5%
+		background-size: 1350px
+		position: relative
+		margin: -100px 0 0
+	&__title
+		padding: 27px 0 0 16px
+		+r(991)
+			padding: 0 0 0 16px
+		+r(767)
+			padding: 0
+	&__title-bottom
+		position: absolute
+		max-width: 320px
+		bottom: 130px
+		left: 72%
+		+r(1199)
+			margin-right: 15px
+		+r(991)
+			font-size: 48px
+			left: 70%
+			bottom: 100px
+		+r(767)
+			left: 14px
+			bottom: auto
+			top: 256px
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			width: 277px
+			height: 131px
+			background: url("../img/sections/2/negative-arrow.png") no-repeat center
+			left: -76px
+			top: 100%
+			margin: 10px 0 0
+			+r(991)
+				width: 205px
+				background-size: 100%
+				left: -50px
+				margin: -20px 0 0
+			+r(767)
+				display: none	
+		&::before
+			display: none
+			background-image: url("../img/sections/2/negative-arrow-xs.png")
+			content: ""		
+			position: absolute	
+			width: 144px
+			height: 45px			
+			margin-top: 80px
+			+r(767)
+				display: block
+	&__btn
+		margin: 50px auto 0
+		display: table
+		+r(991)
+			margin: 20px auto 0
+			position: relative
+			left: -15px
+		+r(767)
+			margin: 148px auto 0
+			left: auto
+.negative-list
+	+fs("Open Sans", 600)
+	color: $color-text-sect2
+	font-size: 19px
+	padding: 340px 0 0
+	clear: both
+	position: relative
+	+r(991)
+		font-size: 16px
+	+r(767)
+		padding: 15px 0 0
+		font-size: 13px
+	&__item
+		position: absolute
+		width: 300px
+		+r(991)
+			width: 280px
+		+r(767)
+			width: auto
+			position: static
+			text-align: left
+			padding: 0
+			text-transform: uppercase
+			padding-left: 15px
+			&:not(:first-of-type)
+				margin-top: 10px
+		&_1,
+		&_2,
+		&_3
+			padding-right: 104px
+			text-align: right
+			+r(991)
+				padding-right: 92px
+			&:before
+				right: 0
+		&_4,
+		&_5
+			padding-left: 104px
+			text-align: left
+			+r(991)
+				padding-left: 92px
+			&:before
+				left: 0
+		&_1
+			top: 84px
+			left: 96px
+			+r(1200)
+				top: 56px
+				left: 56px
+			+r(991)
+				top: 32px
+				left: 0
+			&:before
+				+s(despair)
+		&_2
+			top: 186px
+			left: 52px
+			+r(1200)
+				top: 186px
+				left: -10px
+			+r(991)
+				top: 150px
+				left: -50px
+			&:before
+				+s(perplexity)
+		&_3
+			top: 284px
+			left: 116px
+			+r(1200)
+				top: 320px
+				left: 10px
+			+r(991)
+				top: 280px
+				left: -47px
+			&:before
+				+s(fear)
+		&_4
+			top: 10px
+			left: 700px
+			+r(1200)
+				left: 600px
+			+r(991)
+				top: 0
+				left: 440px
+			&:before
+				+s(stress)
+		&_5
+			top: 102px
+			left: 776px
+			+r(1200)
+				left: 670px
+			+r(991)
+				top: 111px
+				left: 482px
+			&:before
+				+s(irritation)
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			+r(991)
+				transform: translateY(-50%) scale(0.8)
+			+r(767)
+				display: none
+		span
+			+text-overflow
+			display: block
+			position: relative
+			+r(767)
+				white-space: normal
+				overflow: visible
+				text-overflow: inherit
+				&:before
+					content: ''
+					position: absolute
+					display: block
+					left: -11px
+					top: 4px
+					width: 6px
+					height: 6px
+					background-color: #a7241e
+					border-radius: 50%
+.negative-contain
+	min-height: 573px
+	position: relative
+	z-index: 1
+	+r(991)
+		padding-top: 43px
+	+r(767)
+		padding-top: 30px
+		max-width: 320px
+		min-height: auto

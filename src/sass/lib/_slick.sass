@@ -2,12 +2,6 @@
 	position: relative
 	display: block
 	box-sizing: border-box
-	-moz-box-sizing: border-box
-	-webkit-touch-callout: none
-	-webkit-user-select: none
-	-khtml-user-select: none
-	-moz-user-select: none
-	-ms-user-select: none
 	user-select: none
 	-ms-touch-action: pan-y
 	touch-action: pan-y
@@ -72,16 +66,15 @@
 	position: absolute
 	top: 50%
 	margin-top: -23px
+	background-color: transparent
 	+hide-text
-	width: 17px
-	height: 43px
-	background: url("../img/slider.png")
+	+s(slick-arrow-prev)
 	left: 0
 	z-index: 1 
 	&:focus
 		outline: none	
 .slick-next
-	background-position-x: -25px	
+	+s(slick-arrow-next)
 .slick-next
 	right: 0
 	left: auto

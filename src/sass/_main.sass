@@ -25,9 +25,7 @@
 		color: $color-text-sect2		
 //  form	 
 .block-form
-	width: 255px
-	height: 491px
-	background: url("../img/form.png")
+	+s(form)
 	position: relative
 	&__in
 		position: relative
@@ -41,15 +39,36 @@
 	&__price
 		@extend %font
 		+fs("Roboto", 300)
-		.al-cost
+		div 
+			display: inline-block	
+		.old
 			font-size: 45px
-			background: url("../img/form-price.png") no-repeat center			
+			position: relative
+			display: inline-block
+			&:before,
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 120%
+				border-bottom: 1px solid #fff
+				top: 50%
+				left: 50%
+				margin: 0 0 0 -30px
+			&:before
+				+rotate(45)
+			&:after
+				+rotate(-45)
 			&__small
-				font-size: 30px								
-		.al-cost-promo
+				font-size: 30px	
+				display: inline-block															
+		.new
 			font-size: 70px
+			display: inline-block			
 			&__small
 				font-size: 50px 
+				display: inline-block
+				padding-left: 20px				
 	&__form
 		width: 220px		
 		margin: 0 auto 	
@@ -74,21 +93,20 @@
 	&-wraper
 		position: relative		
 	&__bottom-img
-		width: 220px
-		height: 39px
-		background: url("../img/form-bottom.png") no-repeat		
+		+s(form-bottom)
 		margin: 15px auto 0	
 	.error
 		border: 1px solid red
-		padding-top: 14px
-		padding-bottom: 6px
-		display: block
+		padding-top: 16px
+		padding-bottom: 4px
+		display: block		
 		+ label
 			color: red	
 			position: absolute
 			left: 13px
-			bottom: 20px
+			bottom: 22px
 			display: block 	
+			font-size: 12px
 // style button	 
 .button	
 	display: inline-block
@@ -102,42 +120,60 @@
 	color: $color-text-button		
 	+fs("Open Sans", 600)
 	font-size: 17px
-	cursor: pointer		
-	&__ico-animete
-		background: url("../img/btn4.png") no-repeat center				
-		display: inline-block
-		width: 2px
-		height: 11px		
-		transition: width 0.5s	
-		margin-left: 3px
+	cursor: pointer
+	span
+		position: relative
+		margin-left: -3px
+		transition: all 0.5s
+	i
+		position: absolute
+		left: 100%
+		margin-left: 6px
+		top: 50%
+		transform: translateY(-50%)
+		display: block
 	&__ico
-		display: inline-block
-		width: 6px
-		height: 11px
-		background: url("../img/btn.png") no-repeat 0 0		
-		margin-left: -5px			
+		+s(arrow)
+		margin-left: -5px
+		position: relative
+		transition: margin 0.5s
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -1px
+			+s(arrow-hover)
+			width: 0
+			transition: right 0.5s, width 0.5s
 	&_small
 		width: 138px
 		font-size: 14px
 		padding: 8px 0	
 		line-height: 17px
 	&:hover	
-		background: #ff4800		
-		.button__ico-animete
-			width: 15px 
-			background: url("../img/btn4.png") no-repeat center		
-			transition: width 0.5s				
+		+rm(992)
+			background: #ff4800
+		span
+			+rm(992)
+				margin-left: -10px
+		.button__ico
+			+rm(992)
+				margin-left: 15px
+				&:before
+					width: 13px
+					right: 3px
+				
 	&:active
 		background: #4acb4a
-		border-color: #3c9a3c		 	
-		.button__ico-animete
-			background: none
+		border-color: #3c9a3c
+		+rm(992)
+			background: #4acb4a
 		.button__ico
-			background-position: -80px 0
-			width: 17px
-			height: 19px
-			margin-top: -5px	
-			margin-left: -15px
+			&:before
+				display: none
+			+s(check)
 			
 .btn-expand
 	color: $color-text-h2
@@ -147,12 +183,11 @@
 	position: relative
 	padding-bottom: 44px	
 	text-align: center
+	z-index: 2
 	&::before
 		content: ""
 		display: block
-		width: 36px
-		height: 36px		
-		background-image: url("../img/ico-button.png")
+		+s(arrow-bottom)
 		position: absolute
 		bottom: 0
 		left: 50%
@@ -173,14 +208,14 @@
 	background-color: #53cdfc
 	border-radius: 23px
 	display: none
-	position: fixed
+	position: fixed	
+	box-shadow: 0px 0px 25px 20px rgba( 255, 255, 255, 0.74 )
 	right: 10px	
 	top: 10px
 	z-index: 200	
 	font-size: 0
 	text-indent: -9999px
-	appearance: none
-	box-shadow: none
+	appearance: none	
 	cursor: pointer
 	transition: background 0.3s
 	+r(767)

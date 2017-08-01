@@ -1,0 +1,195 @@
+//*****************медали
+%bg-i			
+	background-image: url("../img/sections/8/sect8-item.png")
+	width: 171px
+	height: 176px
+	top: 50%
+	transform: translateY(-50%)
+	position: absolute
+	+r(1199)
+		width: 130px
+		height: 133px
+		background-size: cover
+	+r(991)
+		width: 93px
+		height: 96px	
+	+r(767)
+		left: 15px		
+/************************** guarantee-section **************************/
+.guarantee	
+	min-height: 555px	
+	background-position-x: 50%	
+	background-repeat: no-repeat
+	position: relative 
+	margin-top: 45px
+	+r(1199)
+		margin-top: 100px
+	+r(991)
+		min-height: 508px
+		margin-top: -175px
+		z-index: 1
+	+r(767)
+		margin-top: -160px	
+	
+	h2
+		padding-left: 15px
+		+r(767)
+			font-size: 34px
+			max-width: 400px
+			margin: auto 
+			text-align: center
+			padding-left: 0 
+	.button 
+		float: right
+		margin: 240px 52px 0 0
+		position: relative
+		z-index: 10			
+		+r(991)
+			margin-top: 30px
+			margin-right: 15px
+		+r(767)
+			display: block
+			float: none
+			position: relative
+			top: 250px
+			margin: auto
+.guarantee-contain		
+	height: 100%		
+	position: relative
+	padding-top: 15px	
+	+r(767)
+		padding: 0 20px
+		max-width: 320px
+	.uppercase	
+		text-transform: uppercase
+.guarantee-block		
+	height: 332px		
+	background: url("../img/sections/8/sect8-fon.jpg") no-repeat right
+	position: relative
+	margin-top: 10px
+	+r(1199)
+		background-size: 100%
+	+r(991)
+		height: 300px	
+		max-width: 690px
+		margin: 25px auto 0
+		background-size: cover			
+		background: url("../img/sections/8/sect8-fon-small.jpg") no-repeat right
+	+r(767)
+		max-width: 400px
+		margin-top: 205px	
+		height: 330px
+		border: 2px solid #53cdfc
+		background-color: #dbf6fe
+		background-image: none
+
+	&__img
+		position: absolute			
+		right: 25px 
+		top: -135px				
+		width: 440px
+		background: url("../img/sections/8/sect8-block-fon.png") no-repeat
+		+r(1199)
+			top: -90px		
+		+r(991)							
+			background-size: 390px
+			right: -65px
+			top: -30px	
+		+r(767)
+			background: none	
+			right: -282px						
+		img				
+			margin: 0 115px 0 140px
+			position: relative
+			z-index: 10
+			+r(991)
+				width: 192px
+				margin-left: 105px			
+			+r(767)
+				margin-right: 0
+				margin-left: 0
+	&__text			
+		padding: 35px 75px 0 35px
+		font-size: 16px	
+		line-height: 1.3		
+		+r(991)				
+			padding: 25px 355px 0 15px
+		+r(767)
+			position: absolute
+			padding: 0
+			margin-top: -185px
+			text-align: center	
+			left: 0				
+		p
+			margin-bottom: 30px
+			+r(767)
+				margin-bottom: 20px
+				font-size: 14px
+		a
+			color: $color-text-h2
+			+fs("Open Sans", 700)	
+			text-decoration: underline
+			font-size: 19px
+			+r(767)
+				font-size: 16px
+.guarantee-block-tape
+	background-image: url("../img/sections/8/sect8-4.png")		
+	width: 785px
+	height: 97px
+	position: absolute
+	left: 0
+	bottom: 15px
+	+r(1199)
+		width: 600px
+		height: 75px
+		background-size: 100%
+		left: -10px
+		bottom: 30px
+	+r(991)
+		width: 428px
+		height: 54px				
+		left: -9px
+		bottom: 8px
+	+r(767)
+		background-image: url("../img/sections/8/tape_767.png")
+		width: 150px
+		height: 195px
+		top: 10px	
+		z-index: 10
+	&__item1								
+		@extend %bg-i
+		background-position: -176px, 0
+		left: 252px	
+		z-index: 5				
+		+r(1199)
+			background-position-x: -132px	
+			left: 180px	
+		+r(991)
+			background-position-x: -96px	
+			left: 138px
+		+r(767)	
+			top: 169px															
+	&__item3
+		@extend %bg-i
+		background-position: 0, 0					
+		left: 45px
+		z-index: 1	
+		+r(1199)
+			left: 30px			
+		+r(991)
+			left: 25px
+		+r(767)					
+			top: 29px								
+	&__item2
+		@extend %bg-i
+		background-position: -350px, 0							
+		left: 460px
+		z-index: 3
+		+r(1199)
+			background-position-x: -658px
+			left: 340px	
+		+r(991)
+			background-position-x: -474px
+			left: 250px
+		+r(767)					
+			margin-top: 0px

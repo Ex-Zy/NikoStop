@@ -3,82 +3,75 @@
 <head>
 	<meta charset="utf-8">
 	<title>NikoStop</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/style.css" >
 </head>
 <body>
-<!--  Begin navbar  -->
-	<header>
-	
-	    <nav class="navbar">
-	
-	             <span class="btn-close navbar__close"></span>     
-	
-	            <div class="container navbar-contein">        
-	
-	                    <a class="js-scroll" href="#top-drops"><span class="navbar-logo col-sm-2" ></span></a>
-	
-	                    <ul class="navbar-menu col-md-8 col-sm-7" id="fixed-nav">
-	
-	                            <li class="is-active"><a class="js-scroll" href="#top-drops">Main page</a></li>
-	
-	                            <li><a class="js-scroll" href="#better"> Чем лучше? </a></li>
-	
-	                            <li><a class="js-scroll" href="#effective">Состав</a></li>
-	
-	                            <li><a class="js-scroll" href="#expert">Эксперт</a></li>
-	
-	                            <li><a class="js-scroll" href="#guarant">Гарантия</a></li>
-	
-	                    </ul>
-	
-	                    <div class="wrar-buttom col-sm-2">
-	
-	                            <a class="button button_small js-scroll" href="#order">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></a>
-	
-	                    </div>        
-	
-	            </div>
-	
-	    </nav>
-	
-	</header>
-<!--  End navbar  -->	
+
+	<!--  Begin navbar  -->
+		<nav class="navbar">
+			 <span class="btn-close navbar__close"></span>     
+			<div class="navbar-contain container">	
+				<a class="js-scroll js-mob-menu-scroll" href="#top-drops"><span class="navbar-logo col-sm-2" ></span></a>
+				<ul class="navbar-menu col-md-8 col-sm-7" id="fixed-nav">
+					<li class="is-active"><a class="js-scroll js-mob-menu-scroll" href="#top-drops">Main page</a></li>
+					<li><a class="js-scroll js-mob-menu-scroll" href="#better"> Чем лучше? </a></li>
+					<li><a class="js-scroll js-mob-menu-scroll" href="#effective">Состав</a></li>
+					<li><a class="js-scroll js-mob-menu-scroll" href="#expert">Эксперт</a></li>
+					<li><a class="js-scroll js-mob-menu-scroll" href="#guarant">Гарантия</a></li>
+				</ul>
+				<div class="wrar-buttom col-sm-2">
+					<a class="button button_small js-scroll js-to-form js-mob-menu-scroll" href="#order">
+						<span>Заказать<i class="button__ico"></i></span>
+					</a>
+				</div>	
+			</div>
+		</nav>
+	<!--  End navbar  -->
+
 <!-- BEGIN out -->
 	<div class="out">
-	<!--  Begin top-drops-section  -->
-		<section class="top-drops top-bottom" id="top-drops">
-			<div class="container top-bottom-contain">
-				<img class="top-bottom__girl top-drops__girl" src="img/sect1-girl.png" alt="foto girl">
-				<img class="top-bottom__boy top-drops__boy" src="img/sect1-boy.png" alt="foto boy">	
-				<span class="btn-mobile-menu">
-					<span></span>
-				</span>	
-				<div class="top-bottom-content col-lg-8 col-md-10 col-sm-12">			
-					<div class="top-bottom-content-left">
+	<!--  Begin drops  -->
+		<section class="drops" id="top-drops">
+			<div class="drops-contain container">
+			
+				<span class="btn-mobile-menu"><span></span></span>
+		
+				<!-- BEGIN drops-content -->
+				<div class="drops-content col-lg-8 col-md-10 col-sm-12">
+		
+					<!-- BEGIN drops-content__left -->
+					<div class="drops-content__left">
 						<h5>NikoStop Antistress</h5>
 						<h2 class="title">Drops for easy quitting smoking</h2>
-						<ul class="top-bottom-content-list">
-							<li class="top-bottom-content-list__item">Полное избавление<br> от курения за 1 курс</li>
-							<li class="top-bottom-content-list__item">Без стресса, гнева<br>  и раздражения </li>
-							<li class="top-bottom-content-list__item top-bottom-content-list__item_none">Даже для самых заядлых курильщиков</li>
+						<ul class="drops-list">
+							<li class="drops-list__item">Полное избавление<br> от курения за 1 курс</li>
+							<li class="drops-list__item">Без стресса, гнева<br>  и раздражения </li>
+							<li class="drops-list__item drops-list__item_none">Даже для самых заядлых курильщиков</li>
 						</ul>
 						<span>
 							Надежные и эффективные капли, которые помогают быстро и безболезненно перейти в NO-SMOKING режим
 						</span>
 					</div>
-					<div class="top-bottom-content-right">
-					<div class="top-bottom-content__qt">
-						Осталось упаковок<span> по акции</span>
-						<div class="top-bottom-content__counter">17</div>
-					</div>
+					<!-- END drops-content__left -->
+		
+					<!-- BEGIN drops-content__right -->
+					<div class="drops-content__right">
+						<div class="drops-qt">
+							Осталось упаковок<span> по акции</span>
+							<div class="drops-counter js-counter">83</div>
+						</div>
 						<div class="block-form">
 							<div class="block-form__in">
 								<h4 class="block-form__title">Start a free life now!</h4>
 								<div class="block-form__price">
-									<span class="al-cost"><span class="al-cost__small">$</span>50</span>
-									<span class="al-cost-promo"><span class="al-cost-promo__small">$</span>25</span>
+								 	<div>
+										<span class="old__small al-raw-currency">$</span><span class="old al-raw-cost">50</span>
+									</div>
+									<div>
+										<span class="new__small al-raw-currency">$</span><span class="new al-raw-cost-promo">25</span>
+									</div>
 								</div>
 								<form action="/land/order" class="block-form__form al-form" method="post">
 									<select name="country" class="al-country" >
@@ -92,40 +85,60 @@
 							        	<input type="tel" name="phone" id="phone"  placeholder="Phone Number">
 							        	<label for="phone"></label>
 									</div>
-							        <button class="button js-btn" type="submit">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></button>
+					                <button class="button js-btn js-navbar-show" type="submit">
+					        			<span>Заказать<i class="button__ico"></i></span>
+					                </button>
 								</form>
 								<div class="block-form__bottom-img"></div>	
 							</div>
 						</div>
-					</div>			
-				</div>	
-				<div class="top-bottom-product">
-					<a class="top-bottom-product__link js-scroll" href="#guarant">Guarantee</a>
-				</div>	
+					</div>
+					<!-- END drops-content__right -->
+		
+				</div>
+				<!-- END drops-content -->
+		
+				<!-- BEGIN drops-product -->
+				<div class="drops-product">
+					<a class="drops-product__link js-scroll" href="#guarant">Guarantee</a>
+				</div>
+				<!-- END drops-product -->
+				
 			</div>
-			<div class="top-bottom__bottom-bg">	</div>		
 		</section>
 		
-	<!--  End dorp-section  -->	
+	<!--  End drops -->	
 
-	<!--  Begin why-not-section  -->
-		<section class="why-not" >
-			<div class="container why-not-contain">
-				<h2 class="title title_bordo col-md-5">Why can not<br>I quit smoking?</h2>
-				<ul class="why-not-list" >
-					<li class="why-not__item why-not__item-1">Отчаяние</li>
-					<li class="why-not__item why-not__item-2">Растерянность</li>
-					<li class="why-not__item why-not__item-3">Страх</li>
-					<li class="why-not__item why-not__item-4">Стресс</li>
-					<li class="why-not__item why-not__item-5">Раздражение</li>
+	<!--  Begin negative  -->
+		<section class="negative" >
+			<div class="negative-contain container">
+				<h2 class="negative__title title title_bordo col-md-5">Why can not<br>I quit smoking?</h2>
+				<ul class="negative-list" >
+					<li class="negative-list__item negative-list__item_1">
+						<span>Отчаяние</span>
+					</li>
+					<li class="negative-list__item negative-list__item_2">
+						<span>Растерянность</span>
+					</li>
+					<li class="negative-list__item negative-list__item_3">
+						<span>Страх</span>
+					</li>
+					<li class="negative-list__item negative-list__item_4">
+						<span>Стресс</span>
+					</li>
+					<li class="negative-list__item negative-list__item_5">
+						<span>Раздражение</span>
+					</li>
 				</ul>
-				<h2 class="title why-not__title_bottom">So it was<br> before!</h2>
-				<a class="js-scroll button" href="#order">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></a>
+				<h2 class="negative__title-bottom title">So it was<br> before!</h2>
+				<a class="negative__btn button js-scroll js-to-form" href="#order">
+					<span>Заказать<i class="button__ico"></i></span>
+				</a>
 			</div>
 		</section>
-	<!--  End dorp-section  -->	
+	<!--  End negative  -->	
 
-	<!--  Begin better-section  -->
+	<!--  Begin better  -->
 		<section class="better" id="better">
 			<div class="graf-container">
 				<div class="container">
@@ -188,45 +201,46 @@
 				</div>
 				<div class="row content">
 					<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-3">
-						<img src="img/sect3/nikostop.png" alt="NikoStop" class="product">
+						<img src="img/sections/3/nikostop.png" alt="NikoStop" class="product">
 					</div>
 					<div class="col-md-4 right col-sm-5">
 						<p >Обычные средства от курения и заменители никотина НЕ помогают человеку справиться со стрессом и дискомфортом, которые возникают при отказе от курения.</p>
 						<p class="mobile-p">
 							В отличие от обычных средств, которые НЕ помогают вам при отказе от курения, NikoStop Antistress решает проблему дискомфорта за 1 курс
 						</p>
-						<a class="button js-scroll" href="#order">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></a>
+						<a class="button js-scroll js-to-form" href="#order">
+							<span>Заказать<i class="button__ico"></i></span>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-	<!--  End dorp-section  -->	
+	<!--  End better  -->	
 
-	<!--  Begin effective-section  -->
-		<!-- BEGIN effective -->
-		<section class="effective js-parallax-section" id="effective">
+	<!--  Begin effective -->
+		<section class="effective" id="effective">
 			<ul class="parallax-list container" id="scene-1" data-invert-x="false" data-invert-y="false" data-relative-input="true">
 				<li class="parallax-list__item parallax-list__item_1" data-depth="0.08">
-					<img src="img/DropsBack.png" alt="">
+					<img src="img/sections/4/dropsback.png" alt="">
 				</li>
 				<li class="parallax-list__item parallax-list__item_2" data-depth="0.10">
-					<img src="img/BackElements.png" alt="">
+					<img src="img/sections/4/backelements.png" alt="">
 				</li>
 			</ul>
 			<ul class="parallax-list container" id="scene-2">
 				<li class="parallax-list__item parallax-list__item_4" data-depth="0.40">
-					<img src="img/TriptofanPart.png" alt="">
+					<img src="img/sections/4/triptofan.png" alt="">
 				</li>
 			</ul>
 			<ul class="parallax-list parallax-list_front container" id="scene-3">
 				<li class="parallax-list__item parallax-list__item_5" data-depth="0.40">
-					<img src="img/FrontElements.png" alt="">
+					<img src="img/sections/4/FrontElements.png" alt="">
 				</li>
 				<li class="parallax-list__item parallax-list__item_3" data-depth="0.90">
-					<img src="img/front.png" alt="">
+					<img src="img/sections/4/front.png" alt="">
 				</li>
 			</ul>
-			<div class="container inner">
+			<div class="effective-contain container">
 				<h2 class="title">What makes NikoStop <br> so effective?</h2>
 				<div class="effective-items">
 					<div class="effective-bl effective-bl_1">
@@ -299,20 +313,19 @@
 							</div>
 						</li>
 					</ul>
-					<div class="e-dropdown__bottom">
-						<a href="#" class="btn-expand js-dropdown">Подробнее</a>
-					</div>
 				</div>
-				<div class="shadow"></div>
+				<div class="e-dropdown__bottom">
+					<a href="#" class="btn-expand js-dropdown">Подробнее</a>
+					<div class="shadow"></div>
+				</div>
 			</div>
 		</section>
-		<!-- END effective -->
-	<!--  End effective-section  -->
+	<!--  End effective -->
 
-	<!--  Begin effect-section  -->
+	<!--  Begin effect  -->
 		<section class="effect">
-			<div class="container effect-contain">
-				<img class="effect-girl" src="img/sect5-girl.png" alt="girl" >
+			<div class="effect-contain container">
+				<img class="effect-girl" src="img/sections/5/sect5-girl.png" alt="girl" >
 				<div class="col-lg-9 col-md-10 col-lg-offset-3 col-md-offset-2">
 					<h2 class="title">What effect will I get?</h2>
 					<ul class="effect-list">
@@ -320,30 +333,34 @@
 						<li class="effect-list__item">Очищение организма от никотина и смол</li>	
 						<li class="effect-list__item">Повышение работоспособности, концентрации внимания</li>
 						<li class="effect-list__item">Здоровый сон и восстановление организма</li>
-						<li class="effect-list__item sect1-content-list__item_none">Закрепление новой привычки не-курить</li>
+						<li class="effect-list__item">Закрепление новой привычки не-курить</li>
 					</ul>
 					<div class="effect-tape">Отказаться от куренияе с НикоСтоп - просто!</div>
 				</div>
-				<img class="effect-product" src="img/sect5-product.png" alt="product" >
-				<a class="js-scroll button" href="#order">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></a>
+				<img class="effect-product" src="img/sections/5/sect5-product.png" alt="product" >
+				<a class="button js-scroll js-to-fotm" href="#order">
+					<span>Заказать<i class="button__ico"></i></span> 
+				</a>
 			</div>
 		</section>	
-	<!--  End dorp-section  -->	
+	<!--  End effect  -->	
 
-	<!--  Begin expert-section  -->
+	<!--  Begin expert  -->
 		<section class="expert" id="expert">
-			<div class="container expert-contain">
+			<div class="expert-contain container">
 				<h2 class="title col-md-offset-3">Experts recommend</h2>
 				<div class="expert-block col-md-12">
-					<img class="expert-block__img" src="img/sect6-boy.png" alt="foto expert">
+					<img class="expert-block__img" src="img/sections/6/sect6-boy.png" alt="foto expert">
 					<div class="row">
 						<div class="expert-block__form col-lg-3 col-md-3 col-sm-5">
 							<div class="block-form">
 								<div class="block-form__in">
 									<h4 class="block-form__title">Start a free life now!</h4>
 									<div class="block-form__price">
-										<span class="al-cost">$50</span>
-										<span class="al-cost-promo">$25</span>
+										<div class="block-form__price">
+											<span class="old__small al-raw-currency">$</span><span class="old al-raw-cost">50</span>
+											<span class="new__small al-raw-currency">$</span><span class="new al-raw-cost-promo">25</span>
+										</div>
 									</div>
 									<form action="/land/order" class="block-form__form al-form" method="post">
 										<select name="country" class="al-country"> </select>
@@ -355,7 +372,7 @@
 								        	<input type="tel" name="phone" id='phone1' placeholder="Phone Number">
 								        	<label for="phone1"></label>
 								        </div>	
-								        <button class="button" type="submit">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></button>
+								        <button class="button" type="submit"><span>Заказать <i class="button__ico"></i></span></button>
 									</form>
 									<div class="block-form__bottom-img"></div>	
 								</div>
@@ -376,25 +393,27 @@
 									Проявления абстинентного синдрома при приеме капель НикоСтоп фактически отсутствуют. Именно поэтому я рекомендую его всем своим пациентам.
 								</p>						
 							</div>	
+							<div class="table-visible">						
+								<p >
+									Проявления абстинентного синдрома при приеме капель НикоСтоп фактически отсутствуют. Именно поэтому я рекомендую его всем своим пациентам.							
+								</p>
+								<a href="#" class="btn-expand js-dropdown">Подробнее</a>
+							</div>
 							<p class="autor">
 								<span class="autor__name">Ковальский Ю. Б.</span>
 								Ведущий эксперт Международного центра <br>по лечению табачной зависимости
 							</p>				
-							<div class="table-visible">						
-								<p >
-									Проявления абстинентного синдрома при приеме капель НикоСтоп фактически отсутствуют. Именно поэтому я рекомендую его всем своим пациентам.
-								</p>
-								<a href="#" class="btn-expand">Подробнее</a>
-							</div>
+							
 						</div>
 					</div>
+					<a class="js-scroll button js-to-form" href="#order"><span>Заказать <i class="button__ico"></i></span></a>
 				</div>
 			</div>
 		</section>	
 		
-	<!--  End dorp-section  -->	
+	<!--  End expert  -->	
 
-	<!--  Begin reviews-section  -->
+	<!--  Begin reviews  -->
 		<section class="reviews">
 		   <div class="container reviews-contain">
 		    	<h2 class="title">Reviews about NikoStop</h2>
@@ -438,24 +457,24 @@
 		        </div>
 		    </div>
 		</section> 
-	<!--  End dorp-section  -->	
+	<!--  End reviews  -->	
 
-	<!--  Begin guarantee-section  -->
+	<!--  Begin guarantee  -->
 		<section class="guarantee" id="guarant">
-			<div class="container guarantee-contain">
+			<div class="guarantee-contain container">
 				<h2 class="title">
 					Others promise — <br>
 					<span class="uppercase">we</span> give a <span class="uppercase">guarantee</span>
 				</h2>		
 				<div class="guarantee-block col-md-12">
 					<div class="guarantee-block__img ">
-						<img src="img/sect8-product.png">
+						<img src="img/sections/8/sect8-product.png">
 					</div>
 					
 					<ul class="guarantee-block-tape">
-						<li class="guarantee-block-tape__item1"></li>							
-						<li class="guarantee-block-tape__item2"></li>							
-						<li class="guarantee-block-tape__item3"></li>							
+						<li class="guarantee-block-tape__item1"></li>
+						<li class="guarantee-block-tape__item2"></li>
+						<li class="guarantee-block-tape__item3"></li>
 					</ul>
 					<div class="guarantee-block__text col-md-7">
 						<p>
@@ -463,41 +482,49 @@
 						</p>
 						<a class="modal_button" href="#modal_button">Детальнее о условиях возврата</a>	
 					</div>
-					<a class="js-scroll button" href="#order">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></a>
+					<a class="button js-to-form js-scroll" href="#order"><span>Заказать<i class="button__ico"></i></span></a>
 				</div>		
 			</div>
 		</section>
 		
-	<!--  End dorp-section  -->
+	<!--  End guarantee  -->
 
-	<!--  Begin bottom-drops-section  -->
-		<section class="bottom-drops top-bottom">
-			<img class="bottom-drops__top-bg" src="img/bg-9-top.png" alt="">		
-			<div class="container top-bottom-contain">
-				<img class="top-bottom__girl bottom-drops__girl" src="img/sect9-girl.png" alt="foto girl">
-				<img class="top-bottom__boy bottom-drops__boy" src="img/sect9-boy.png" alt="foto boy">		
-				<img class="top-bottom__boy bottom-drops__boy-mobile" src="img/sect1-boy.png" alt="foto boy">		
-				<div class="top-bottom-content col-lg-8 col-md-10 col-sm-12">			
-					<div class="top-bottom-content-left">
+	<!--  Begin bottom-drops  -->
+		<section class="drops drops-bottom">
+			<div class="drops-contain container">
+			
+				<!-- BEGIN drops-content -->
+				<div class="drops-content col-lg-8 col-md-10 col-sm-12">
+		
+					<!-- BEGIN drops-content__left -->
+					<div class="drops-content__left">
 						<h5>NikoStop Antistress</h5>
-						<h2 class="title top-bottom-content__h2">Drops for easy quitting smoking</h2>
-						<ul class="top-bottom-content-list">
-							<li class="top-bottom-content-list__item">Полное избавление<br> от курения за 1 курс</li>
-							<li class="top-bottom-content-list__item">Без стресса, гнева<br>  и раздражения </li>
-							<li class="top-bottom-content-list__item top-bottom-content-list__item_none">Даже для самых заядлых курильщиков</li>
-						</ul>				
+						<h2 class="title">Drops for easy quitting smoking</h2>
+						<ul class="drops-list">
+							<li class="drops-list__item">Полное избавление<br> от курения за 1 курс</li>
+							<li class="drops-list__item">Без стресса, гнева<br>  и раздражения </li>
+							<li class="drops-list__item">Даже для самых заядлых курильщиков</li>
+						</ul>
+						<span>
+							Надежные и эффективные капли, которые помогают быстро и безболезненно перейти в NO-SMOKING режим
+						</span>
 					</div>
-					<div class="top-bottom-content-right">
-					<div class="top-bottom-content__qt">
-						Осталось упаковок<span> по акции</span>
-						<div class="top-bottom-content__counter">17</div>
-					</div>
+					<!-- END drops-content__left -->
+		
+					<!-- BEGIN drops-content__right -->
+					<div class="drops-content__right">
+						<div class="drops-qt">
+							Осталось упаковок<span> по акции</span>
+							<div class="drops-counter js-counter">83</div>
+						</div>
 						<div class="block-form">
 							<div class="block-form__in">
 								<h4 class="block-form__title">Start a free life now!</h4>
 								<div class="block-form__price">
-									<span class="al-cost">$50</span>
-									<span class="al-cost-promo">$25</span>
+									<div class="block-form__price">
+										<span class="old__small al-raw-currency">$</span><span class="old al-raw-cost">50</span>
+										<span class="new__small al-raw-currency">$</span><span class="new al-raw-cost-promo">25</span>
+									</div>
 								</div>
 								<form id="order" action="/land/order" class="block-form__form al-form" method="post">
 									<select name="country" class="al-country"> </select>
@@ -509,60 +536,90 @@
 							        	<input type="tel" name="phone" id="phone2" placeholder="Phone Number">
 							        	<label for="phone2"></label>
 							        </div>	
-							        <button class="button js-btn" type="submit">Заказать <i class="button__ico-animete"></i><i class="button__ico"></i></button>
+							        <button class="button js-btn" type="submit">
+										<span>Заказать<i class="button__ico"></i></span>
+							        </button>
 								</form>
 								<div class="block-form__bottom-img"></div>	
 							</div>
 						</div>
-					</div>			
-				</div>	
-				<div class="top-bottom-product">
-					<a class="top-bottom-product__link js-scroll" href="#guarant">Guarantee</a>
-				</div>	
+					</div>
+					<!-- END drops-content__right -->
+		
+				</div>
+				<!-- END drops-content -->
+		
+				<!-- BEGIN drops-product -->
+				<div class="drops-product">
+					<a class="drops-product__link js-scroll" href="#guarant">Guarantee</a>
+				</div>
+				<!-- END drops-product -->
+				
 			</div>
-			<div class="top-bottom__bottom-bg">	</div>
 		</section>
-	<!--  End dorp-section  -->	
+	<!--  End bottom-drops  -->	
+
+	<!-- BEGIN footer -->
+		<footer class="footer">
+			<div class="footer__title">Ottieni rapidamente il tuo NikoStop</div>
+			<ul class="footer-list">
+				<li class="footer-list__item footer-list__item1">Spedizione dell`ordine in stesso giorno</li>
+				<li class="footer-list__item footer-list__item2">Consegna in tutta Italia </li>
+				<li class="footer-list__item footer-list__item3">Il pagamento dopo controllo dell`ordine</li>
+			</ul>
+			<div class="footer__copyright">Copyright© 
+				<span>
+					<script type="text/javascript">							
+						document.write( new Date().getFullYear());
+					</script>
+				</span> 
+				<a href="https://terraleads.com">Terraleads®</a>.
+				<span class='footer__bottom'> All rights reserved.</span>
+			</div>
+		</footer>
+	<!-- END footer -->
+
 	</div>
 	<!-- END out -->
-<!--  Begin guarantee-popup  -->
-	<div class="popup"> 
-	    <span class="btn-close popup__close"></span>     
-		    <h2>Guaranty Terms and conditions</h2>
-		    <span class="popup__line"></span>	
-		    <div class="popup-content">	       
-			     <p>
-			     	Суть - ми говоримо що повертаємо гроші якщо краплі не допомогли покинути курити. Для цього ми просимо надати:
-			     	</p> 
-			     <ul>
-				    <li>доказ проходження курсу </li>
-				    <li>чек на покупку трьох упаковок Нікостоп Антистрес</li>
-			     	<li>пусті три упаковки Нікостоп Антистрес</li>
-			     	<li>флюрографія завірена лікуючим лікарем датована днем початку проходження курсу</li>
-			     	<li>флюрографія завірена лікуючим лікарем датована днем закінчення проходження курсу</li>
-			    </ul>
-				<p>Заявку на повернення не пізніше 32-гого дня від дати покупки. Заявка містить:</p>
-			     <ul>
-			    	<li>повне Ім’я</li>
-			   		<li>номер телефону</li>
-			    	<li>номер страхового полісу</li>
-			    	<li>адресу проживання</li>
-			    	<li>номер квитанції про оплату</li>
-			   	</ul> 	
-			   	<p>
-			   		Заключення ліцензованого лікаря про те, що легені не містять залишків куріння протягом останніх 30 днів
-				</p>
-			   	<p>
-			   		Ми також попереджаємо що повертаємо гроші лише в тому випадку якщо протягом курсу людина не палила жодної цигарки і ми маємо докази кваліфікованого лікаря.
-				</p>		  		
-		</div>	
-		<span class="popup__line"></span>	 
-	 </div>
-	<div id="overlay"></div>
-	
-	
-	
-<!--  End guarantee-popup  -->	
+
+	<!--  Begin guarantee-popup  -->
+		<div class="popup"> 
+		    <span class="btn-close popup__close"></span>     
+			    <h2>Guaranty Terms and conditions</h2>
+			    <span class="popup__line"></span>	
+			    <div class="popup-content">	       
+				     <p>
+				     	Суть - ми говоримо що повертаємо гроші якщо краплі не допомогли покинути курити. Для цього ми просимо надати:
+				     	</p> 
+				     <ul>
+					    <li>доказ проходження курсу </li>
+					    <li>чек на покупку трьох упаковок Нікостоп Антистрес</li>
+				     	<li>пусті три упаковки Нікостоп Антистрес</li>
+				     	<li>флюрографія завірена лікуючим лікарем датована днем початку проходження курсу</li>
+				     	<li>флюрографія завірена лікуючим лікарем датована днем закінчення проходження курсу</li>
+				    </ul>
+					<p>Заявку на повернення не пізніше 32-гого дня від дати покупки. Заявка містить:</p>
+				     <ul>
+				    	<li>повне Ім’я</li>
+				   		<li>номер телефону</li>
+				    	<li>номер страхового полісу</li>
+				    	<li>адресу проживання</li>
+				    	<li>номер квитанції про оплату</li>
+				   	</ul> 	
+				   	<p>
+				   		Заключення ліцензованого лікаря про те, що легені не містять залишків куріння протягом останніх 30 днів
+					</p>
+				   	<p>
+				   		Ми також попереджаємо що повертаємо гроші лише в тому випадку якщо протягом курсу людина не палила жодної цигарки і ми маємо докази кваліфікованого лікаря.
+					</p>		  		
+			</div>	
+			<span class="popup__line"></span>	 
+		 </div>
+		<div id="overlay"></div>
+		
+		
+		
+	<!--  End guarantee-popup  -->	
 
 <script src="js/app.js"></script>
 </body>

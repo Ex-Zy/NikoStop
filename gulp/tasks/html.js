@@ -15,6 +15,6 @@ gulp.task('html', function () {
 gulp.task('html:watch', function() {
     gulp.watch([
     	config.src.root+'*.html', 
-    	config.src.root+'partials/*.html'
+    	config.src.root+'partials/**/*.html'
     ], ['html']);
 });

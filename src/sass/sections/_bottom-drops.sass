@@ -1,0 +1,49 @@
+/********************* drops-bottom *****************************/
+.drops-bottom
+	background: url(../img/sections/9/drops-bottom-bg.jpg) no-repeat center -13px
+	padding: 0 0 114px
+	+r(991)
+		background: url(../img/sections/9/drops-bottom-bg-tablet.jpg) no-repeat center -52px !important
+		margin: -274px 0 0
+		padding: 274px 0 0
+	+r(767)
+		background: url(../img/sections/9/drops-bottom-bg-mob.jpg) no-repeat center -272px !important
+		margin: 40px 0 0
+		padding: 0
+		z-index: 2
+	.drops-content
+		min-height: 652px
+		+r(767)
+			min-height: 1100px
+		&__left
+			+r(991)
+				span
+					display: none
+			+r(767)
+				padding: 0
+		.block-form
+			+r(767)
+				top: 520px
+	.drops-list
+		&__item
+			&:not(:first-of-type)
+				+r(991)
+					margin: 8px 0 0
+				+r(767)
+					margin: 0
+		+r(991)
+			margin: 124px 0 0
+		+r(767)
+			display: none
+	.drops-product
+		bottom: -54px
+		+r(991)
+			background-size: contain
+			bottom: 33px
+			height: 400px
+			left: -15px
+		+r(767)
+			display: none
+	.drops-qt
+		+r(767)
+			top: 80px

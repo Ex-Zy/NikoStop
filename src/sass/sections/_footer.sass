@@ -1,0 +1,50 @@
+.footer 
+	background: url("../img/footer.png") no-repeat center bottom
+	min-height: 160px
+	background-size: cover
+	text-align: center
+	&__title
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+		margin-bottom: 15px
+	&__copyright 
+		margin-top: 40px
+		+r(991)
+			padding-bottom: 40px
+	&__bottom
+		+r(768)
+			display: block
+	a 
+		color: #595959
+		text-decoration: underline
+.footer-list
+	&__item 
+		display: inline-block
+		padding-left: 30px
+		margin: 0 15px
+		position: relative
+		+r(991)
+			display: block
+			padding-left: 0
+			padding-top: 25px
+			margin-top: 15px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			+r(991)
+				top: 0
+				left: 50%
+				transform: translate(-50%, 0)
+	&__item1
+		&::before 
+			+s(calendar)
+	&__item2
+		&::before 
+			+s(box)
+	&__item3
+		&::before 
+			+s(cart)
